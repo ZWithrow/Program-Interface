@@ -27,11 +27,12 @@ Partial Class Arrigo
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavItem1 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator1 = New DevComponents.DotNetBar.Separator()
         Me.SideNavItem2 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
-        Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -56,6 +57,7 @@ Partial Class Arrigo
         '
         'SideNavPanel1
         '
+        Me.SideNavPanel1.Controls.Add(Me.CheckBox1)
         Me.SideNavPanel1.Controls.Add(Me.Button1)
         Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SideNavPanel1.Location = New System.Drawing.Point(116, 36)
@@ -71,6 +73,15 @@ Partial Class Arrigo
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'SideNavPanel2
+        '
+        Me.SideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel2.Location = New System.Drawing.Point(116, 36)
+        Me.SideNavPanel2.Name = "SideNavPanel2"
+        Me.SideNavPanel2.Size = New System.Drawing.Size(1336, 727)
+        Me.SideNavPanel2.TabIndex = 6
+        Me.SideNavPanel2.Visible = False
         '
         'SideNavItem1
         '
@@ -104,14 +115,15 @@ Partial Class Arrigo
         Me.SideNavItem3.Symbol = ""
         Me.SideNavItem3.Text = "SideNavItem3"
         '
-        'SideNavPanel2
+        'CheckBox1
         '
-        Me.SideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel2.Location = New System.Drawing.Point(116, 36)
-        Me.SideNavPanel2.Name = "SideNavPanel2"
-        Me.SideNavPanel2.Size = New System.Drawing.Size(1336, 727)
-        Me.SideNavPanel2.TabIndex = 6
-        Me.SideNavPanel2.Visible = False
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(223, 201)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(82, 17)
+        Me.CheckBox1.TabIndex = 1
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Arrigo
         '
@@ -127,6 +139,7 @@ Partial Class Arrigo
         Me.SideNav1.ResumeLayout(False)
         Me.SideNav1.PerformLayout()
         Me.SideNavPanel1.ResumeLayout(False)
+        Me.SideNavPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -140,4 +153,5 @@ Partial Class Arrigo
     Friend WithEvents Button1 As Button
     Friend WithEvents SideNavPanel2 As DevComponents.DotNetBar.Controls.SideNavPanel
     Friend WithEvents SideNavItem3 As DevComponents.DotNetBar.Controls.SideNavItem
+    Friend WithEvents CheckBox1 As CheckBox
 End Class

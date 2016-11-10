@@ -103,6 +103,9 @@ Partial Class Arrigo
         Me.roomTempFCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.newSpecNextButton = New System.Windows.Forms.Button()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.backNexSpecButton = New System.Windows.Forms.Button()
+        Me.submitNewSpecButton = New System.Windows.Forms.Button()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.IntegerInput2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -147,6 +150,9 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.submitNewSpecButton)
+        Me.SideNavPanel2.Controls.Add(Me.backNexSpecButton)
+        Me.SideNavPanel2.Controls.Add(Me.Label18)
         Me.SideNavPanel2.Controls.Add(Me.newSpecNextButton)
         Me.SideNavPanel2.Controls.Add(Me.roomTempKCheckBox)
         Me.SideNavPanel2.Controls.Add(Me.roomTempCCheckBox)
@@ -1078,12 +1084,42 @@ Partial Class Arrigo
         '
         'newSpecNextButton
         '
-        Me.newSpecNextButton.Location = New System.Drawing.Point(1202, 668)
+        Me.newSpecNextButton.Location = New System.Drawing.Point(1101, 668)
         Me.newSpecNextButton.Name = "newSpecNextButton"
         Me.newSpecNextButton.Size = New System.Drawing.Size(64, 31)
         Me.newSpecNextButton.TabIndex = 36
         Me.newSpecNextButton.Text = "NEXT"
         Me.newSpecNextButton.UseVisualStyleBackColor = True
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.LightGray
+        Me.Label18.Location = New System.Drawing.Point(837, 170)
+        Me.Label18.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(150, 30)
+        Me.Label18.TabIndex = 37
+        Me.Label18.Text = "New Specimen"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'backNexSpecButton
+        '
+        Me.backNexSpecButton.Location = New System.Drawing.Point(46, 668)
+        Me.backNexSpecButton.Name = "backNexSpecButton"
+        Me.backNexSpecButton.Size = New System.Drawing.Size(64, 31)
+        Me.backNexSpecButton.TabIndex = 38
+        Me.backNexSpecButton.Text = "BACK"
+        Me.backNexSpecButton.UseVisualStyleBackColor = True
+        '
+        'submitNewSpecButton
+        '
+        Me.submitNewSpecButton.Location = New System.Drawing.Point(1214, 668)
+        Me.submitNewSpecButton.Name = "submitNewSpecButton"
+        Me.submitNewSpecButton.Size = New System.Drawing.Size(64, 31)
+        Me.submitNewSpecButton.TabIndex = 39
+        Me.submitNewSpecButton.Text = "SUBMIT"
+        Me.submitNewSpecButton.UseVisualStyleBackColor = True
         '
         'Arrigo
         '
@@ -1200,4 +1236,7 @@ Partial Class Arrigo
     Friend WithEvents roomTempIntegerInput As DevComponents.Editors.IntegerInput
     Friend WithEvents Separator2 As DevComponents.DotNetBar.Separator
     Friend WithEvents newSpecNextButton As Button
+    Friend WithEvents Label18 As Label
+    Friend WithEvents backNexSpecButton As Button
+    Friend WithEvents submitNewSpecButton As Button
 End Class

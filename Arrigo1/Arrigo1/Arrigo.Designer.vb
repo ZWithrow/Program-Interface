@@ -26,9 +26,10 @@ Partial Class Arrigo
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.KelvinDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
+        Me.CelsiusDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.FarenDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.IntegerInput1 = New DevComponents.Editors.IntegerInput()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.DimensionsLabel = New System.Windows.Forms.Label()
         Me.MaxTempLabel = New System.Windows.Forms.Label()
         Me.materialLabel = New System.Windows.Forms.Label()
@@ -46,11 +47,18 @@ Partial Class Arrigo
         Me.Retest = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
-        Me.CelsiusDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.KelvinDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
+        Me.lengthDoubleInput1 = New DevComponents.Editors.DoubleInput()
+        Me.lengthLabel = New System.Windows.Forms.Label()
+        Me.widthLabel = New System.Windows.Forms.Label()
+        Me.widthDoubleInput2 = New DevComponents.Editors.DoubleInput()
+        Me.heightLabel1 = New System.Windows.Forms.Label()
+        Me.heightDoubleInput1 = New DevComponents.Editors.DoubleInput()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.heightDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -77,11 +85,16 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.heightDoubleInput1)
+        Me.SideNavPanel2.Controls.Add(Me.heightLabel1)
+        Me.SideNavPanel2.Controls.Add(Me.widthDoubleInput2)
+        Me.SideNavPanel2.Controls.Add(Me.widthLabel)
+        Me.SideNavPanel2.Controls.Add(Me.lengthLabel)
+        Me.SideNavPanel2.Controls.Add(Me.lengthDoubleInput1)
         Me.SideNavPanel2.Controls.Add(Me.KelvinDegreeCheck)
         Me.SideNavPanel2.Controls.Add(Me.CelsiusDegreeCheck)
         Me.SideNavPanel2.Controls.Add(Me.FarenDegreeCheck)
         Me.SideNavPanel2.Controls.Add(Me.IntegerInput1)
-        Me.SideNavPanel2.Controls.Add(Me.Label1)
         Me.SideNavPanel2.Controls.Add(Me.DimensionsLabel)
         Me.SideNavPanel2.Controls.Add(Me.MaxTempLabel)
         Me.SideNavPanel2.Controls.Add(Me.materialLabel)
@@ -91,6 +104,34 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
+        '
+        'KelvinDegreeCheck
+        '
+        '
+        '
+        '
+        Me.KelvinDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.KelvinDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
+        Me.KelvinDegreeCheck.Location = New System.Drawing.Point(459, 178)
+        Me.KelvinDegreeCheck.Name = "KelvinDegreeCheck"
+        Me.KelvinDegreeCheck.Size = New System.Drawing.Size(100, 23)
+        Me.KelvinDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.KelvinDegreeCheck.TabIndex = 8
+        Me.KelvinDegreeCheck.Text = "K"
+        '
+        'CelsiusDegreeCheck
+        '
+        '
+        '
+        '
+        Me.CelsiusDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.CelsiusDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
+        Me.CelsiusDegreeCheck.Location = New System.Drawing.Point(405, 179)
+        Me.CelsiusDegreeCheck.Name = "CelsiusDegreeCheck"
+        Me.CelsiusDegreeCheck.Size = New System.Drawing.Size(100, 23)
+        Me.CelsiusDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CelsiusDegreeCheck.TabIndex = 7
+        Me.CelsiusDegreeCheck.Text = "C°"
         '
         'FarenDegreeCheck
         '
@@ -119,18 +160,6 @@ Partial Class Arrigo
         Me.IntegerInput1.ShowUpDown = True
         Me.IntegerInput1.Size = New System.Drawing.Size(90, 22)
         Me.IntegerInput1.TabIndex = 5
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.LightGray
-        Me.Label1.Location = New System.Drawing.Point(35, 299)
-        Me.Label1.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(150, 30)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Dimensions"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'DimensionsLabel
         '
@@ -285,33 +314,77 @@ Partial Class Arrigo
         Me.SideNavItem4.Symbol = ""
         Me.SideNavItem4.Text = "Saved Specimen"
         '
-        'CelsiusDegreeCheck
+        'lengthDoubleInput1
         '
         '
         '
         '
-        Me.CelsiusDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.CelsiusDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.CelsiusDegreeCheck.Location = New System.Drawing.Point(405, 179)
-        Me.CelsiusDegreeCheck.Name = "CelsiusDegreeCheck"
-        Me.CelsiusDegreeCheck.Size = New System.Drawing.Size(100, 23)
-        Me.CelsiusDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.CelsiusDegreeCheck.TabIndex = 7
-        Me.CelsiusDegreeCheck.Text = "C°"
+        Me.lengthDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.lengthDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.lengthDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.lengthDoubleInput1.Increment = 1.0R
+        Me.lengthDoubleInput1.Location = New System.Drawing.Point(322, 241)
+        Me.lengthDoubleInput1.Name = "lengthDoubleInput1"
+        Me.lengthDoubleInput1.ShowUpDown = True
+        Me.lengthDoubleInput1.Size = New System.Drawing.Size(131, 22)
+        Me.lengthDoubleInput1.TabIndex = 9
         '
-        'KelvinDegreeCheck
+        'lengthLabel
+        '
+        Me.lengthLabel.AutoSize = True
+        Me.lengthLabel.Location = New System.Drawing.Point(232, 250)
+        Me.lengthLabel.Name = "lengthLabel"
+        Me.lengthLabel.Size = New System.Drawing.Size(50, 13)
+        Me.lengthLabel.TabIndex = 10
+        Me.lengthLabel.Text = "LENGTH:"
+        '
+        'widthLabel
+        '
+        Me.widthLabel.AutoSize = True
+        Me.widthLabel.Location = New System.Drawing.Point(232, 289)
+        Me.widthLabel.Name = "widthLabel"
+        Me.widthLabel.Size = New System.Drawing.Size(45, 13)
+        Me.widthLabel.TabIndex = 11
+        Me.widthLabel.Text = "WIDTH:"
+        '
+        'widthDoubleInput2
         '
         '
         '
         '
-        Me.KelvinDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.KelvinDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.KelvinDegreeCheck.Location = New System.Drawing.Point(459, 178)
-        Me.KelvinDegreeCheck.Name = "KelvinDegreeCheck"
-        Me.KelvinDegreeCheck.Size = New System.Drawing.Size(100, 23)
-        Me.KelvinDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.KelvinDegreeCheck.TabIndex = 8
-        Me.KelvinDegreeCheck.Text = "K"
+        Me.widthDoubleInput2.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.widthDoubleInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.widthDoubleInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.widthDoubleInput2.Increment = 1.0R
+        Me.widthDoubleInput2.Location = New System.Drawing.Point(322, 280)
+        Me.widthDoubleInput2.Name = "widthDoubleInput2"
+        Me.widthDoubleInput2.ShowUpDown = True
+        Me.widthDoubleInput2.Size = New System.Drawing.Size(131, 22)
+        Me.widthDoubleInput2.TabIndex = 12
+        '
+        'heightLabel1
+        '
+        Me.heightLabel1.AutoSize = True
+        Me.heightLabel1.Location = New System.Drawing.Point(232, 324)
+        Me.heightLabel1.Name = "heightLabel1"
+        Me.heightLabel1.Size = New System.Drawing.Size(48, 13)
+        Me.heightLabel1.TabIndex = 13
+        Me.heightLabel1.Text = "HEIGHT:"
+        '
+        'heightDoubleInput1
+        '
+        '
+        '
+        '
+        Me.heightDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.heightDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.heightDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.heightDoubleInput1.Increment = 1.0R
+        Me.heightDoubleInput1.Location = New System.Drawing.Point(322, 315)
+        Me.heightDoubleInput1.Name = "heightDoubleInput1"
+        Me.heightDoubleInput1.ShowUpDown = True
+        Me.heightDoubleInput1.Size = New System.Drawing.Size(131, 22)
+        Me.heightDoubleInput1.TabIndex = 14
         '
         'Arrigo
         '
@@ -321,6 +394,7 @@ Partial Class Arrigo
         Me.Controls.Add(Me.SideNav1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Arrigo"
         Me.Text = "Arrigo"
         Me.SideNav1.ResumeLayout(False)
@@ -328,6 +402,9 @@ Partial Class Arrigo
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
         CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.heightDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -353,8 +430,13 @@ Partial Class Arrigo
     Friend WithEvents MaxTempLabel As Label
     Friend WithEvents FarenDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
     Friend WithEvents IntegerInput1 As DevComponents.Editors.IntegerInput
-    Friend WithEvents Label1 As Label
     Friend WithEvents DimensionsLabel As Label
     Friend WithEvents KelvinDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
     Friend WithEvents CelsiusDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
+    Friend WithEvents lengthLabel As Label
+    Friend WithEvents lengthDoubleInput1 As DevComponents.Editors.DoubleInput
+    Friend WithEvents widthLabel As Label
+    Friend WithEvents widthDoubleInput2 As DevComponents.Editors.DoubleInput
+    Friend WithEvents heightDoubleInput1 As DevComponents.Editors.DoubleInput
+    Friend WithEvents heightLabel1 As Label
 End Class

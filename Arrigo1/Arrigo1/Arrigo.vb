@@ -3,4 +3,6 @@ Public Class Arrigo
         materialLabel.BackColor = Color.Aqua
         newSpecimenLabel.BackColor = Color.AliceBlue
     End Sub
+
+
 End Class

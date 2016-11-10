@@ -26,11 +26,17 @@ Partial Class Arrigo
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.FarenDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
+        Me.IntegerInput1 = New DevComponents.Editors.IntegerInput()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DimensionsLabel = New System.Windows.Forms.Label()
+        Me.MaxTempLabel = New System.Windows.Forms.Label()
+        Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavItem1 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator1 = New DevComponents.DotNetBar.Separator()
@@ -40,9 +46,11 @@ Partial Class Arrigo
         Me.Retest = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
-        Me.materialLabel = New System.Windows.Forms.Label()
+        Me.CelsiusDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
+        Me.KelvinDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
+        CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -53,10 +61,10 @@ Partial Class Arrigo
         'SideNav1
         '
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel3)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel5)
         Me.SideNav1.Controls.Add(Me.SideNavPanel4)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel5)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
         Me.SideNav1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SideNavItem1, Me.Separator1, Me.SideNavItem2, Me.NewSpecimensiSideNav, Me.NewHeatingSchedule, Me.Retest, Me.SideNavItem3, Me.SideNavItem4})
@@ -69,6 +77,13 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.KelvinDegreeCheck)
+        Me.SideNavPanel2.Controls.Add(Me.CelsiusDegreeCheck)
+        Me.SideNavPanel2.Controls.Add(Me.FarenDegreeCheck)
+        Me.SideNavPanel2.Controls.Add(Me.IntegerInput1)
+        Me.SideNavPanel2.Controls.Add(Me.Label1)
+        Me.SideNavPanel2.Controls.Add(Me.DimensionsLabel)
+        Me.SideNavPanel2.Controls.Add(Me.MaxTempLabel)
         Me.SideNavPanel2.Controls.Add(Me.materialLabel)
         Me.SideNavPanel2.Controls.Add(Me.newSpecimenLabel)
         Me.SideNavPanel2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -76,6 +91,82 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
+        '
+        'FarenDegreeCheck
+        '
+        '
+        '
+        '
+        Me.FarenDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.FarenDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
+        Me.FarenDegreeCheck.Location = New System.Drawing.Point(353, 179)
+        Me.FarenDegreeCheck.Name = "FarenDegreeCheck"
+        Me.FarenDegreeCheck.Size = New System.Drawing.Size(100, 23)
+        Me.FarenDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.FarenDegreeCheck.TabIndex = 6
+        Me.FarenDegreeCheck.Text = "F°"
+        '
+        'IntegerInput1
+        '
+        '
+        '
+        '
+        Me.IntegerInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.IntegerInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.IntegerInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.IntegerInput1.Location = New System.Drawing.Point(235, 179)
+        Me.IntegerInput1.Name = "IntegerInput1"
+        Me.IntegerInput1.ShowUpDown = True
+        Me.IntegerInput1.Size = New System.Drawing.Size(90, 22)
+        Me.IntegerInput1.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.LightGray
+        Me.Label1.Location = New System.Drawing.Point(35, 299)
+        Me.Label1.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(150, 30)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Dimensions"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DimensionsLabel
+        '
+        Me.DimensionsLabel.AutoSize = True
+        Me.DimensionsLabel.BackColor = System.Drawing.Color.LightGray
+        Me.DimensionsLabel.Location = New System.Drawing.Point(35, 233)
+        Me.DimensionsLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.DimensionsLabel.Name = "DimensionsLabel"
+        Me.DimensionsLabel.Size = New System.Drawing.Size(150, 30)
+        Me.DimensionsLabel.TabIndex = 3
+        Me.DimensionsLabel.Text = "Dimensions"
+        Me.DimensionsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'MaxTempLabel
+        '
+        Me.MaxTempLabel.AutoSize = True
+        Me.MaxTempLabel.BackColor = System.Drawing.Color.LightGray
+        Me.MaxTempLabel.Location = New System.Drawing.Point(35, 171)
+        Me.MaxTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.MaxTempLabel.Name = "MaxTempLabel"
+        Me.MaxTempLabel.Size = New System.Drawing.Size(150, 30)
+        Me.MaxTempLabel.TabIndex = 2
+        Me.MaxTempLabel.Text = "Max Temperature"
+        Me.MaxTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'materialLabel
+        '
+        Me.materialLabel.AutoSize = True
+        Me.materialLabel.BackColor = System.Drawing.Color.LightGray
+        Me.materialLabel.Location = New System.Drawing.Point(35, 108)
+        Me.materialLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.materialLabel.Name = "materialLabel"
+        Me.materialLabel.Size = New System.Drawing.Size(150, 30)
+        Me.materialLabel.TabIndex = 1
+        Me.materialLabel.Text = "Material"
+        Me.materialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'newSpecimenLabel
         '
@@ -98,14 +189,14 @@ Partial Class Arrigo
         Me.SideNavPanel3.TabIndex = 10
         Me.SideNavPanel3.Visible = False
         '
-        'SideNavPanel6
+        'SideNavPanel4
         '
-        Me.SideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel6.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel6.Name = "SideNavPanel6"
-        Me.SideNavPanel6.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel6.TabIndex = 22
-        Me.SideNavPanel6.Visible = False
+        Me.SideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel4.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel4.Name = "SideNavPanel4"
+        Me.SideNavPanel4.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel4.TabIndex = 14
+        Me.SideNavPanel4.Visible = False
         '
         'SideNavPanel5
         '
@@ -116,14 +207,14 @@ Partial Class Arrigo
         Me.SideNavPanel5.TabIndex = 18
         Me.SideNavPanel5.Visible = False
         '
-        'SideNavPanel4
+        'SideNavPanel6
         '
-        Me.SideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel4.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel4.Name = "SideNavPanel4"
-        Me.SideNavPanel4.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel4.TabIndex = 14
-        Me.SideNavPanel4.Visible = False
+        Me.SideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel6.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel6.Name = "SideNavPanel6"
+        Me.SideNavPanel6.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel6.TabIndex = 22
+        Me.SideNavPanel6.Visible = False
         '
         'SideNavPanel1
         '
@@ -194,17 +285,33 @@ Partial Class Arrigo
         Me.SideNavItem4.Symbol = ""
         Me.SideNavItem4.Text = "Saved Specimen"
         '
-        'materialLabel
+        'CelsiusDegreeCheck
         '
-        Me.materialLabel.AutoSize = True
-        Me.materialLabel.BackColor = System.Drawing.Color.LightGray
-        Me.materialLabel.Location = New System.Drawing.Point(35, 108)
-        Me.materialLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.materialLabel.Name = "materialLabel"
-        Me.materialLabel.Size = New System.Drawing.Size(150, 30)
-        Me.materialLabel.TabIndex = 1
-        Me.materialLabel.Text = "Material"
-        Me.materialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        '
+        '
+        Me.CelsiusDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.CelsiusDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
+        Me.CelsiusDegreeCheck.Location = New System.Drawing.Point(405, 179)
+        Me.CelsiusDegreeCheck.Name = "CelsiusDegreeCheck"
+        Me.CelsiusDegreeCheck.Size = New System.Drawing.Size(100, 23)
+        Me.CelsiusDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.CelsiusDegreeCheck.TabIndex = 7
+        Me.CelsiusDegreeCheck.Text = "C°"
+        '
+        'KelvinDegreeCheck
+        '
+        '
+        '
+        '
+        Me.KelvinDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.KelvinDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
+        Me.KelvinDegreeCheck.Location = New System.Drawing.Point(459, 178)
+        Me.KelvinDegreeCheck.Name = "KelvinDegreeCheck"
+        Me.KelvinDegreeCheck.Size = New System.Drawing.Size(100, 23)
+        Me.KelvinDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.KelvinDegreeCheck.TabIndex = 8
+        Me.KelvinDegreeCheck.Text = "K"
         '
         'Arrigo
         '
@@ -220,6 +327,7 @@ Partial Class Arrigo
         Me.SideNav1.PerformLayout()
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
+        CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -242,4 +350,11 @@ Partial Class Arrigo
     Friend WithEvents SideNavItem4 As DevComponents.DotNetBar.Controls.SideNavItem
     Friend WithEvents newSpecimenLabel As Label
     Friend WithEvents materialLabel As Label
+    Friend WithEvents MaxTempLabel As Label
+    Friend WithEvents FarenDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
+    Friend WithEvents IntegerInput1 As DevComponents.Editors.IntegerInput
+    Friend WithEvents Label1 As Label
+    Friend WithEvents DimensionsLabel As Label
+    Friend WithEvents KelvinDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
+    Friend WithEvents CelsiusDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
 End Class

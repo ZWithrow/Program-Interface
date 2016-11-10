@@ -1,8 +1,7 @@
 Public Class Arrigo
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles materialLabel.Click
-        materialLabel.BackColor = Color.Aqua
-        newSpecimenLabel.BackColor = Color.AliceBlue
+
+    Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        newSpecimenLabel.BackColor = Color.PeachPuff
+
     End Sub
-
-
 End Class

@@ -14,6 +14,9 @@ Public Class Arrigo
         Label18.Hide()
         backNexSpecButton.Hide()
         submitNewSpecButton.Hide()
+        priorTestNotesLabel.Hide()
+        priorTestNotesTextBox.Hide()
+        postTestMaxTemp.Hide()
 
         ' variable for keeping track of button clicks
 
@@ -69,6 +72,10 @@ Public Class Arrigo
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
+                postTestMaxTemp.Hide()
+
+
+
 
             Case 2
                 'shown page2
@@ -78,9 +85,7 @@ Public Class Arrigo
                 newSpecNextButton.Show()
                 priorTestNotesTextBox.Show()
                 priorTestNotesLabel.Show()
-
-
-
+                postTestMaxTemp.Show()
 
 
                 'hidden page 2

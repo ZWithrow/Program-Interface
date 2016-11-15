@@ -26,6 +26,8 @@ Partial Class Arrigo
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
+        Me.priorTestNotesLabel = New System.Windows.Forms.Label()
         Me.ButtonClickCounter = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.submitNewSpecButton = New System.Windows.Forms.Button()
@@ -66,11 +68,12 @@ Partial Class Arrigo
         Me.MaxTempLabel = New System.Windows.Forms.Label()
         Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
-        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.testlabel = New System.Windows.Forms.Label()
         Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavItem1 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator1 = New DevComponents.DotNetBar.Separator()
         Me.SideNavItem2 = New DevComponents.DotNetBar.Controls.SideNavItem()
@@ -80,9 +83,7 @@ Partial Class Arrigo
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
-        Me.priorTestNotesLabel = New System.Windows.Forms.Label()
-        Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
-        Me.testlabel = New System.Windows.Forms.Label()
+        Me.postTestMaxTemp = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,10 +104,10 @@ Partial Class Arrigo
         '
         'SideNav1
         '
+        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
         Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel4)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
@@ -120,6 +121,7 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.postTestMaxTemp)
         Me.SideNavPanel2.Controls.Add(Me.priorTestNotesTextBox)
         Me.SideNavPanel2.Controls.Add(Me.priorTestNotesLabel)
         Me.SideNavPanel2.Controls.Add(Me.ButtonClickCounter)
@@ -167,6 +169,26 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
+        Me.SideNavPanel2.Visible = False
+        '
+        'priorTestNotesTextBox
+        '
+        Me.priorTestNotesTextBox.Location = New System.Drawing.Point(320, 107)
+        Me.priorTestNotesTextBox.Name = "priorTestNotesTextBox"
+        Me.priorTestNotesTextBox.Size = New System.Drawing.Size(314, 22)
+        Me.priorTestNotesTextBox.TabIndex = 43
+        '
+        'priorTestNotesLabel
+        '
+        Me.priorTestNotesLabel.AutoSize = True
+        Me.priorTestNotesLabel.BackColor = System.Drawing.Color.LightGray
+        Me.priorTestNotesLabel.Location = New System.Drawing.Point(120, 99)
+        Me.priorTestNotesLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.priorTestNotesLabel.Name = "priorTestNotesLabel"
+        Me.priorTestNotesLabel.Size = New System.Drawing.Size(150, 30)
+        Me.priorTestNotesLabel.TabIndex = 42
+        Me.priorTestNotesLabel.Text = "Prior Test Notes"
+        Me.priorTestNotesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ButtonClickCounter
         '
@@ -636,15 +658,6 @@ Partial Class Arrigo
         Me.newSpecimenLabel.Text = "New Specimen"
         Me.newSpecimenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'SideNavPanel1
-        '
-        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel1.Name = "SideNavPanel1"
-        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel1.TabIndex = 2
-        Me.SideNavPanel1.Visible = False
-        '
         'SideNavPanel3
         '
         Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -653,6 +666,33 @@ Partial Class Arrigo
         Me.SideNavPanel3.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel3.TabIndex = 10
         Me.SideNavPanel3.Visible = False
+        '
+        'SideNavPanel1
+        '
+        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel1.Name = "SideNavPanel1"
+        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel1.TabIndex = 2
+        '
+        'SideNavPanel5
+        '
+        Me.SideNavPanel5.Controls.Add(Me.testlabel)
+        Me.SideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel5.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel5.Name = "SideNavPanel5"
+        Me.SideNavPanel5.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel5.TabIndex = 18
+        Me.SideNavPanel5.Visible = False
+        '
+        'testlabel
+        '
+        Me.testlabel.AutoSize = True
+        Me.testlabel.Location = New System.Drawing.Point(249, 54)
+        Me.testlabel.Name = "testlabel"
+        Me.testlabel.Size = New System.Drawing.Size(43, 13)
+        Me.testlabel.TabIndex = 0
+        Me.testlabel.Text = "testing"
         '
         'SideNavPanel6
         '
@@ -671,16 +711,6 @@ Partial Class Arrigo
         Me.SideNavPanel4.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel4.TabIndex = 14
         Me.SideNavPanel4.Visible = False
-        '
-        'SideNavPanel5
-        '
-        Me.SideNavPanel5.Controls.Add(Me.testlabel)
-        Me.SideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel5.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel5.Name = "SideNavPanel5"
-        Me.SideNavPanel5.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel5.TabIndex = 18
-        Me.SideNavPanel5.Visible = False
         '
         'SideNavItem1
         '
@@ -701,6 +731,7 @@ Partial Class Arrigo
         '
         'SideNavItem2
         '
+        Me.SideNavItem2.Checked = True
         Me.SideNavItem2.Name = "SideNavItem2"
         Me.SideNavItem2.Panel = Me.SideNavPanel1
         Me.SideNavItem2.Symbol = ""
@@ -708,7 +739,6 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
-        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -752,33 +782,17 @@ Partial Class Arrigo
         Me.Separator2.Padding.Top = 2
         Me.Separator2.SeparatorOrientation = DevComponents.DotNetBar.eDesignMarkerOrientation.Vertical
         '
-        'priorTestNotesLabel
+        'postTestMaxTemp
         '
-        Me.priorTestNotesLabel.AutoSize = True
-        Me.priorTestNotesLabel.BackColor = System.Drawing.Color.LightGray
-        Me.priorTestNotesLabel.Location = New System.Drawing.Point(120, 99)
-        Me.priorTestNotesLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.priorTestNotesLabel.Name = "priorTestNotesLabel"
-        Me.priorTestNotesLabel.Size = New System.Drawing.Size(150, 30)
-        Me.priorTestNotesLabel.TabIndex = 42
-        Me.priorTestNotesLabel.Text = "Prior Test Notes"
-        Me.priorTestNotesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'priorTestNotesTextBox
-        '
-        Me.priorTestNotesTextBox.Location = New System.Drawing.Point(320, 107)
-        Me.priorTestNotesTextBox.Name = "priorTestNotesTextBox"
-        Me.priorTestNotesTextBox.Size = New System.Drawing.Size(314, 22)
-        Me.priorTestNotesTextBox.TabIndex = 43
-        '
-        'testlabel
-        '
-        Me.testlabel.AutoSize = True
-        Me.testlabel.Location = New System.Drawing.Point(249, 54)
-        Me.testlabel.Name = "testlabel"
-        Me.testlabel.Size = New System.Drawing.Size(43, 13)
-        Me.testlabel.TabIndex = 0
-        Me.testlabel.Text = "testing"
+        Me.postTestMaxTemp.AutoSize = True
+        Me.postTestMaxTemp.BackColor = System.Drawing.Color.LightGray
+        Me.postTestMaxTemp.Location = New System.Drawing.Point(120, 162)
+        Me.postTestMaxTemp.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postTestMaxTemp.Name = "postTestMaxTemp"
+        Me.postTestMaxTemp.Size = New System.Drawing.Size(150, 30)
+        Me.postTestMaxTemp.TabIndex = 44
+        Me.postTestMaxTemp.Text = " Post Max Temperature"
+        Me.postTestMaxTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Arrigo
         '
@@ -788,8 +802,9 @@ Partial Class Arrigo
         Me.Controls.Add(Me.SideNav1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Arrigo"
-        Me.Text = "Arrigo"
+        Me.Text = " "
         Me.SideNav1.ResumeLayout(False)
         Me.SideNav1.PerformLayout()
         Me.SideNavPanel2.ResumeLayout(False)
@@ -868,4 +883,5 @@ Partial Class Arrigo
     Friend WithEvents priorTestNotesTextBox As TextBox
     Friend WithEvents priorTestNotesLabel As Label
     Friend WithEvents testlabel As Label
+    Friend WithEvents postTestMaxTemp As Label
 End Class

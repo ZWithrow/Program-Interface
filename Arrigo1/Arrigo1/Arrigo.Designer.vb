@@ -25,7 +25,9 @@ Partial Class Arrigo
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
+        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.postTestMaxTemp = New System.Windows.Forms.Label()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.priorTestNotesLabel = New System.Windows.Forms.Label()
         Me.ButtonClickCounter = New System.Windows.Forms.Label()
@@ -69,7 +71,6 @@ Partial Class Arrigo
         Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.testlabel = New System.Windows.Forms.Label()
         Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
@@ -83,7 +84,6 @@ Partial Class Arrigo
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
-        Me.postTestMaxTemp = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -104,8 +104,8 @@ Partial Class Arrigo
         '
         'SideNav1
         '
-        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
@@ -118,6 +118,15 @@ Partial Class Arrigo
         Me.SideNav1.Size = New System.Drawing.Size(1457, 764)
         Me.SideNav1.TabIndex = 0
         Me.SideNav1.Text = "SideNav1"
+        '
+        'SideNavPanel1
+        '
+        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel1.Name = "SideNavPanel1"
+        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel1.TabIndex = 2
+        Me.SideNavPanel1.Visible = False
         '
         'SideNavPanel2
         '
@@ -169,7 +178,18 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
-        Me.SideNavPanel2.Visible = False
+        '
+        'postTestMaxTemp
+        '
+        Me.postTestMaxTemp.AutoSize = True
+        Me.postTestMaxTemp.BackColor = System.Drawing.Color.LightGray
+        Me.postTestMaxTemp.Location = New System.Drawing.Point(120, 162)
+        Me.postTestMaxTemp.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postTestMaxTemp.Name = "postTestMaxTemp"
+        Me.postTestMaxTemp.Size = New System.Drawing.Size(150, 30)
+        Me.postTestMaxTemp.TabIndex = 44
+        Me.postTestMaxTemp.Text = " Post Max Temperature"
+        Me.postTestMaxTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'priorTestNotesTextBox
         '
@@ -667,14 +687,6 @@ Partial Class Arrigo
         Me.SideNavPanel3.TabIndex = 10
         Me.SideNavPanel3.Visible = False
         '
-        'SideNavPanel1
-        '
-        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel1.Name = "SideNavPanel1"
-        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel1.TabIndex = 2
-        '
         'SideNavPanel5
         '
         Me.SideNavPanel5.Controls.Add(Me.testlabel)
@@ -731,7 +743,6 @@ Partial Class Arrigo
         '
         'SideNavItem2
         '
-        Me.SideNavItem2.Checked = True
         Me.SideNavItem2.Name = "SideNavItem2"
         Me.SideNavItem2.Panel = Me.SideNavPanel1
         Me.SideNavItem2.Symbol = ""
@@ -739,6 +750,7 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
+        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -781,18 +793,6 @@ Partial Class Arrigo
         Me.Separator2.Padding.Right = 6
         Me.Separator2.Padding.Top = 2
         Me.Separator2.SeparatorOrientation = DevComponents.DotNetBar.eDesignMarkerOrientation.Vertical
-        '
-        'postTestMaxTemp
-        '
-        Me.postTestMaxTemp.AutoSize = True
-        Me.postTestMaxTemp.BackColor = System.Drawing.Color.LightGray
-        Me.postTestMaxTemp.Location = New System.Drawing.Point(120, 162)
-        Me.postTestMaxTemp.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.postTestMaxTemp.Name = "postTestMaxTemp"
-        Me.postTestMaxTemp.Size = New System.Drawing.Size(150, 30)
-        Me.postTestMaxTemp.TabIndex = 44
-        Me.postTestMaxTemp.Text = " Post Max Temperature"
-        Me.postTestMaxTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Arrigo
         '

@@ -1,46 +1,50 @@
 # Program Interface Documentation
 
 ## Interface Items
-1. New Specimen
+1. New Specimen Tab
   * newSpecimenLabel
-  *  specimenNameLabel
+  * specimenNameLabel
   * dimensionsLabel
   * materialLabel
   * materialTextBox
   * MaxTempLabel
   * MaxTempIntegerInput1
   * weightLabel
+  * widthDoubleInput2
+  * weightIntegerInput2
+  * widthLabel
+  * FarenDegreeCheck
+  * CelsiusDegreeCheck
+  * KelvinDegreeCheck
+  * lengthLabel
+  * lengthDoubleInput1
+  * heightLabel1
+  * heightDoubleInput1
+  * mmLabel
+    - Label1
+    - Label2
+  * compoundShapeLabel
+  * compoundShapeDoubleInput1
+  * parallelLabel
+  * parallelSwitchButton1
+  * crossSectionLabel
+  * crossSectionSwitchButton
+  * gramsLabel
+  * notesLabel
+  * roomTempLabel
+  * roomTempFCheckBox
+  * roomTempCCheckBox
+  * roomTempKCheckBox
+  * roomTempIntegerInput
+  *
+  *
+  *
+  *
+  *
+  *
   *
 
 
-
-            
-                FarenDegreeCheck.Show()
-                CelsiusDegreeCheck.Show()
-                KelvinDegreeCheck.Show()
-                lengthLabel.Show()
-                lengthDoubleInput1.Show()
-                heightDoubleInput1.Show()
-                heightLabel1.Show()
-                widthLabel.Show()
-                widthDoubleInput2.Show()
-                mmLabel.Show()
-                Label1.Show()
-                Label2.Show()
-                compoundShapeLabel.Show()
-                compoundShapeDoubleInput1.Show()
-                parallelLabel.Show()
-                parallelSwitchButton1.Show()
-                crossSectionLabel.Show()
-                crossSectionSwitchButton.Show()
-                weightIntegerInput2.Show()
-                gramsLabel.Show()
-                notesLabel.Show()
-                roomTempLabel.Show()
-                roomTempIntegerInput.Show()
-                roomTempFCheckBox.Show()
-                roomTempCCheckBox.Show()
-                roomTempKCheckBox.Show()
                 newSpecNextButton.Show()
 
                 'hidden on page 1

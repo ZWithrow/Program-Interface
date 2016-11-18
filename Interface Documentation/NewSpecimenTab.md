@@ -1,4 +1,4 @@
-# New Specimen Tab 
+# New Specimen Tab
 ### Interface Items
 
 1. First page
@@ -38,7 +38,7 @@
   * roomTempIntegerInput
   * newSpecNextButton
 2. Second page
-      * this "page" is a continutation page of adding a new specimen.
+       this "page" is a continutation page of adding a new specimen.
   * Label18
   * backNexSpecButton
   * submitNewSpecButton

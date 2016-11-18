@@ -7,11 +7,14 @@
   * dimensionsLabel
   * materialLabel
   * materialTextBox
+  * MaxTempLabel
+  * MaxTempIntegerInput1
+  * weightLabel
+  *
 
-              
-                MaxTempIntegerInput1.Show()
-                MaxTempLabel.Show()
-                weightLabel.Show()
+
+
+            
                 FarenDegreeCheck.Show()
                 CelsiusDegreeCheck.Show()
                 KelvinDegreeCheck.Show()

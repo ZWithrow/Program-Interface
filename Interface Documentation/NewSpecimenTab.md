@@ -1,7 +1,5 @@
-# Program Interface Documentation
-
-## Interface Items
-### New Specimen Tab
+# New Specimen Tab 
+### Interface Items
 
 1. First page
   * newSpecimenLabel
@@ -47,7 +45,3 @@
   * priorTestNotesLabel
   * priorTestNotesTextBox
   * postTestMaxTemp
-
-
-
-            

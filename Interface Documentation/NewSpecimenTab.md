@@ -1,7 +1,9 @@
 # Program Interface Documentation
 
 ## Interface Items
-1. New Specimen Tab
+### New Specimen Tab
+
+1. First page
   * newSpecimenLabel
   * specimenNameLabel
   * dimensionsLabel
@@ -36,21 +38,16 @@
   * roomTempCCheckBox
   * roomTempKCheckBox
   * roomTempIntegerInput
-  *
-  *
-  *
-  *
-  *
-  *
-  *
+  * newSpecNextButton
+2. Second page
+      * this "page" is a continutation page of adding a new specimen.
+  * Label18
+  * backNexSpecButton
+  * submitNewSpecButton
+  * priorTestNotesLabel
+  * priorTestNotesTextBox
+  * postTestMaxTemp
 
 
-                newSpecNextButton.Show()
 
-                'hidden on page 1
-                Label18.Hide()
-                backNexSpecButton.Hide()
-                submitNewSpecButton.Hide()
-                priorTestNotesLabel.Hide()
-                priorTestNotesTextBox.Hide()
-                postTestMaxTemp.Hide()
+            

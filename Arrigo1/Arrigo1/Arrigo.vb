@@ -16,7 +16,15 @@ Public Class Arrigo
         submitNewSpecButton.Hide()
         priorTestNotesLabel.Hide()
         priorTestNotesTextBox.Hide()
-        postTestMaxTemp.Hide()
+        postMaxTempIntegerInput.Hide()
+        postKelCheckBox.Hide()
+        postCelCheckBox.Hide()
+        postFarenCheckBox.Hide()
+        postTestMaxTempLabel.Hide()
+
+
+
+
 
         ' variable for keeping track of button clicks
 
@@ -72,7 +80,13 @@ Public Class Arrigo
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
-                postTestMaxTemp.Hide()
+                postTestMaxTempLabel.Hide()
+                postMaxTempIntegerInput.Hide()
+                postKelCheckBox.Hide()
+                postCelCheckBox.Hide()
+                postFarenCheckBox.Hide()
+                postTestMaxTempLabel.Hide()
+
 
 
 
@@ -85,7 +99,13 @@ Public Class Arrigo
                 newSpecNextButton.Show()
                 priorTestNotesTextBox.Show()
                 priorTestNotesLabel.Show()
-                postTestMaxTemp.Show()
+                postTestMaxTempLabel.Show()
+                postMaxTempIntegerInput.Show()
+                postKelCheckBox.Show()
+                postCelCheckBox.Show()
+                postFarenCheckBox.Show()
+                postTestMaxTempLabel.Show()
+
 
 
                 'hidden page 2
@@ -129,7 +149,62 @@ Public Class Arrigo
 
 
             Case 3
+                'Shown on page 3
                 submitNewSpecButton.Show()
+                backNexSpecButton.Show()
+                'Hidden on page 3
+                Label18.Hide()
+                submitNewSpecButton.Hide()
+                priorTestNotesLabel.Hide()
+                priorTestNotesTextBox.Hide()
+                postTestMaxTempLabel.Hide()
+                postMaxTempIntegerInput.Hide()
+                postKelCheckBox.Hide()
+                postCelCheckBox.Hide()
+                postFarenCheckBox.Hide()
+                postTestMaxTempLabel.Hide()
+                newSpecimenLabel.Hide()
+                specimenNameLabel.Hide()
+                dimensionsLabel.Hide()
+                materialLabel.Hide()
+                materialTextBox.Hide()
+                MaxTempIntegerInput1.Hide()
+                MaxTempLabel.Hide()
+                weightLabel.Hide()
+                FarenDegreeCheck.Hide()
+                CelsiusDegreeCheck.Hide()
+                KelvinDegreeCheck.Hide()
+                lengthLabel.Hide()
+                lengthDoubleInput1.Hide()
+                heightLabel1.Hide()
+                heightDoubleInput1.Hide()
+                widthLabel.Hide()
+                widthDoubleInput2.Hide()
+                mmLabel.Hide()
+                Label1.Hide()
+                Label2.Hide()
+                compoundShapeLabel.Hide()
+                compoundShapeDoubleInput1.Hide()
+                parallelLabel.Hide()
+                parallelSwitchButton1.Hide()
+                crossSectionLabel.Hide()
+                crossSectionSwitchButton.Hide()
+                weightIntegerInput2.Hide()
+                gramsLabel.Hide()
+                notesLabel.Hide()
+                roomTempLabel.Hide()
+                roomTempIntegerInput.Hide()
+                roomTempFCheckBox.Hide()
+                roomTempCCheckBox.Hide()
+                roomTempKCheckBox.Hide()
+                submitNewSpecButton.Hide()
+                specimenNameIntegerInput.Hide()
+
+            Case Else
+
+
+
+
         End Select
 
     End Sub

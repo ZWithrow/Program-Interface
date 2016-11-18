@@ -37,7 +37,7 @@
   * roomTempKCheckBox
   * roomTempIntegerInput
   * newSpecNextButton
-2. Second page
+2. Second page -
        this "page" is a continutation page of adding a new specimen.
   * Label18
   * backNexSpecButton
@@ -45,3 +45,10 @@
   * priorTestNotesLabel
   * priorTestNotesTextBox
   * postTestMaxTemp
+
+
+  postMaxTempIntegerInput.Hide()
+      postKelCheckBox.Hide()
+      postCelCheckBox.Hide()
+      postFarenCheckBox.Hide()
+      postTestMaxTempLabel.Hide()

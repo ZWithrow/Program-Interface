@@ -83,6 +83,12 @@ Partial Class Arrigo
         Me.roomAirLabel = New System.Windows.Forms.Label()
         Me.dryAirLabel = New System.Windows.Forms.Label()
         Me.otherLabel = New System.Windows.Forms.Label()
+        Me.observeLabel = New System.Windows.Forms.Label()
+        Me.roomAirTextBox = New System.Windows.Forms.TextBox()
+        Me.dryAirTextBox = New System.Windows.Forms.TextBox()
+        Me.otherTextBox = New System.Windows.Forms.TextBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,6 +127,11 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.observeTextBoxX)
+        Me.SideNavPanel2.Controls.Add(Me.otherTextBox)
+        Me.SideNavPanel2.Controls.Add(Me.dryAirTextBox)
+        Me.SideNavPanel2.Controls.Add(Me.roomAirTextBox)
+        Me.SideNavPanel2.Controls.Add(Me.observeLabel)
         Me.SideNavPanel2.Controls.Add(Me.otherLabel)
         Me.SideNavPanel2.Controls.Add(Me.dryAirLabel)
         Me.SideNavPanel2.Controls.Add(Me.roomAirLabel)
@@ -185,7 +196,7 @@ Partial Class Arrigo
         Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(-15, 306)
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(315, 315)
         Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
         Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.postMaxTempIntegerInput.TabIndex = 45
@@ -194,7 +205,7 @@ Partial Class Arrigo
         '
         Me.postTestMaxTempLabel.AutoSize = True
         Me.postTestMaxTempLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postTestMaxTempLabel.Location = New System.Drawing.Point(-75, 354)
+        Me.postTestMaxTempLabel.Location = New System.Drawing.Point(120, 315)
         Me.postTestMaxTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.postTestMaxTempLabel.Name = "postTestMaxTempLabel"
         Me.postTestMaxTempLabel.Size = New System.Drawing.Size(150, 30)
@@ -746,6 +757,57 @@ Partial Class Arrigo
         Me.otherLabel.TabIndex = 50
         Me.otherLabel.Text = "OTHER:"
         '
+        'observeLabel
+        '
+        Me.observeLabel.AutoSize = True
+        Me.observeLabel.Location = New System.Drawing.Point(187, 224)
+        Me.observeLabel.Name = "observeLabel"
+        Me.observeLabel.Size = New System.Drawing.Size(109, 13)
+        Me.observeLabel.TabIndex = 51
+        Me.observeLabel.Text = "Observable Defects:"
+        '
+        'roomAirTextBox
+        '
+        Me.roomAirTextBox.Location = New System.Drawing.Point(512, 98)
+        Me.roomAirTextBox.Name = "roomAirTextBox"
+        Me.roomAirTextBox.Size = New System.Drawing.Size(122, 22)
+        Me.roomAirTextBox.TabIndex = 52
+        '
+        'dryAirTextBox
+        '
+        Me.dryAirTextBox.Location = New System.Drawing.Point(512, 146)
+        Me.dryAirTextBox.Name = "dryAirTextBox"
+        Me.dryAirTextBox.Size = New System.Drawing.Size(122, 22)
+        Me.dryAirTextBox.TabIndex = 53
+        '
+        'otherTextBox
+        '
+        Me.otherTextBox.Location = New System.Drawing.Point(512, 187)
+        Me.otherTextBox.Name = "otherTextBox"
+        Me.otherTextBox.Size = New System.Drawing.Size(253, 22)
+        Me.otherTextBox.TabIndex = 54
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'observeTextBoxX
+        '
+        Me.observeTextBoxX.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.observeTextBoxX.Border.Class = "TextBoxBorder"
+        Me.observeTextBoxX.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.observeTextBoxX.DisabledBackColor = System.Drawing.Color.White
+        Me.observeTextBoxX.ForeColor = System.Drawing.Color.Black
+        Me.observeTextBoxX.Location = New System.Drawing.Point(320, 222)
+        Me.observeTextBoxX.Name = "observeTextBoxX"
+        Me.observeTextBoxX.PreventEnterBeep = True
+        Me.observeTextBoxX.Size = New System.Drawing.Size(314, 22)
+        Me.observeTextBoxX.TabIndex = 55
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -837,4 +899,10 @@ Partial Class Arrigo
     Friend WithEvents roomAirLabel As Label
     Friend WithEvents dryAirLabel As Label
     Friend WithEvents otherLabel As Label
+    Friend WithEvents observeLabel As Label
+    Friend WithEvents roomAirTextBox As TextBox
+    Friend WithEvents dryAirTextBox As TextBox
+    Friend WithEvents otherTextBox As TextBox
+    Friend WithEvents observeTextBoxX As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class

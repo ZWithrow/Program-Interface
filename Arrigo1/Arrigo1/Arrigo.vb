@@ -1,4 +1,5 @@
 Public Class Arrigo
+    ' variable for keeping track of button clicks
     Dim pageCounter As Integer = 1
 
     Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -20,18 +21,11 @@ Public Class Arrigo
         roomAirLabel.Hide()
         dryAirLabel.Hide()
         otherLabel.Hide()
-
-
-
-
-
-
-
-        ' variable for keeping track of button clicks
-
-
-
-
+        observeLabel.Hide()
+        roomAirTextBox.Hide()
+        dryAirTextBox.Hide()
+        otherTextBox.Hide()
+        observeTextBoxX.Hide()
 
     End Sub
 
@@ -53,6 +47,11 @@ Public Class Arrigo
                 roomAirLabel.Hide()
                 dryAirLabel.Hide()
                 otherLabel.Hide()
+                observeLabel.Hide()
+                roomAirTextBox.Hide()
+                dryAirTextBox.Hide()
+                otherTextBox.Hide()
+                observeTextBoxX.Hide()
 
 
 
@@ -74,7 +73,11 @@ Public Class Arrigo
                 roomAirLabel.Show()
                 dryAirLabel.Show()
                 otherLabel.Show()
-
+                observeLabel.Show()
+                roomAirTextBox.Show()
+                dryAirTextBox.Show()
+                otherTextBox.Show()
+                observeTextBoxX.Show()
 
 
 
@@ -157,6 +160,15 @@ Public Class Arrigo
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
                 pretestWeightLabel.Hide()
+                observeLabel.Hide()
+                observeTextBoxX.Hide()
+                roomAirTextBox.Hide()
+                roomAirLabel.Hide()
+                dryAirTextBox.Hide()
+                dryAirLabel.Hide()
+                otherTextBox.Hide()
+                otherLabel.Hide()
+                priorTestLabel.Hide()
 
 
             Case Else

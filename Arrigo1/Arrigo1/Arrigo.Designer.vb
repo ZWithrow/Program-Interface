@@ -25,8 +25,8 @@ Partial Class Arrigo
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
-        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.postMaxTempIntegerInput = New DevComponents.Editors.IntegerInput()
         Me.postTestMaxTempLabel = New System.Windows.Forms.Label()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.priorTestNotesLabel = New System.Windows.Forms.Label()
@@ -35,9 +35,6 @@ Partial Class Arrigo
         Me.submitNewSpecButton = New System.Windows.Forms.Button()
         Me.backNexSpecButton = New System.Windows.Forms.Button()
         Me.newSpecNextButton = New System.Windows.Forms.Button()
-        Me.roomTempKCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.roomTempCCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.roomTempFCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.roomTempIntegerInput = New DevComponents.Editors.IntegerInput()
         Me.roomTempLabel = New System.Windows.Forms.Label()
         Me.specimenNameIntegerInput = New DevComponents.Editors.IntegerInput()
@@ -62,14 +59,12 @@ Partial Class Arrigo
         Me.widthLabel = New System.Windows.Forms.Label()
         Me.lengthLabel = New System.Windows.Forms.Label()
         Me.lengthDoubleInput1 = New DevComponents.Editors.DoubleInput()
-        Me.KelvinDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.CelsiusDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.FarenDegreeCheck = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.MaxTempIntegerInput1 = New DevComponents.Editors.IntegerInput()
         Me.dimensionsLabel = New System.Windows.Forms.Label()
         Me.MaxTempLabel = New System.Windows.Forms.Label()
         Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
+        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.testlabel = New System.Windows.Forms.Label()
@@ -84,12 +79,9 @@ Partial Class Arrigo
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
-        Me.postMaxTempIntegerInput = New DevComponents.Editors.IntegerInput()
-        Me.postFarenCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.postCelCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
-        Me.postKelCheckBox = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
+        CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.weightIntegerInput2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,7 +91,6 @@ Partial Class Arrigo
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNavPanel5.SuspendLayout()
-        CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -124,20 +115,8 @@ Partial Class Arrigo
         Me.SideNav1.TabIndex = 0
         Me.SideNav1.Text = "SideNav1"
         '
-        'SideNavPanel1
-        '
-        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
-        Me.SideNavPanel1.Name = "SideNavPanel1"
-        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
-        Me.SideNavPanel1.TabIndex = 2
-        Me.SideNavPanel1.Visible = False
-        '
         'SideNavPanel2
         '
-        Me.SideNavPanel2.Controls.Add(Me.postKelCheckBox)
-        Me.SideNavPanel2.Controls.Add(Me.postCelCheckBox)
-        Me.SideNavPanel2.Controls.Add(Me.postFarenCheckBox)
         Me.SideNavPanel2.Controls.Add(Me.postMaxTempIntegerInput)
         Me.SideNavPanel2.Controls.Add(Me.postTestMaxTempLabel)
         Me.SideNavPanel2.Controls.Add(Me.priorTestNotesTextBox)
@@ -147,9 +126,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.submitNewSpecButton)
         Me.SideNavPanel2.Controls.Add(Me.backNexSpecButton)
         Me.SideNavPanel2.Controls.Add(Me.newSpecNextButton)
-        Me.SideNavPanel2.Controls.Add(Me.roomTempKCheckBox)
-        Me.SideNavPanel2.Controls.Add(Me.roomTempCCheckBox)
-        Me.SideNavPanel2.Controls.Add(Me.roomTempFCheckBox)
         Me.SideNavPanel2.Controls.Add(Me.roomTempIntegerInput)
         Me.SideNavPanel2.Controls.Add(Me.roomTempLabel)
         Me.SideNavPanel2.Controls.Add(Me.specimenNameIntegerInput)
@@ -174,9 +150,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.widthLabel)
         Me.SideNavPanel2.Controls.Add(Me.lengthLabel)
         Me.SideNavPanel2.Controls.Add(Me.lengthDoubleInput1)
-        Me.SideNavPanel2.Controls.Add(Me.KelvinDegreeCheck)
-        Me.SideNavPanel2.Controls.Add(Me.CelsiusDegreeCheck)
-        Me.SideNavPanel2.Controls.Add(Me.FarenDegreeCheck)
         Me.SideNavPanel2.Controls.Add(Me.MaxTempIntegerInput1)
         Me.SideNavPanel2.Controls.Add(Me.dimensionsLabel)
         Me.SideNavPanel2.Controls.Add(Me.MaxTempLabel)
@@ -187,6 +160,19 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
+        '
+        'postMaxTempIntegerInput
+        '
+        '
+        '
+        '
+        Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 170)
+        Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
+        Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
+        Me.postMaxTempIntegerInput.TabIndex = 45
         '
         'postTestMaxTempLabel
         '
@@ -266,48 +252,6 @@ Partial Class Arrigo
         Me.newSpecNextButton.Text = "NEXT"
         Me.newSpecNextButton.UseVisualStyleBackColor = True
         '
-        'roomTempKCheckBox
-        '
-        '
-        '
-        '
-        Me.roomTempKCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.roomTempKCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.roomTempKCheckBox.Location = New System.Drawing.Point(633, 529)
-        Me.roomTempKCheckBox.Name = "roomTempKCheckBox"
-        Me.roomTempKCheckBox.Size = New System.Drawing.Size(100, 23)
-        Me.roomTempKCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.roomTempKCheckBox.TabIndex = 35
-        Me.roomTempKCheckBox.Text = "K"
-        '
-        'roomTempCCheckBox
-        '
-        '
-        '
-        '
-        Me.roomTempCCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.roomTempCCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.roomTempCCheckBox.Location = New System.Drawing.Point(579, 529)
-        Me.roomTempCCheckBox.Name = "roomTempCCheckBox"
-        Me.roomTempCCheckBox.Size = New System.Drawing.Size(100, 23)
-        Me.roomTempCCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.roomTempCCheckBox.TabIndex = 34
-        Me.roomTempCCheckBox.Text = "C°"
-        '
-        'roomTempFCheckBox
-        '
-        '
-        '
-        '
-        Me.roomTempFCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.roomTempFCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.roomTempFCheckBox.Location = New System.Drawing.Point(527, 529)
-        Me.roomTempFCheckBox.Name = "roomTempFCheckBox"
-        Me.roomTempFCheckBox.Size = New System.Drawing.Size(100, 23)
-        Me.roomTempFCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.roomTempFCheckBox.TabIndex = 33
-        Me.roomTempFCheckBox.Text = "F°"
-        '
         'roomTempIntegerInput
         '
         '
@@ -318,7 +262,6 @@ Partial Class Arrigo
         Me.roomTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.roomTempIntegerInput.Location = New System.Drawing.Point(416, 529)
         Me.roomTempIntegerInput.Name = "roomTempIntegerInput"
-        Me.roomTempIntegerInput.ShowUpDown = True
         Me.roomTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.roomTempIntegerInput.TabIndex = 32
         '
@@ -341,13 +284,12 @@ Partial Class Arrigo
         Me.specimenNameIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.specimenNameIntegerInput.Location = New System.Drawing.Point(675, 43)
         Me.specimenNameIntegerInput.Name = "specimenNameIntegerInput"
-        Me.specimenNameIntegerInput.ShowUpDown = True
         Me.specimenNameIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.specimenNameIntegerInput.TabIndex = 30
         '
         'specimenNameLabel
         '
-        Me.specimenNameLabel.Location = New System.Drawing.Point(320, 43)
+        Me.specimenNameLabel.Location = New System.Drawing.Point(320, 37)
         Me.specimenNameLabel.Name = "specimenNameLabel"
         Me.specimenNameLabel.Size = New System.Drawing.Size(314, 22)
         Me.specimenNameLabel.TabIndex = 29
@@ -417,7 +359,6 @@ Partial Class Arrigo
         Me.weightIntegerInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.weightIntegerInput2.Location = New System.Drawing.Point(320, 466)
         Me.weightIntegerInput2.Name = "weightIntegerInput2"
-        Me.weightIntegerInput2.ShowUpDown = True
         Me.weightIntegerInput2.Size = New System.Drawing.Size(90, 22)
         Me.weightIntegerInput2.TabIndex = 22
         '
@@ -498,7 +439,6 @@ Partial Class Arrigo
         Me.compoundShapeDoubleInput1.Increment = 1.0R
         Me.compoundShapeDoubleInput1.Location = New System.Drawing.Point(449, 347)
         Me.compoundShapeDoubleInput1.Name = "compoundShapeDoubleInput1"
-        Me.compoundShapeDoubleInput1.ShowUpDown = True
         Me.compoundShapeDoubleInput1.Size = New System.Drawing.Size(131, 22)
         Me.compoundShapeDoubleInput1.TabIndex = 16
         '
@@ -522,7 +462,6 @@ Partial Class Arrigo
         Me.heightDoubleInput1.Increment = 1.0R
         Me.heightDoubleInput1.Location = New System.Drawing.Point(407, 306)
         Me.heightDoubleInput1.Name = "heightDoubleInput1"
-        Me.heightDoubleInput1.ShowUpDown = True
         Me.heightDoubleInput1.Size = New System.Drawing.Size(131, 22)
         Me.heightDoubleInput1.TabIndex = 14
         '
@@ -546,7 +485,6 @@ Partial Class Arrigo
         Me.widthDoubleInput2.Increment = 1.0R
         Me.widthDoubleInput2.Location = New System.Drawing.Point(407, 271)
         Me.widthDoubleInput2.Name = "widthDoubleInput2"
-        Me.widthDoubleInput2.ShowUpDown = True
         Me.widthDoubleInput2.Size = New System.Drawing.Size(131, 22)
         Me.widthDoubleInput2.TabIndex = 12
         '
@@ -579,51 +517,8 @@ Partial Class Arrigo
         Me.lengthDoubleInput1.Increment = 1.0R
         Me.lengthDoubleInput1.Location = New System.Drawing.Point(407, 232)
         Me.lengthDoubleInput1.Name = "lengthDoubleInput1"
-        Me.lengthDoubleInput1.ShowUpDown = True
         Me.lengthDoubleInput1.Size = New System.Drawing.Size(131, 22)
         Me.lengthDoubleInput1.TabIndex = 9
-        '
-        'KelvinDegreeCheck
-        '
-        '
-        '
-        '
-        Me.KelvinDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.KelvinDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.KelvinDegreeCheck.Location = New System.Drawing.Point(544, 171)
-        Me.KelvinDegreeCheck.Name = "KelvinDegreeCheck"
-        Me.KelvinDegreeCheck.Size = New System.Drawing.Size(36, 23)
-        Me.KelvinDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.KelvinDegreeCheck.TabIndex = 8
-        Me.KelvinDegreeCheck.Text = "K"
-        '
-        'CelsiusDegreeCheck
-        '
-        '
-        '
-        '
-        Me.CelsiusDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.CelsiusDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.CelsiusDegreeCheck.Location = New System.Drawing.Point(490, 170)
-        Me.CelsiusDegreeCheck.Name = "CelsiusDegreeCheck"
-        Me.CelsiusDegreeCheck.Size = New System.Drawing.Size(33, 23)
-        Me.CelsiusDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.CelsiusDegreeCheck.TabIndex = 7
-        Me.CelsiusDegreeCheck.Text = "C°"
-        '
-        'FarenDegreeCheck
-        '
-        '
-        '
-        '
-        Me.FarenDegreeCheck.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.FarenDegreeCheck.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.FarenDegreeCheck.Location = New System.Drawing.Point(438, 170)
-        Me.FarenDegreeCheck.Name = "FarenDegreeCheck"
-        Me.FarenDegreeCheck.Size = New System.Drawing.Size(100, 23)
-        Me.FarenDegreeCheck.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.FarenDegreeCheck.TabIndex = 6
-        Me.FarenDegreeCheck.Text = "F°"
         '
         'MaxTempIntegerInput1
         '
@@ -635,7 +530,6 @@ Partial Class Arrigo
         Me.MaxTempIntegerInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.MaxTempIntegerInput1.Location = New System.Drawing.Point(320, 170)
         Me.MaxTempIntegerInput1.Name = "MaxTempIntegerInput1"
-        Me.MaxTempIntegerInput1.ShowUpDown = True
         Me.MaxTempIntegerInput1.Size = New System.Drawing.Size(90, 22)
         Me.MaxTempIntegerInput1.TabIndex = 5
         '
@@ -686,6 +580,15 @@ Partial Class Arrigo
         Me.newSpecimenLabel.TabIndex = 0
         Me.newSpecimenLabel.Text = "New Specimen"
         Me.newSpecimenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SideNavPanel1
+        '
+        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel1.Name = "SideNavPanel1"
+        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel1.TabIndex = 2
+        Me.SideNavPanel1.Visible = False
         '
         'SideNavPanel3
         '
@@ -803,62 +706,6 @@ Partial Class Arrigo
         Me.Separator2.Padding.Top = 2
         Me.Separator2.SeparatorOrientation = DevComponents.DotNetBar.eDesignMarkerOrientation.Vertical
         '
-        'postMaxTempIntegerInput
-        '
-        '
-        '
-        '
-        Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 171)
-        Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
-        Me.postMaxTempIntegerInput.ShowUpDown = True
-        Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
-        Me.postMaxTempIntegerInput.TabIndex = 45
-        '
-        'postFarenCheckBox
-        '
-        '
-        '
-        '
-        Me.postFarenCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postFarenCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.postFarenCheckBox.Location = New System.Drawing.Point(438, 170)
-        Me.postFarenCheckBox.Name = "postFarenCheckBox"
-        Me.postFarenCheckBox.Size = New System.Drawing.Size(25, 23)
-        Me.postFarenCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.postFarenCheckBox.TabIndex = 46
-        Me.postFarenCheckBox.Text = "F°"
-        '
-        'postCelCheckBox
-        '
-        '
-        '
-        '
-        Me.postCelCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postCelCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.postCelCheckBox.Location = New System.Drawing.Point(490, 171)
-        Me.postCelCheckBox.Name = "postCelCheckBox"
-        Me.postCelCheckBox.Size = New System.Drawing.Size(33, 23)
-        Me.postCelCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.postCelCheckBox.TabIndex = 47
-        Me.postCelCheckBox.Text = "C°"
-        '
-        'postKelCheckBox
-        '
-        '
-        '
-        '
-        Me.postKelCheckBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postKelCheckBox.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton
-        Me.postKelCheckBox.Location = New System.Drawing.Point(544, 171)
-        Me.postKelCheckBox.Name = "postKelCheckBox"
-        Me.postKelCheckBox.Size = New System.Drawing.Size(36, 23)
-        Me.postKelCheckBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.postKelCheckBox.TabIndex = 48
-        Me.postKelCheckBox.Text = "K"
-        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -874,6 +721,7 @@ Partial Class Arrigo
         Me.SideNav1.PerformLayout()
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
+        CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.weightIntegerInput2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -884,7 +732,6 @@ Partial Class Arrigo
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel5.PerformLayout()
-        CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -908,11 +755,8 @@ Partial Class Arrigo
     Friend WithEvents newSpecimenLabel As Label
     Friend WithEvents materialLabel As Label
     Friend WithEvents MaxTempLabel As Label
-    Friend WithEvents FarenDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
     Friend WithEvents MaxTempIntegerInput1 As DevComponents.Editors.IntegerInput
     Friend WithEvents dimensionsLabel As Label
-    Friend WithEvents KelvinDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents CelsiusDegreeCheck As DevComponents.DotNetBar.Controls.CheckBoxX
     Friend WithEvents lengthLabel As Label
     Friend WithEvents lengthDoubleInput1 As DevComponents.Editors.DoubleInput
     Friend WithEvents widthLabel As Label
@@ -936,9 +780,6 @@ Partial Class Arrigo
     Friend WithEvents specimenNameLabel As TextBox
     Friend WithEvents materialTextBox As TextBox
     Friend WithEvents roomTempLabel As Label
-    Friend WithEvents roomTempKCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents roomTempCCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents roomTempFCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
     Friend WithEvents roomTempIntegerInput As DevComponents.Editors.IntegerInput
     Friend WithEvents Separator2 As DevComponents.DotNetBar.Separator
     Friend WithEvents newSpecNextButton As Button
@@ -951,7 +792,4 @@ Partial Class Arrigo
     Friend WithEvents testlabel As Label
     Friend WithEvents postTestMaxTempLabel As Label
     Friend WithEvents postMaxTempIntegerInput As DevComponents.Editors.IntegerInput
-    Friend WithEvents postCelCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents postFarenCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
-    Friend WithEvents postKelCheckBox As DevComponents.DotNetBar.Controls.CheckBoxX
 End Class

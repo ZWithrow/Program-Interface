@@ -81,6 +81,8 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestLabel = New System.Windows.Forms.Label()
         Me.roomAirLabel = New System.Windows.Forms.Label()
+        Me.dryAirLabel = New System.Windows.Forms.Label()
+        Me.otherLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,6 +121,8 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.otherLabel)
+        Me.SideNavPanel2.Controls.Add(Me.dryAirLabel)
         Me.SideNavPanel2.Controls.Add(Me.roomAirLabel)
         Me.SideNavPanel2.Controls.Add(Me.priorTestLabel)
         Me.SideNavPanel2.Controls.Add(Me.pretestWeightLabel)
@@ -181,7 +185,7 @@ Partial Class Arrigo
         Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 162)
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(-15, 306)
         Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
         Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.postMaxTempIntegerInput.TabIndex = 45
@@ -190,7 +194,7 @@ Partial Class Arrigo
         '
         Me.postTestMaxTempLabel.AutoSize = True
         Me.postTestMaxTempLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postTestMaxTempLabel.Location = New System.Drawing.Point(120, 162)
+        Me.postTestMaxTempLabel.Location = New System.Drawing.Point(-75, 354)
         Me.postTestMaxTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.postTestMaxTempLabel.Name = "postTestMaxTempLabel"
         Me.postTestMaxTempLabel.Size = New System.Drawing.Size(150, 30)
@@ -724,6 +728,24 @@ Partial Class Arrigo
         Me.roomAirLabel.TabIndex = 48
         Me.roomAirLabel.Text = "ROOM AIR:"
         '
+        'dryAirLabel
+        '
+        Me.dryAirLabel.AutoSize = True
+        Me.dryAirLabel.Location = New System.Drawing.Point(441, 146)
+        Me.dryAirLabel.Name = "dryAirLabel"
+        Me.dryAirLabel.Size = New System.Drawing.Size(50, 13)
+        Me.dryAirLabel.TabIndex = 49
+        Me.dryAirLabel.Text = "DRY AIR:"
+        '
+        'otherLabel
+        '
+        Me.otherLabel.AutoSize = True
+        Me.otherLabel.Location = New System.Drawing.Point(441, 187)
+        Me.otherLabel.Name = "otherLabel"
+        Me.otherLabel.Size = New System.Drawing.Size(45, 13)
+        Me.otherLabel.TabIndex = 50
+        Me.otherLabel.Text = "OTHER:"
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -813,4 +835,6 @@ Partial Class Arrigo
     Friend WithEvents pretestWeightLabel As Label
     Friend WithEvents priorTestLabel As Label
     Friend WithEvents roomAirLabel As Label
+    Friend WithEvents dryAirLabel As Label
+    Friend WithEvents otherLabel As Label
 End Class

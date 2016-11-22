@@ -18,6 +18,8 @@ Public Class Arrigo
         postTestMaxTempLabel.Hide()
         priorTestLabel.Hide()
         roomAirLabel.Hide()
+        dryAirLabel.Hide()
+        otherLabel.Hide()
 
 
 
@@ -37,35 +39,7 @@ Public Class Arrigo
         Select Case pageCounter
             Case 1
                 ' what a appears on page 1
-                newSpecimenLabel.Show()
-                specimenNameLabel.Show()
-                dimensionsLabel.Show()
-                materialLabel.Show()
-                materialTextBox.Show()
-                MaxTempIntegerInput1.Show()
-                MaxTempLabel.Show()
-                weightLabel.Show()
-                lengthLabel.Show()
-                lengthDoubleInput1.Show()
-                heightDoubleInput1.Show()
-                heightLabel1.Show()
-                widthLabel.Show()
-                widthDoubleInput2.Show()
-                mmLabel.Show()
-                Label1.Show()
-                Label2.Show()
-                compoundShapeLabel.Show()
-                compoundShapeDoubleInput1.Show()
-                parallelLabel.Show()
-                parallelSwitchButton1.Show()
-                crossSectionLabel.Show()
-                crossSectionSwitchButton.Show()
-                weightIntegerInput2.Show()
-                gramsLabel.Show()
-                notesLabel.Show()
-                roomTempLabel.Show()
-                roomTempIntegerInput.Show()
-                newSpecNextButton.Show()
+
 
                 'hidden on page 1
                 backNexSpecButton.Hide()
@@ -77,6 +51,8 @@ Public Class Arrigo
                 postTestMaxTempLabel.Hide()
                 priorTestLabel.Hide()
                 roomAirLabel.Hide()
+                dryAirLabel.Hide()
+                otherLabel.Hide()
 
 
 
@@ -96,6 +72,9 @@ Public Class Arrigo
                 postTestMaxTempLabel.Show()
                 priorTestLabel.Show()
                 roomAirLabel.Show()
+                dryAirLabel.Show()
+                otherLabel.Show()
+
 
 
 
@@ -132,6 +111,7 @@ Public Class Arrigo
                 roomTempIntegerInput.Hide()
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
+                pretestWeightLabel.Hide()
 
 
 
@@ -176,6 +156,8 @@ Public Class Arrigo
                 roomTempIntegerInput.Hide()
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
+                pretestWeightLabel.Hide()
+
 
             Case Else
 

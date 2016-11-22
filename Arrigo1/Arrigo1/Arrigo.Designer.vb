@@ -91,6 +91,13 @@ Partial Class Arrigo
         Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.saveLabel = New System.Windows.Forms.Label()
         Me.saveAddLabel = New System.Windows.Forms.Label()
+        Me.heatingScheduleLabel = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.optHeatingScheduleTextBox = New System.Windows.Forms.TextBox()
+        Me.optHeatingScheduleNameLabel = New System.Windows.Forms.Label()
+        Me.elevatedTempTestLabel = New System.Windows.Forms.Label()
+        Me.maxElevTempLabel = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +109,7 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SideNavPanel3.SuspendLayout()
         Me.SideNavPanel5.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -112,12 +120,12 @@ Partial Class Arrigo
         '
         'SideNav1
         '
+        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
         Me.SideNav1.Controls.Add(Me.SideNavPanel1)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel4)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel4)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
         Me.SideNav1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SideNavItem1, Me.Separator1, Me.SideNavItem2, Me.NewSpecimensiSideNav, Me.NewHeatingSchedule, Me.Retest, Me.SideNavItem3, Me.SideNavItem4, Me.Separator2})
         Me.SideNav1.Location = New System.Drawing.Point(0, 0)
@@ -182,6 +190,7 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
+        Me.SideNavPanel2.Visible = False
         '
         'pretestWeightLabel
         '
@@ -611,12 +620,18 @@ Partial Class Arrigo
         '
         'SideNavPanel3
         '
+        Me.SideNavPanel3.Controls.Add(Me.TextBox2)
+        Me.SideNavPanel3.Controls.Add(Me.maxElevTempLabel)
+        Me.SideNavPanel3.Controls.Add(Me.elevatedTempTestLabel)
+        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleNameLabel)
+        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleTextBox)
+        Me.SideNavPanel3.Controls.Add(Me.TextBox1)
+        Me.SideNavPanel3.Controls.Add(Me.heatingScheduleLabel)
         Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SideNavPanel3.Location = New System.Drawing.Point(135, 36)
         Me.SideNavPanel3.Name = "SideNavPanel3"
         Me.SideNavPanel3.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel3.TabIndex = 10
-        Me.SideNavPanel3.Visible = False
         '
         'SideNavPanel5
         '
@@ -681,7 +696,6 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
-        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -689,6 +703,7 @@ Partial Class Arrigo
         '
         'NewHeatingSchedule
         '
+        Me.NewHeatingSchedule.Checked = True
         Me.NewHeatingSchedule.Name = "NewHeatingSchedule"
         Me.NewHeatingSchedule.Panel = Me.SideNavPanel3
         Me.NewHeatingSchedule.Symbol = ""
@@ -835,6 +850,75 @@ Partial Class Arrigo
         Me.saveAddLabel.Text = "SAVE AND ADD NEXT SPECIMEN"
         Me.saveAddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'heatingScheduleLabel
+        '
+        Me.heatingScheduleLabel.AutoSize = True
+        Me.heatingScheduleLabel.BackColor = System.Drawing.Color.LightGray
+        Me.heatingScheduleLabel.Location = New System.Drawing.Point(120, 34)
+        Me.heatingScheduleLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.heatingScheduleLabel.Name = "heatingScheduleLabel"
+        Me.heatingScheduleLabel.Size = New System.Drawing.Size(150, 30)
+        Me.heatingScheduleLabel.TabIndex = 45
+        Me.heatingScheduleLabel.Text = "HEATING SCHEDULE"
+        Me.heatingScheduleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(320, 34)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(314, 22)
+        Me.TextBox1.TabIndex = 45
+        '
+        'optHeatingScheduleTextBox
+        '
+        Me.optHeatingScheduleTextBox.Location = New System.Drawing.Point(320, 95)
+        Me.optHeatingScheduleTextBox.Name = "optHeatingScheduleTextBox"
+        Me.optHeatingScheduleTextBox.Size = New System.Drawing.Size(314, 22)
+        Me.optHeatingScheduleTextBox.TabIndex = 46
+        '
+        'optHeatingScheduleNameLabel
+        '
+        Me.optHeatingScheduleNameLabel.AutoSize = True
+        Me.optHeatingScheduleNameLabel.BackColor = System.Drawing.Color.LightGray
+        Me.optHeatingScheduleNameLabel.Location = New System.Drawing.Point(120, 98)
+        Me.optHeatingScheduleNameLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.optHeatingScheduleNameLabel.Name = "optHeatingScheduleNameLabel"
+        Me.optHeatingScheduleNameLabel.Size = New System.Drawing.Size(150, 30)
+        Me.optHeatingScheduleNameLabel.TabIndex = 47
+        Me.optHeatingScheduleNameLabel.Text = "OPTIONAL NAME"
+        Me.optHeatingScheduleNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'elevatedTempTestLabel
+        '
+        Me.elevatedTempTestLabel.AutoSize = True
+        Me.elevatedTempTestLabel.BackColor = System.Drawing.Color.Transparent
+        Me.elevatedTempTestLabel.Location = New System.Drawing.Point(120, 167)
+        Me.elevatedTempTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.elevatedTempTestLabel.Name = "elevatedTempTestLabel"
+        Me.elevatedTempTestLabel.Size = New System.Drawing.Size(150, 30)
+        Me.elevatedTempTestLabel.TabIndex = 48
+        Me.elevatedTempTestLabel.Text = "Elevated Temperature Test"
+        Me.elevatedTempTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'maxElevTempLabel
+        '
+        Me.maxElevTempLabel.AutoSize = True
+        Me.maxElevTempLabel.BackColor = System.Drawing.Color.Transparent
+        Me.maxElevTempLabel.Location = New System.Drawing.Point(317, 167)
+        Me.maxElevTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.maxElevTempLabel.Name = "maxElevTempLabel"
+        Me.maxElevTempLabel.Size = New System.Drawing.Size(150, 30)
+        Me.maxElevTempLabel.TabIndex = 49
+        Me.maxElevTempLabel.Text = "Maxium:"
+        Me.maxElevTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(444, 167)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox2.TabIndex = 50
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -859,6 +943,8 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SideNavPanel3.ResumeLayout(False)
+        Me.SideNavPanel3.PerformLayout()
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel5.PerformLayout()
         Me.ResumeLayout(False)
@@ -934,4 +1020,11 @@ Partial Class Arrigo
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents saveLabel As Label
     Friend WithEvents saveAddLabel As Label
+    Friend WithEvents heatingScheduleLabel As Label
+    Friend WithEvents optHeatingScheduleNameLabel As Label
+    Friend WithEvents optHeatingScheduleTextBox As TextBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents maxElevTempLabel As Label
+    Friend WithEvents elevatedTempTestLabel As Label
 End Class

@@ -15,6 +15,8 @@ Public Class Arrigo
         postTestMaxTempLabel.BackColor = Color.LightGray
         saveLabel.BackColor = Color.LightGreen
         saveAddLabel.BackColor = Color.LightGreen
+        heatingScheduleLabel.BackColor = Color.LightGray
+        optHeatingScheduleNameLabel.BackColor = Color.LightGray
 
 
         ' set what can and cannot be seen upon initialization
@@ -135,6 +137,59 @@ Public Class Arrigo
                 submitNewSpecButton.Show()
                 backNexSpecButton.Show()
                 'Hidden on page 3
+
+                priorTestNotesLabel.Hide()
+                priorTestNotesTextBox.Hide()
+                postTestMaxTempLabel.Hide()
+                postMaxTempIntegerInput.Hide()
+                postTestMaxTempLabel.Hide()
+                newSpecimenLabel.Hide()
+                specimenNameLabel.Hide()
+                dimensionsLabel.Hide()
+                materialLabel.Hide()
+                materialTextBox.Hide()
+                MaxTempIntegerInput1.Hide()
+                MaxTempLabel.Hide()
+                weightLabel.Hide()
+                lengthLabel.Hide()
+                lengthDoubleInput1.Hide()
+                heightLabel1.Hide()
+                heightDoubleInput1.Hide()
+                widthLabel.Hide()
+                widthDoubleInput2.Hide()
+                mmLabel.Hide()
+                Label1.Hide()
+                Label2.Hide()
+                compoundShapeLabel.Hide()
+                compoundShapeDoubleInput1.Hide()
+                parallelLabel.Hide()
+                parallelSwitchButton1.Hide()
+                crossSectionLabel.Hide()
+                crossSectionSwitchButton.Hide()
+                weightIntegerInput2.Hide()
+                gramsLabel.Hide()
+                notesLabel.Hide()
+                roomTempLabel.Hide()
+                roomTempIntegerInput.Hide()
+                specimenNameIntegerInput.Hide()
+                pretestWeightLabel.Hide()
+                observeLabel.Hide()
+                observeTextBoxX.Hide()
+                roomAirTextBox.Hide()
+                roomAirLabel.Hide()
+                dryAirTextBox.Hide()
+                dryAirLabel.Hide()
+                otherTextBox.Hide()
+                otherLabel.Hide()
+                priorTestLabel.Hide()
+
+
+            Case Else
+
+                'Shown on page 3
+                submitNewSpecButton.Show()
+                backNexSpecButton.Show()
+                'Hidden on page 3
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
@@ -169,7 +224,6 @@ Public Class Arrigo
                 notesLabel.Hide()
                 roomTempLabel.Hide()
                 roomTempIntegerInput.Hide()
-                submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
                 pretestWeightLabel.Hide()
                 observeLabel.Hide()
@@ -181,10 +235,6 @@ Public Class Arrigo
                 otherTextBox.Hide()
                 otherLabel.Hide()
                 priorTestLabel.Hide()
-
-
-            Case Else
-
 
 
 
@@ -205,5 +255,12 @@ Public Class Arrigo
 
     End Sub
 
+    Private Sub submitNewSpecButton_Click(sender As Object, e As EventArgs) Handles submitNewSpecButton.Click
 
+
+
+
+
+
+    End Sub
 End Class

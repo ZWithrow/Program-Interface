@@ -26,12 +26,12 @@ Partial Class Arrigo
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.pretestWeightLabel = New System.Windows.Forms.Label()
         Me.postMaxTempIntegerInput = New DevComponents.Editors.IntegerInput()
         Me.postTestMaxTempLabel = New System.Windows.Forms.Label()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.priorTestNotesLabel = New System.Windows.Forms.Label()
         Me.ButtonClickCounter = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.submitNewSpecButton = New System.Windows.Forms.Button()
         Me.backNexSpecButton = New System.Windows.Forms.Button()
         Me.newSpecNextButton = New System.Windows.Forms.Button()
@@ -79,6 +79,8 @@ Partial Class Arrigo
         Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
+        Me.priorTestLabel = New System.Windows.Forms.Label()
+        Me.roomAirLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,12 +119,13 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.roomAirLabel)
+        Me.SideNavPanel2.Controls.Add(Me.priorTestLabel)
+        Me.SideNavPanel2.Controls.Add(Me.pretestWeightLabel)
         Me.SideNavPanel2.Controls.Add(Me.postMaxTempIntegerInput)
         Me.SideNavPanel2.Controls.Add(Me.postTestMaxTempLabel)
-        Me.SideNavPanel2.Controls.Add(Me.priorTestNotesTextBox)
         Me.SideNavPanel2.Controls.Add(Me.priorTestNotesLabel)
         Me.SideNavPanel2.Controls.Add(Me.ButtonClickCounter)
-        Me.SideNavPanel2.Controls.Add(Me.Label18)
         Me.SideNavPanel2.Controls.Add(Me.submitNewSpecButton)
         Me.SideNavPanel2.Controls.Add(Me.backNexSpecButton)
         Me.SideNavPanel2.Controls.Add(Me.newSpecNextButton)
@@ -161,6 +164,15 @@ Partial Class Arrigo
         Me.SideNavPanel2.Size = New System.Drawing.Size(1317, 727)
         Me.SideNavPanel2.TabIndex = 6
         '
+        'pretestWeightLabel
+        '
+        Me.pretestWeightLabel.AutoSize = True
+        Me.pretestWeightLabel.Location = New System.Drawing.Point(317, 475)
+        Me.pretestWeightLabel.Name = "pretestWeightLabel"
+        Me.pretestWeightLabel.Size = New System.Drawing.Size(99, 13)
+        Me.pretestWeightLabel.TabIndex = 46
+        Me.pretestWeightLabel.Text = "PRE-TEST WEIGHT:"
+        '
         'postMaxTempIntegerInput
         '
         '
@@ -169,7 +181,7 @@ Partial Class Arrigo
         Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 170)
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 162)
         Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
         Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.postMaxTempIntegerInput.TabIndex = 45
@@ -188,7 +200,7 @@ Partial Class Arrigo
         '
         'priorTestNotesTextBox
         '
-        Me.priorTestNotesTextBox.Location = New System.Drawing.Point(320, 107)
+        Me.priorTestNotesTextBox.Location = New System.Drawing.Point(-46, 423)
         Me.priorTestNotesTextBox.Name = "priorTestNotesTextBox"
         Me.priorTestNotesTextBox.Size = New System.Drawing.Size(314, 22)
         Me.priorTestNotesTextBox.TabIndex = 43
@@ -197,7 +209,7 @@ Partial Class Arrigo
         '
         Me.priorTestNotesLabel.AutoSize = True
         Me.priorTestNotesLabel.BackColor = System.Drawing.Color.LightGray
-        Me.priorTestNotesLabel.Location = New System.Drawing.Point(120, 99)
+        Me.priorTestNotesLabel.Location = New System.Drawing.Point(120, 35)
         Me.priorTestNotesLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.priorTestNotesLabel.Name = "priorTestNotesLabel"
         Me.priorTestNotesLabel.Size = New System.Drawing.Size(150, 30)
@@ -212,18 +224,6 @@ Partial Class Arrigo
         Me.ButtonClickCounter.Name = "ButtonClickCounter"
         Me.ButtonClickCounter.Size = New System.Drawing.Size(0, 13)
         Me.ButtonClickCounter.TabIndex = 41
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.LightGray
-        Me.Label18.Location = New System.Drawing.Point(120, 37)
-        Me.Label18.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(150, 30)
-        Me.Label18.TabIndex = 40
-        Me.Label18.Text = "Notes Continued"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'submitNewSpecButton
         '
@@ -296,7 +296,7 @@ Partial Class Arrigo
         '
         'materialTextBox
         '
-        Me.materialTextBox.Location = New System.Drawing.Point(320, 107)
+        Me.materialTextBox.Location = New System.Drawing.Point(320, 137)
         Me.materialTextBox.Name = "materialTextBox"
         Me.materialTextBox.Size = New System.Drawing.Size(314, 22)
         Me.materialTextBox.TabIndex = 28
@@ -343,7 +343,7 @@ Partial Class Arrigo
         'gramsLabel
         '
         Me.gramsLabel.AutoSize = True
-        Me.gramsLabel.Location = New System.Drawing.Point(413, 475)
+        Me.gramsLabel.Location = New System.Drawing.Point(524, 475)
         Me.gramsLabel.Name = "gramsLabel"
         Me.gramsLabel.Size = New System.Drawing.Size(14, 13)
         Me.gramsLabel.TabIndex = 23
@@ -357,7 +357,7 @@ Partial Class Arrigo
         Me.weightIntegerInput2.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.weightIntegerInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.weightIntegerInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.weightIntegerInput2.Location = New System.Drawing.Point(320, 466)
+        Me.weightIntegerInput2.Location = New System.Drawing.Point(416, 466)
         Me.weightIntegerInput2.Name = "weightIntegerInput2"
         Me.weightIntegerInput2.Size = New System.Drawing.Size(90, 22)
         Me.weightIntegerInput2.TabIndex = 22
@@ -528,7 +528,7 @@ Partial Class Arrigo
         Me.MaxTempIntegerInput1.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.MaxTempIntegerInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.MaxTempIntegerInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.MaxTempIntegerInput1.Location = New System.Drawing.Point(320, 170)
+        Me.MaxTempIntegerInput1.Location = New System.Drawing.Point(544, 81)
         Me.MaxTempIntegerInput1.Name = "MaxTempIntegerInput1"
         Me.MaxTempIntegerInput1.Size = New System.Drawing.Size(90, 22)
         Me.MaxTempIntegerInput1.TabIndex = 5
@@ -549,19 +549,19 @@ Partial Class Arrigo
         '
         Me.MaxTempLabel.AutoSize = True
         Me.MaxTempLabel.BackColor = System.Drawing.Color.LightGray
-        Me.MaxTempLabel.Location = New System.Drawing.Point(120, 162)
+        Me.MaxTempLabel.Location = New System.Drawing.Point(317, 81)
         Me.MaxTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.MaxTempLabel.Name = "MaxTempLabel"
         Me.MaxTempLabel.Size = New System.Drawing.Size(150, 30)
         Me.MaxTempLabel.TabIndex = 2
-        Me.MaxTempLabel.Text = "Max Temperature"
+        Me.MaxTempLabel.Text = "Max Allowable Temperature"
         Me.MaxTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'materialLabel
         '
         Me.materialLabel.AutoSize = True
         Me.materialLabel.BackColor = System.Drawing.Color.LightGray
-        Me.materialLabel.Location = New System.Drawing.Point(120, 99)
+        Me.materialLabel.Location = New System.Drawing.Point(120, 137)
         Me.materialLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.materialLabel.Name = "materialLabel"
         Me.materialLabel.Size = New System.Drawing.Size(150, 30)
@@ -706,15 +706,33 @@ Partial Class Arrigo
         Me.Separator2.Padding.Top = 2
         Me.Separator2.SeparatorOrientation = DevComponents.DotNetBar.eDesignMarkerOrientation.Vertical
         '
+        'priorTestLabel
+        '
+        Me.priorTestLabel.AutoSize = True
+        Me.priorTestLabel.Location = New System.Drawing.Point(187, 98)
+        Me.priorTestLabel.Name = "priorTestLabel"
+        Me.priorTestLabel.Size = New System.Drawing.Size(218, 13)
+        Me.priorTestLabel.TabIndex = 47
+        Me.priorTestLabel.Text = "Prior to test specimen was maintained in:"
+        '
+        'roomAirLabel
+        '
+        Me.roomAirLabel.AutoSize = True
+        Me.roomAirLabel.Location = New System.Drawing.Point(441, 98)
+        Me.roomAirLabel.Name = "roomAirLabel"
+        Me.roomAirLabel.Size = New System.Drawing.Size(65, 13)
+        Me.roomAirLabel.TabIndex = 48
+        Me.roomAirLabel.Text = "ROOM AIR:"
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1469, 764)
         Me.Controls.Add(Me.SideNav1)
+        Me.Controls.Add(Me.priorTestNotesTextBox)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Arrigo"
         Me.Text = " "
         Me.SideNav1.ResumeLayout(False)
@@ -733,6 +751,7 @@ Partial Class Arrigo
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel5.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -785,11 +804,13 @@ Partial Class Arrigo
     Friend WithEvents newSpecNextButton As Button
     Friend WithEvents backNexSpecButton As Button
     Friend WithEvents submitNewSpecButton As Button
-    Friend WithEvents Label18 As Label
     Friend WithEvents ButtonClickCounter As Label
     Friend WithEvents priorTestNotesTextBox As TextBox
     Friend WithEvents priorTestNotesLabel As Label
     Friend WithEvents testlabel As Label
     Friend WithEvents postTestMaxTempLabel As Label
     Friend WithEvents postMaxTempIntegerInput As DevComponents.Editors.IntegerInput
+    Friend WithEvents pretestWeightLabel As Label
+    Friend WithEvents priorTestLabel As Label
+    Friend WithEvents roomAirLabel As Label
 End Class

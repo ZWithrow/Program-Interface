@@ -8,19 +8,18 @@ Public Class Arrigo
         materialLabel.BackColor = Color.LightGray
         MaxTempLabel.BackColor = Color.LightGray
         weightLabel.BackColor = Color.LightGray
-        Label18.BackColor = Color.Aqua
 
         ' set what can and cannot be seen upon initialization
-        Label18.Hide()
         backNexSpecButton.Hide()
         submitNewSpecButton.Hide()
         priorTestNotesLabel.Hide()
         priorTestNotesTextBox.Hide()
         postMaxTempIntegerInput.Hide()
-        postKelCheckBox.Hide()
-        postCelCheckBox.Hide()
-        postFarenCheckBox.Hide()
         postTestMaxTempLabel.Hide()
+        priorTestLabel.Hide()
+        roomAirLabel.Hide()
+
+
 
 
 
@@ -46,9 +45,6 @@ Public Class Arrigo
                 MaxTempIntegerInput1.Show()
                 MaxTempLabel.Show()
                 weightLabel.Show()
-                FarenDegreeCheck.Show()
-                CelsiusDegreeCheck.Show()
-                KelvinDegreeCheck.Show()
                 lengthLabel.Show()
                 lengthDoubleInput1.Show()
                 heightDoubleInput1.Show()
@@ -69,23 +65,20 @@ Public Class Arrigo
                 notesLabel.Show()
                 roomTempLabel.Show()
                 roomTempIntegerInput.Show()
-                roomTempFCheckBox.Show()
-                roomTempCCheckBox.Show()
-                roomTempKCheckBox.Show()
                 newSpecNextButton.Show()
 
                 'hidden on page 1
-                Label18.Hide()
                 backNexSpecButton.Hide()
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
                 postTestMaxTempLabel.Hide()
                 postMaxTempIntegerInput.Hide()
-                postKelCheckBox.Hide()
-                postCelCheckBox.Hide()
-                postFarenCheckBox.Hide()
                 postTestMaxTempLabel.Hide()
+                priorTestLabel.Hide()
+                roomAirLabel.Hide()
+
+
 
 
 
@@ -94,17 +87,17 @@ Public Class Arrigo
             Case 2
                 'shown page2
 
-                Label18.Show()
                 backNexSpecButton.Show()
                 newSpecNextButton.Show()
                 priorTestNotesTextBox.Show()
                 priorTestNotesLabel.Show()
                 postTestMaxTempLabel.Show()
                 postMaxTempIntegerInput.Show()
-                postKelCheckBox.Show()
-                postCelCheckBox.Show()
-                postFarenCheckBox.Show()
                 postTestMaxTempLabel.Show()
+                priorTestLabel.Show()
+                roomAirLabel.Show()
+
+
 
 
 
@@ -117,9 +110,6 @@ Public Class Arrigo
                 MaxTempIntegerInput1.Hide()
                 MaxTempLabel.Hide()
                 weightLabel.Hide()
-                FarenDegreeCheck.Hide()
-                CelsiusDegreeCheck.Hide()
-                KelvinDegreeCheck.Hide()
                 lengthLabel.Hide()
                 lengthDoubleInput1.Hide()
                 heightLabel1.Hide()
@@ -140,9 +130,6 @@ Public Class Arrigo
                 notesLabel.Hide()
                 roomTempLabel.Hide()
                 roomTempIntegerInput.Hide()
-                roomTempFCheckBox.Hide()
-                roomTempCCheckBox.Hide()
-                roomTempKCheckBox.Hide()
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
 
@@ -153,15 +140,11 @@ Public Class Arrigo
                 submitNewSpecButton.Show()
                 backNexSpecButton.Show()
                 'Hidden on page 3
-                Label18.Hide()
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
                 postTestMaxTempLabel.Hide()
                 postMaxTempIntegerInput.Hide()
-                postKelCheckBox.Hide()
-                postCelCheckBox.Hide()
-                postFarenCheckBox.Hide()
                 postTestMaxTempLabel.Hide()
                 newSpecimenLabel.Hide()
                 specimenNameLabel.Hide()
@@ -171,9 +154,6 @@ Public Class Arrigo
                 MaxTempIntegerInput1.Hide()
                 MaxTempLabel.Hide()
                 weightLabel.Hide()
-                FarenDegreeCheck.Hide()
-                CelsiusDegreeCheck.Hide()
-                KelvinDegreeCheck.Hide()
                 lengthLabel.Hide()
                 lengthDoubleInput1.Hide()
                 heightLabel1.Hide()
@@ -194,9 +174,6 @@ Public Class Arrigo
                 notesLabel.Hide()
                 roomTempLabel.Hide()
                 roomTempIntegerInput.Hide()
-                roomTempFCheckBox.Hide()
-                roomTempCCheckBox.Hide()
-                roomTempKCheckBox.Hide()
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
 

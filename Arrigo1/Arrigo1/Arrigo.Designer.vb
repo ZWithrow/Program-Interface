@@ -89,6 +89,8 @@ Partial Class Arrigo
         Me.otherTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.saveLabel = New System.Windows.Forms.Label()
+        Me.saveAddLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,6 +129,8 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.saveAddLabel)
+        Me.SideNavPanel2.Controls.Add(Me.saveLabel)
         Me.SideNavPanel2.Controls.Add(Me.observeTextBoxX)
         Me.SideNavPanel2.Controls.Add(Me.otherTextBox)
         Me.SideNavPanel2.Controls.Add(Me.dryAirTextBox)
@@ -808,6 +812,29 @@ Partial Class Arrigo
         Me.observeTextBoxX.Size = New System.Drawing.Size(314, 22)
         Me.observeTextBoxX.TabIndex = 55
         '
+        'saveLabel
+        '
+        Me.saveLabel.AutoSize = True
+        Me.saveLabel.BackColor = System.Drawing.Color.LightGray
+        Me.saveLabel.Location = New System.Drawing.Point(120, 402)
+        Me.saveLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.saveLabel.Name = "saveLabel"
+        Me.saveLabel.Size = New System.Drawing.Size(150, 30)
+        Me.saveLabel.TabIndex = 56
+        Me.saveLabel.Text = "SAVE"
+        Me.saveLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'saveAddLabel
+        '
+        Me.saveAddLabel.BackColor = System.Drawing.Color.LightGray
+        Me.saveAddLabel.Location = New System.Drawing.Point(317, 402)
+        Me.saveAddLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.saveAddLabel.Name = "saveAddLabel"
+        Me.saveAddLabel.Size = New System.Drawing.Size(317, 30)
+        Me.saveAddLabel.TabIndex = 57
+        Me.saveAddLabel.Text = "SAVE AND ADD NEXT SPECIMEN"
+        Me.saveAddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -905,4 +932,6 @@ Partial Class Arrigo
     Friend WithEvents otherTextBox As TextBox
     Friend WithEvents observeTextBoxX As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents saveLabel As Label
+    Friend WithEvents saveAddLabel As Label
 End Class

@@ -9,6 +9,13 @@ Public Class Arrigo
         materialLabel.BackColor = Color.LightGray
         MaxTempLabel.BackColor = Color.LightGray
         weightLabel.BackColor = Color.LightGray
+        priorTestNotesLabel.BackColor = Color.LightGray
+        priorTestLabel.BackColor = Color.Bisque
+        roomAirLabel.BackColor = Color.Bisque
+        postTestMaxTempLabel.BackColor = Color.LightGray
+        saveLabel.BackColor = Color.LightGreen
+        saveAddLabel.BackColor = Color.LightGreen
+
 
         ' set what can and cannot be seen upon initialization
         backNexSpecButton.Hide()
@@ -26,6 +33,8 @@ Public Class Arrigo
         dryAirTextBox.Hide()
         otherTextBox.Hide()
         observeTextBoxX.Hide()
+        saveLabel.Hide()
+        saveAddLabel.Hide()
 
     End Sub
 
@@ -52,7 +61,8 @@ Public Class Arrigo
                 dryAirTextBox.Hide()
                 otherTextBox.Hide()
                 observeTextBoxX.Hide()
-
+                saveLabel.Hide()
+                saveAddLabel.Hide()
 
 
 
@@ -78,6 +88,8 @@ Public Class Arrigo
                 dryAirTextBox.Show()
                 otherTextBox.Show()
                 observeTextBoxX.Show()
+                saveLabel.Show()
+                saveAddLabel.Show()
 
 
 

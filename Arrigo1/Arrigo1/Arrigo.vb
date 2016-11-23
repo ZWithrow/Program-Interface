@@ -21,6 +21,7 @@ Public Class Arrigo
         uniformTempIntervalsLabel.BackColor = Color.LightGray
         autofillSchedLabel.BackColor = Color.LightGreen
         newHeatSchedLabel.BackColor = Color.LightGray
+        newSpecProgressBar.BackColor = Color.LightGray
 
 
 
@@ -88,6 +89,8 @@ Public Class Arrigo
 
 
             Case 2
+                'setting colors and graphics of set page
+                newSpecProgressBar.BackColor = Color.Gainsboro
                 'shown page2
 
                 backNexSpecButton.Show()
@@ -269,12 +272,15 @@ Public Class Arrigo
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
         ShowPage()
+        newSpecProgressBar.PerformStep()
+
 
     End Sub
 
     Private Sub backNexSpecButton_Click(sender As Object, e As EventArgs) Handles backNexSpecButton.Click
         pageCounter -= 1
         ShowPage()
+        newSpecProgressBar.Value -= 10
 
     End Sub
 
@@ -282,12 +288,6 @@ Public Class Arrigo
         NewHeatingSchedule.Select()
 
 
-
-
-
-
-
     End Sub
-
 
 End Class

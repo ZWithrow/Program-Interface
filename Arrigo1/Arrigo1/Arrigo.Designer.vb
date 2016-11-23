@@ -25,20 +25,8 @@ Partial Class Arrigo
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
-        Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.numOfIntervalsLabel = New System.Windows.Forms.Label()
-        Me.startingTempDoubleInput1 = New DevComponents.Editors.DoubleInput()
-        Me.tempIntervalsDoubleInput1 = New DevComponents.Editors.DoubleInput()
-        Me.uniformTempIntervalsLabel = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.maxElevTempLabel = New System.Windows.Forms.Label()
-        Me.elevatedTempTestLabel = New System.Windows.Forms.Label()
-        Me.optHeatingScheduleNameLabel = New System.Windows.Forms.Label()
-        Me.optHeatingScheduleTextBox = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.heatingScheduleLabel = New System.Windows.Forms.Label()
-        Me.startingTempLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.newSpecProgressBar = New System.Windows.Forms.ProgressBar()
         Me.saveAddLabel = New System.Windows.Forms.Label()
         Me.saveLabel = New System.Windows.Forms.Label()
         Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -87,6 +75,21 @@ Partial Class Arrigo
         Me.MaxTempLabel = New System.Windows.Forms.Label()
         Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
+        Me.SideNavPanel3 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.newHeatSchedLabel = New System.Windows.Forms.Label()
+        Me.autofillSchedLabel = New System.Windows.Forms.Label()
+        Me.tempIntervalsDoubleInput1 = New DevComponents.Editors.DoubleInput()
+        Me.numOfIntervalsLabel = New System.Windows.Forms.Label()
+        Me.startingTempDoubleInput1 = New DevComponents.Editors.DoubleInput()
+        Me.uniformTempIntervalsLabel = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.maxElevTempLabel = New System.Windows.Forms.Label()
+        Me.elevatedTempTestLabel = New System.Windows.Forms.Label()
+        Me.optHeatingScheduleNameLabel = New System.Windows.Forms.Label()
+        Me.optHeatingScheduleTextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.heatingScheduleLabel = New System.Windows.Forms.Label()
+        Me.startingTempLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
@@ -104,12 +107,7 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.autofillSchedLabel = New System.Windows.Forms.Label()
-        Me.newHeatSchedLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
-        Me.SideNavPanel3.SuspendLayout()
-        CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,6 +118,9 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SideNavPanel3.SuspendLayout()
+        CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNavPanel5.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -130,8 +131,8 @@ Partial Class Arrigo
         '
         'SideNav1
         '
-        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel4)
@@ -145,162 +146,9 @@ Partial Class Arrigo
         Me.SideNav1.TabIndex = 0
         Me.SideNav1.Text = "SideNav1"
         '
-        'SideNavPanel3
-        '
-        Me.SideNavPanel3.Controls.Add(Me.newHeatSchedLabel)
-        Me.SideNavPanel3.Controls.Add(Me.autofillSchedLabel)
-        Me.SideNavPanel3.Controls.Add(Me.tempIntervalsDoubleInput1)
-        Me.SideNavPanel3.Controls.Add(Me.numOfIntervalsLabel)
-        Me.SideNavPanel3.Controls.Add(Me.startingTempDoubleInput1)
-        Me.SideNavPanel3.Controls.Add(Me.uniformTempIntervalsLabel)
-        Me.SideNavPanel3.Controls.Add(Me.TextBox2)
-        Me.SideNavPanel3.Controls.Add(Me.maxElevTempLabel)
-        Me.SideNavPanel3.Controls.Add(Me.elevatedTempTestLabel)
-        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleNameLabel)
-        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleTextBox)
-        Me.SideNavPanel3.Controls.Add(Me.TextBox1)
-        Me.SideNavPanel3.Controls.Add(Me.heatingScheduleLabel)
-        Me.SideNavPanel3.Controls.Add(Me.startingTempLabel)
-        Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel3.Location = New System.Drawing.Point(141, 36)
-        Me.SideNavPanel3.Name = "SideNavPanel3"
-        Me.SideNavPanel3.Size = New System.Drawing.Size(1311, 727)
-        Me.SideNavPanel3.TabIndex = 10
-        '
-        'numOfIntervalsLabel
-        '
-        Me.numOfIntervalsLabel.AutoSize = True
-        Me.numOfIntervalsLabel.BackColor = System.Drawing.Color.Transparent
-        Me.numOfIntervalsLabel.Location = New System.Drawing.Point(312, 232)
-        Me.numOfIntervalsLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.numOfIntervalsLabel.Name = "numOfIntervalsLabel"
-        Me.numOfIntervalsLabel.Size = New System.Drawing.Size(150, 30)
-        Me.numOfIntervalsLabel.TabIndex = 54
-        Me.numOfIntervalsLabel.Text = "# of Intervals:"
-        Me.numOfIntervalsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'startingTempDoubleInput1
-        '
-        '
-        '
-        '
-        Me.startingTempDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.startingTempDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.startingTempDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.startingTempDoubleInput1.Increment = 1.0R
-        Me.startingTempDoubleInput1.Location = New System.Drawing.Point(444, 296)
-        Me.startingTempDoubleInput1.Name = "startingTempDoubleInput1"
-        Me.startingTempDoubleInput1.Size = New System.Drawing.Size(131, 22)
-        Me.startingTempDoubleInput1.TabIndex = 53
-        '
-        'tempIntervalsDoubleInput1
-        '
-        '
-        '
-        '
-        Me.tempIntervalsDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.tempIntervalsDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.tempIntervalsDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.tempIntervalsDoubleInput1.Increment = 1.0R
-        Me.tempIntervalsDoubleInput1.Location = New System.Drawing.Point(444, 240)
-        Me.tempIntervalsDoubleInput1.Name = "tempIntervalsDoubleInput1"
-        Me.tempIntervalsDoubleInput1.Size = New System.Drawing.Size(131, 22)
-        Me.tempIntervalsDoubleInput1.TabIndex = 44
-        '
-        'uniformTempIntervalsLabel
-        '
-        Me.uniformTempIntervalsLabel.AutoSize = True
-        Me.uniformTempIntervalsLabel.BackColor = System.Drawing.Color.LightGray
-        Me.uniformTempIntervalsLabel.Location = New System.Drawing.Point(111, 232)
-        Me.uniformTempIntervalsLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.uniformTempIntervalsLabel.Name = "uniformTempIntervalsLabel"
-        Me.uniformTempIntervalsLabel.Size = New System.Drawing.Size(150, 30)
-        Me.uniformTempIntervalsLabel.TabIndex = 51
-        Me.uniformTempIntervalsLabel.Text = "UNIFORM TEMP INTERVALS"
-        Me.uniformTempIntervalsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(444, 173)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(190, 22)
-        Me.TextBox2.TabIndex = 50
-        '
-        'maxElevTempLabel
-        '
-        Me.maxElevTempLabel.AutoSize = True
-        Me.maxElevTempLabel.BackColor = System.Drawing.Color.Transparent
-        Me.maxElevTempLabel.Location = New System.Drawing.Point(317, 167)
-        Me.maxElevTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.maxElevTempLabel.Name = "maxElevTempLabel"
-        Me.maxElevTempLabel.Size = New System.Drawing.Size(150, 30)
-        Me.maxElevTempLabel.TabIndex = 49
-        Me.maxElevTempLabel.Text = "Maxium:"
-        Me.maxElevTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'elevatedTempTestLabel
-        '
-        Me.elevatedTempTestLabel.BackColor = System.Drawing.Color.Transparent
-        Me.elevatedTempTestLabel.Location = New System.Drawing.Point(149, 170)
-        Me.elevatedTempTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.elevatedTempTestLabel.Name = "elevatedTempTestLabel"
-        Me.elevatedTempTestLabel.Size = New System.Drawing.Size(188, 30)
-        Me.elevatedTempTestLabel.TabIndex = 48
-        Me.elevatedTempTestLabel.Text = "Elevated Temperature Test"
-        Me.elevatedTempTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'optHeatingScheduleNameLabel
-        '
-        Me.optHeatingScheduleNameLabel.AutoSize = True
-        Me.optHeatingScheduleNameLabel.BackColor = System.Drawing.Color.LightGray
-        Me.optHeatingScheduleNameLabel.Location = New System.Drawing.Point(111, 95)
-        Me.optHeatingScheduleNameLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.optHeatingScheduleNameLabel.Name = "optHeatingScheduleNameLabel"
-        Me.optHeatingScheduleNameLabel.Size = New System.Drawing.Size(150, 30)
-        Me.optHeatingScheduleNameLabel.TabIndex = 47
-        Me.optHeatingScheduleNameLabel.Text = "OPTIONAL NAME"
-        Me.optHeatingScheduleNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'optHeatingScheduleTextBox
-        '
-        Me.optHeatingScheduleTextBox.Location = New System.Drawing.Point(315, 95)
-        Me.optHeatingScheduleTextBox.Name = "optHeatingScheduleTextBox"
-        Me.optHeatingScheduleTextBox.Size = New System.Drawing.Size(314, 22)
-        Me.optHeatingScheduleTextBox.TabIndex = 46
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(315, 34)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(314, 22)
-        Me.TextBox1.TabIndex = 45
-        '
-        'heatingScheduleLabel
-        '
-        Me.heatingScheduleLabel.AutoSize = True
-        Me.heatingScheduleLabel.BackColor = System.Drawing.Color.LightGray
-        Me.heatingScheduleLabel.Location = New System.Drawing.Point(111, 34)
-        Me.heatingScheduleLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.heatingScheduleLabel.Name = "heatingScheduleLabel"
-        Me.heatingScheduleLabel.Size = New System.Drawing.Size(150, 30)
-        Me.heatingScheduleLabel.TabIndex = 45
-        Me.heatingScheduleLabel.Text = "HEATING SCHEDULE"
-        Me.heatingScheduleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'startingTempLabel
-        '
-        Me.startingTempLabel.AutoSize = True
-        Me.startingTempLabel.BackColor = System.Drawing.Color.Transparent
-        Me.startingTempLabel.Location = New System.Drawing.Point(317, 288)
-        Me.startingTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.startingTempLabel.Name = "startingTempLabel"
-        Me.startingTempLabel.Size = New System.Drawing.Size(150, 30)
-        Me.startingTempLabel.TabIndex = 52
-        Me.startingTempLabel.Text = "Starting Temp:"
-        Me.startingTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.newSpecProgressBar)
         Me.SideNavPanel2.Controls.Add(Me.saveAddLabel)
         Me.SideNavPanel2.Controls.Add(Me.saveLabel)
         Me.SideNavPanel2.Controls.Add(Me.observeTextBoxX)
@@ -354,7 +202,14 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel2.TabIndex = 6
-        Me.SideNavPanel2.Visible = False
+        '
+        'newSpecProgressBar
+        '
+        Me.newSpecProgressBar.Location = New System.Drawing.Point(377, 689)
+        Me.newSpecProgressBar.Maximum = 30
+        Me.newSpecProgressBar.Name = "newSpecProgressBar"
+        Me.newSpecProgressBar.Size = New System.Drawing.Size(257, 10)
+        Me.newSpecProgressBar.TabIndex = 58
         '
         'saveAddLabel
         '
@@ -871,6 +726,185 @@ Partial Class Arrigo
         Me.newSpecimenLabel.Text = "New Specimen"
         Me.newSpecimenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'SideNavPanel3
+        '
+        Me.SideNavPanel3.Controls.Add(Me.newHeatSchedLabel)
+        Me.SideNavPanel3.Controls.Add(Me.autofillSchedLabel)
+        Me.SideNavPanel3.Controls.Add(Me.tempIntervalsDoubleInput1)
+        Me.SideNavPanel3.Controls.Add(Me.numOfIntervalsLabel)
+        Me.SideNavPanel3.Controls.Add(Me.startingTempDoubleInput1)
+        Me.SideNavPanel3.Controls.Add(Me.uniformTempIntervalsLabel)
+        Me.SideNavPanel3.Controls.Add(Me.TextBox2)
+        Me.SideNavPanel3.Controls.Add(Me.maxElevTempLabel)
+        Me.SideNavPanel3.Controls.Add(Me.elevatedTempTestLabel)
+        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleNameLabel)
+        Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleTextBox)
+        Me.SideNavPanel3.Controls.Add(Me.TextBox1)
+        Me.SideNavPanel3.Controls.Add(Me.heatingScheduleLabel)
+        Me.SideNavPanel3.Controls.Add(Me.startingTempLabel)
+        Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel3.Location = New System.Drawing.Point(141, 36)
+        Me.SideNavPanel3.Name = "SideNavPanel3"
+        Me.SideNavPanel3.Size = New System.Drawing.Size(1311, 727)
+        Me.SideNavPanel3.TabIndex = 10
+        Me.SideNavPanel3.Visible = False
+        '
+        'newHeatSchedLabel
+        '
+        Me.newHeatSchedLabel.AutoSize = True
+        Me.newHeatSchedLabel.BackColor = System.Drawing.Color.LightGray
+        Me.newHeatSchedLabel.Location = New System.Drawing.Point(111, 342)
+        Me.newHeatSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.newHeatSchedLabel.Name = "newHeatSchedLabel"
+        Me.newHeatSchedLabel.Size = New System.Drawing.Size(150, 30)
+        Me.newHeatSchedLabel.TabIndex = 56
+        Me.newHeatSchedLabel.Text = "New Schedule"
+        Me.newHeatSchedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'autofillSchedLabel
+        '
+        Me.autofillSchedLabel.AutoSize = True
+        Me.autofillSchedLabel.BackColor = System.Drawing.Color.LightGray
+        Me.autofillSchedLabel.Location = New System.Drawing.Point(341, 342)
+        Me.autofillSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.autofillSchedLabel.Name = "autofillSchedLabel"
+        Me.autofillSchedLabel.Size = New System.Drawing.Size(170, 30)
+        Me.autofillSchedLabel.TabIndex = 55
+        Me.autofillSchedLabel.Text = "Autofill Schedule From Previous"
+        Me.autofillSchedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'tempIntervalsDoubleInput1
+        '
+        '
+        '
+        '
+        Me.tempIntervalsDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.tempIntervalsDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.tempIntervalsDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.tempIntervalsDoubleInput1.Increment = 1.0R
+        Me.tempIntervalsDoubleInput1.Location = New System.Drawing.Point(444, 240)
+        Me.tempIntervalsDoubleInput1.Name = "tempIntervalsDoubleInput1"
+        Me.tempIntervalsDoubleInput1.Size = New System.Drawing.Size(131, 22)
+        Me.tempIntervalsDoubleInput1.TabIndex = 44
+        '
+        'numOfIntervalsLabel
+        '
+        Me.numOfIntervalsLabel.AutoSize = True
+        Me.numOfIntervalsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.numOfIntervalsLabel.Location = New System.Drawing.Point(312, 232)
+        Me.numOfIntervalsLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.numOfIntervalsLabel.Name = "numOfIntervalsLabel"
+        Me.numOfIntervalsLabel.Size = New System.Drawing.Size(150, 30)
+        Me.numOfIntervalsLabel.TabIndex = 54
+        Me.numOfIntervalsLabel.Text = "# of Intervals:"
+        Me.numOfIntervalsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'startingTempDoubleInput1
+        '
+        '
+        '
+        '
+        Me.startingTempDoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.startingTempDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.startingTempDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.startingTempDoubleInput1.Increment = 1.0R
+        Me.startingTempDoubleInput1.Location = New System.Drawing.Point(444, 296)
+        Me.startingTempDoubleInput1.Name = "startingTempDoubleInput1"
+        Me.startingTempDoubleInput1.Size = New System.Drawing.Size(131, 22)
+        Me.startingTempDoubleInput1.TabIndex = 53
+        '
+        'uniformTempIntervalsLabel
+        '
+        Me.uniformTempIntervalsLabel.AutoSize = True
+        Me.uniformTempIntervalsLabel.BackColor = System.Drawing.Color.LightGray
+        Me.uniformTempIntervalsLabel.Location = New System.Drawing.Point(111, 232)
+        Me.uniformTempIntervalsLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.uniformTempIntervalsLabel.Name = "uniformTempIntervalsLabel"
+        Me.uniformTempIntervalsLabel.Size = New System.Drawing.Size(150, 30)
+        Me.uniformTempIntervalsLabel.TabIndex = 51
+        Me.uniformTempIntervalsLabel.Text = "UNIFORM TEMP INTERVALS"
+        Me.uniformTempIntervalsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(444, 173)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(190, 22)
+        Me.TextBox2.TabIndex = 50
+        '
+        'maxElevTempLabel
+        '
+        Me.maxElevTempLabel.AutoSize = True
+        Me.maxElevTempLabel.BackColor = System.Drawing.Color.Transparent
+        Me.maxElevTempLabel.Location = New System.Drawing.Point(317, 167)
+        Me.maxElevTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.maxElevTempLabel.Name = "maxElevTempLabel"
+        Me.maxElevTempLabel.Size = New System.Drawing.Size(150, 30)
+        Me.maxElevTempLabel.TabIndex = 49
+        Me.maxElevTempLabel.Text = "Maxium:"
+        Me.maxElevTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'elevatedTempTestLabel
+        '
+        Me.elevatedTempTestLabel.BackColor = System.Drawing.Color.Transparent
+        Me.elevatedTempTestLabel.Location = New System.Drawing.Point(149, 170)
+        Me.elevatedTempTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.elevatedTempTestLabel.Name = "elevatedTempTestLabel"
+        Me.elevatedTempTestLabel.Size = New System.Drawing.Size(188, 30)
+        Me.elevatedTempTestLabel.TabIndex = 48
+        Me.elevatedTempTestLabel.Text = "Elevated Temperature Test"
+        Me.elevatedTempTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'optHeatingScheduleNameLabel
+        '
+        Me.optHeatingScheduleNameLabel.AutoSize = True
+        Me.optHeatingScheduleNameLabel.BackColor = System.Drawing.Color.LightGray
+        Me.optHeatingScheduleNameLabel.Location = New System.Drawing.Point(111, 95)
+        Me.optHeatingScheduleNameLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.optHeatingScheduleNameLabel.Name = "optHeatingScheduleNameLabel"
+        Me.optHeatingScheduleNameLabel.Size = New System.Drawing.Size(150, 30)
+        Me.optHeatingScheduleNameLabel.TabIndex = 47
+        Me.optHeatingScheduleNameLabel.Text = "OPTIONAL NAME"
+        Me.optHeatingScheduleNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'optHeatingScheduleTextBox
+        '
+        Me.optHeatingScheduleTextBox.Location = New System.Drawing.Point(315, 95)
+        Me.optHeatingScheduleTextBox.Name = "optHeatingScheduleTextBox"
+        Me.optHeatingScheduleTextBox.Size = New System.Drawing.Size(314, 22)
+        Me.optHeatingScheduleTextBox.TabIndex = 46
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(315, 34)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(314, 22)
+        Me.TextBox1.TabIndex = 45
+        '
+        'heatingScheduleLabel
+        '
+        Me.heatingScheduleLabel.AutoSize = True
+        Me.heatingScheduleLabel.BackColor = System.Drawing.Color.LightGray
+        Me.heatingScheduleLabel.Location = New System.Drawing.Point(111, 34)
+        Me.heatingScheduleLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.heatingScheduleLabel.Name = "heatingScheduleLabel"
+        Me.heatingScheduleLabel.Size = New System.Drawing.Size(150, 30)
+        Me.heatingScheduleLabel.TabIndex = 45
+        Me.heatingScheduleLabel.Text = "HEATING SCHEDULE"
+        Me.heatingScheduleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'startingTempLabel
+        '
+        Me.startingTempLabel.AutoSize = True
+        Me.startingTempLabel.BackColor = System.Drawing.Color.Transparent
+        Me.startingTempLabel.Location = New System.Drawing.Point(317, 288)
+        Me.startingTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.startingTempLabel.Name = "startingTempLabel"
+        Me.startingTempLabel.Size = New System.Drawing.Size(150, 30)
+        Me.startingTempLabel.TabIndex = 52
+        Me.startingTempLabel.Text = "Starting Temp:"
+        Me.startingTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'SideNavPanel6
         '
         Me.SideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill
@@ -943,6 +977,7 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
+        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -950,7 +985,6 @@ Partial Class Arrigo
         '
         'NewHeatingSchedule
         '
-        Me.NewHeatingSchedule.Checked = True
         Me.NewHeatingSchedule.Name = "NewHeatingSchedule"
         Me.NewHeatingSchedule.Panel = Me.SideNavPanel3
         Me.NewHeatingSchedule.Symbol = ""
@@ -1005,30 +1039,6 @@ Partial Class Arrigo
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'autofillSchedLabel
-        '
-        Me.autofillSchedLabel.AutoSize = True
-        Me.autofillSchedLabel.BackColor = System.Drawing.Color.LightGray
-        Me.autofillSchedLabel.Location = New System.Drawing.Point(341, 342)
-        Me.autofillSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.autofillSchedLabel.Name = "autofillSchedLabel"
-        Me.autofillSchedLabel.Size = New System.Drawing.Size(170, 30)
-        Me.autofillSchedLabel.TabIndex = 55
-        Me.autofillSchedLabel.Text = "Autofill Schedule From Previous"
-        Me.autofillSchedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'newHeatSchedLabel
-        '
-        Me.newHeatSchedLabel.AutoSize = True
-        Me.newHeatSchedLabel.BackColor = System.Drawing.Color.LightGray
-        Me.newHeatSchedLabel.Location = New System.Drawing.Point(111, 342)
-        Me.newHeatSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.newHeatSchedLabel.Name = "newHeatSchedLabel"
-        Me.newHeatSchedLabel.Size = New System.Drawing.Size(150, 30)
-        Me.newHeatSchedLabel.TabIndex = 56
-        Me.newHeatSchedLabel.Text = "New Schedule"
-        Me.newHeatSchedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1042,10 +1052,6 @@ Partial Class Arrigo
         Me.Text = " "
         Me.SideNav1.ResumeLayout(False)
         Me.SideNav1.PerformLayout()
-        Me.SideNavPanel3.ResumeLayout(False)
-        Me.SideNavPanel3.PerformLayout()
-        CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1057,6 +1063,10 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SideNavPanel3.ResumeLayout(False)
+        Me.SideNavPanel3.PerformLayout()
+        CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel5.PerformLayout()
         Me.ResumeLayout(False)
@@ -1147,4 +1157,5 @@ Partial Class Arrigo
     Friend WithEvents numOfIntervalsLabel As Label
     Friend WithEvents autofillSchedLabel As Label
     Friend WithEvents newHeatSchedLabel As Label
+    Friend WithEvents newSpecProgressBar As ProgressBar
 End Class

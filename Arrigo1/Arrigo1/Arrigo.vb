@@ -1,6 +1,7 @@
 Public Class Arrigo
     ' variable for keeping track of button clicks
     Dim pageCounter As Integer = 1
+    Dim heatPageCounter As Integer = 1
 
 
     Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -44,9 +45,48 @@ Public Class Arrigo
         observeTextBoxX.Hide()
         saveLabel.Hide()
         saveAddLabel.Hide()
+        newpageTestLabel.Hide()
+        newHeatBackLabel.Hide()
+
+
 
     End Sub
+    Private Sub HeatShowPage()
+        Select Case heatPageCounter
+            Case 1
+                ' what should appear on page 1
+                heatingScheduleLabel.Show()
+                TextBox1.Show()
+                optHeatingScheduleNameLabel.Show()
+                optHeatingScheduleTextBox.Show()
+                elevatedTempTestLabel.Show()
+                maxElevTempLabel.Show()
+                TextBox2.Show()
 
+                newpageTestLabel.Hide()
+                newHeatBackLabel.Hide()
+                newHeatSchedTestLabel.Show()
+
+
+
+
+
+            Case 2
+                heatingScheduleLabel.Hide()
+                TextBox1.Hide()
+                optHeatingScheduleNameLabel.Hide()
+                optHeatingScheduleTextBox.Hide()
+                elevatedTempTestLabel.Hide()
+                maxElevTempLabel.Hide()
+                TextBox2.Hide()
+
+                newpageTestLabel.Show()
+                newHeatSchedTestLabel.Hide()
+                newHeatBackLabel.Show()
+
+
+        End Select
+    End Sub
     Private Sub ShowPage()
         Select Case pageCounter
             Case 1
@@ -259,7 +299,10 @@ Public Class Arrigo
                 otherLabel.Hide()
                 priorTestLabel.Hide()
 
-            Case 5
+            Case Else
+                pageCounter = 4
+                ShowPage()
+
 
 
 
@@ -290,4 +333,15 @@ Public Class Arrigo
 
     End Sub
 
+    Private Sub newHeatSchedTestLabel_Click(sender As Object, e As EventArgs) Handles newHeatSchedTestLabel.Click
+        heatPageCounter += 1
+        HeatShowPage()
+
+    End Sub
+
+    Private Sub newHeatBackLabel_Click(sender As Object, e As EventArgs) Handles newHeatBackLabel.Click
+        heatPageCounter -= 1
+        HeatShowPage()
+
+    End Sub
 End Class

@@ -107,6 +107,9 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.newHeatSchedTestLabel = New System.Windows.Forms.Label()
+        Me.newpageTestLabel = New System.Windows.Forms.Label()
+        Me.newHeatBackLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,10 +134,10 @@ Partial Class Arrigo
         '
         'SideNav1
         '
-        Me.SideNav1.Controls.Add(Me.SideNavPanel2)
         Me.SideNav1.Controls.Add(Me.SideNavPanel3)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel1)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel2)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel4)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
@@ -202,6 +205,7 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel2.TabIndex = 6
+        Me.SideNavPanel2.Visible = False
         '
         'newSpecProgressBar
         '
@@ -728,6 +732,9 @@ Partial Class Arrigo
         '
         'SideNavPanel3
         '
+        Me.SideNavPanel3.Controls.Add(Me.newHeatBackLabel)
+        Me.SideNavPanel3.Controls.Add(Me.newpageTestLabel)
+        Me.SideNavPanel3.Controls.Add(Me.newHeatSchedTestLabel)
         Me.SideNavPanel3.Controls.Add(Me.newHeatSchedLabel)
         Me.SideNavPanel3.Controls.Add(Me.autofillSchedLabel)
         Me.SideNavPanel3.Controls.Add(Me.tempIntervalsDoubleInput1)
@@ -747,7 +754,6 @@ Partial Class Arrigo
         Me.SideNavPanel3.Name = "SideNavPanel3"
         Me.SideNavPanel3.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel3.TabIndex = 10
-        Me.SideNavPanel3.Visible = False
         '
         'newHeatSchedLabel
         '
@@ -917,9 +923,9 @@ Partial Class Arrigo
         'SideNavPanel1
         '
         Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel1.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel1.Location = New System.Drawing.Point(141, 36)
         Me.SideNavPanel1.Name = "SideNavPanel1"
-        Me.SideNavPanel1.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel1.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel1.TabIndex = 2
         Me.SideNavPanel1.Visible = False
         '
@@ -977,7 +983,6 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
-        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -985,6 +990,7 @@ Partial Class Arrigo
         '
         'NewHeatingSchedule
         '
+        Me.NewHeatingSchedule.Checked = True
         Me.NewHeatingSchedule.Name = "NewHeatingSchedule"
         Me.NewHeatingSchedule.Panel = Me.SideNavPanel3
         Me.NewHeatingSchedule.Symbol = ""
@@ -1038,6 +1044,42 @@ Partial Class Arrigo
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'newHeatSchedTestLabel
+        '
+        Me.newHeatSchedTestLabel.AutoSize = True
+        Me.newHeatSchedTestLabel.BackColor = System.Drawing.Color.LightGray
+        Me.newHeatSchedTestLabel.Location = New System.Drawing.Point(212, 603)
+        Me.newHeatSchedTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.newHeatSchedTestLabel.Name = "newHeatSchedTestLabel"
+        Me.newHeatSchedTestLabel.Size = New System.Drawing.Size(150, 30)
+        Me.newHeatSchedTestLabel.TabIndex = 57
+        Me.newHeatSchedTestLabel.Text = "Next"
+        Me.newHeatSchedTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'newpageTestLabel
+        '
+        Me.newpageTestLabel.AutoSize = True
+        Me.newpageTestLabel.BackColor = System.Drawing.Color.LightGray
+        Me.newpageTestLabel.Location = New System.Drawing.Point(111, 491)
+        Me.newpageTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.newpageTestLabel.Name = "newpageTestLabel"
+        Me.newpageTestLabel.Size = New System.Drawing.Size(150, 30)
+        Me.newpageTestLabel.TabIndex = 58
+        Me.newpageTestLabel.Text = "New PAGE!"
+        Me.newpageTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'newHeatBackLabel
+        '
+        Me.newHeatBackLabel.AutoSize = True
+        Me.newHeatBackLabel.BackColor = System.Drawing.Color.LightGray
+        Me.newHeatBackLabel.Location = New System.Drawing.Point(43, 603)
+        Me.newHeatBackLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.newHeatBackLabel.Name = "newHeatBackLabel"
+        Me.newHeatBackLabel.Size = New System.Drawing.Size(150, 30)
+        Me.newHeatBackLabel.TabIndex = 59
+        Me.newHeatBackLabel.Text = "Back"
+        Me.newHeatBackLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Arrigo
         '
@@ -1158,4 +1200,7 @@ Partial Class Arrigo
     Friend WithEvents autofillSchedLabel As Label
     Friend WithEvents newHeatSchedLabel As Label
     Friend WithEvents newSpecProgressBar As ProgressBar
+    Friend WithEvents newpageTestLabel As Label
+    Friend WithEvents newHeatSchedTestLabel As Label
+    Friend WithEvents newHeatBackLabel As Label
 End Class

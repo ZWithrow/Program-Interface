@@ -13,9 +13,6 @@
   * widthDoubleInput2
   * weightIntegerInput2
   * widthLabel
-  * FarenDegreeCheck
-  * CelsiusDegreeCheck
-  * KelvinDegreeCheck
   * lengthLabel
   * lengthDoubleInput1
   * heightLabel1
@@ -32,9 +29,6 @@
   * gramsLabel
   * notesLabel
   * roomTempLabel
-  * roomTempFCheckBox
-  * roomTempCCheckBox
-  * roomTempKCheckBox
   * roomTempIntegerInput
   * newSpecNextButton
 2. Second page -

@@ -56,7 +56,7 @@ Public Class Arrigo
             Case 1
                 ' what should appear on page 1
                 heatingScheduleLabel.Show()
-                TextBox1.Show()
+                heatScheduleDefaultNameNum.Show()
                 optHeatingScheduleNameLabel.Show()
                 optHeatingScheduleTextBox.Show()
                 elevatedTempTestLabel.Show()
@@ -73,7 +73,7 @@ Public Class Arrigo
 
             Case 2
                 heatingScheduleLabel.Hide()
-                TextBox1.Hide()
+                heatScheduleDefaultNameNum.Hide()
                 optHeatingScheduleNameLabel.Hide()
                 optHeatingScheduleTextBox.Hide()
                 elevatedTempTestLabel.Hide()
@@ -84,6 +84,8 @@ Public Class Arrigo
                 newHeatSchedTestLabel.Hide()
                 newHeatBackLabel.Show()
 
+            Case Else
+                heatPageCounter = 3
 
         End Select
     End Sub

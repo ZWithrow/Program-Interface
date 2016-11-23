@@ -87,7 +87,7 @@ Partial Class Arrigo
         Me.elevatedTempTestLabel = New System.Windows.Forms.Label()
         Me.optHeatingScheduleNameLabel = New System.Windows.Forms.Label()
         Me.optHeatingScheduleTextBox = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.heatScheduleDefaultNameNum = New System.Windows.Forms.TextBox()
         Me.heatingScheduleLabel = New System.Windows.Forms.Label()
         Me.startingTempLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
@@ -746,7 +746,7 @@ Partial Class Arrigo
         Me.SideNavPanel3.Controls.Add(Me.elevatedTempTestLabel)
         Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleNameLabel)
         Me.SideNavPanel3.Controls.Add(Me.optHeatingScheduleTextBox)
-        Me.SideNavPanel3.Controls.Add(Me.TextBox1)
+        Me.SideNavPanel3.Controls.Add(Me.heatScheduleDefaultNameNum)
         Me.SideNavPanel3.Controls.Add(Me.heatingScheduleLabel)
         Me.SideNavPanel3.Controls.Add(Me.startingTempLabel)
         Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
@@ -880,12 +880,12 @@ Partial Class Arrigo
         Me.optHeatingScheduleTextBox.Size = New System.Drawing.Size(314, 22)
         Me.optHeatingScheduleTextBox.TabIndex = 46
         '
-        'TextBox1
+        'heatScheduleDefaultNameNum
         '
-        Me.TextBox1.Location = New System.Drawing.Point(315, 34)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(314, 22)
-        Me.TextBox1.TabIndex = 45
+        Me.heatScheduleDefaultNameNum.Location = New System.Drawing.Point(315, 34)
+        Me.heatScheduleDefaultNameNum.Name = "heatScheduleDefaultNameNum"
+        Me.heatScheduleDefaultNameNum.Size = New System.Drawing.Size(314, 22)
+        Me.heatScheduleDefaultNameNum.TabIndex = 45
         '
         'heatingScheduleLabel
         '
@@ -1049,7 +1049,7 @@ Partial Class Arrigo
         '
         Me.newHeatSchedTestLabel.AutoSize = True
         Me.newHeatSchedTestLabel.BackColor = System.Drawing.Color.LightGray
-        Me.newHeatSchedTestLabel.Location = New System.Drawing.Point(212, 603)
+        Me.newHeatSchedTestLabel.Location = New System.Drawing.Point(1128, 669)
         Me.newHeatSchedTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.newHeatSchedTestLabel.Name = "newHeatSchedTestLabel"
         Me.newHeatSchedTestLabel.Size = New System.Drawing.Size(150, 30)
@@ -1073,7 +1073,7 @@ Partial Class Arrigo
         '
         Me.newHeatBackLabel.AutoSize = True
         Me.newHeatBackLabel.BackColor = System.Drawing.Color.LightGray
-        Me.newHeatBackLabel.Location = New System.Drawing.Point(43, 603)
+        Me.newHeatBackLabel.Location = New System.Drawing.Point(43, 668)
         Me.newHeatBackLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.newHeatBackLabel.Name = "newHeatBackLabel"
         Me.newHeatBackLabel.Size = New System.Drawing.Size(150, 30)
@@ -1187,7 +1187,7 @@ Partial Class Arrigo
     Friend WithEvents heatingScheduleLabel As Label
     Friend WithEvents optHeatingScheduleNameLabel As Label
     Friend WithEvents optHeatingScheduleTextBox As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents heatScheduleDefaultNameNum As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents maxElevTempLabel As Label
     Friend WithEvents elevatedTempTestLabel As Label

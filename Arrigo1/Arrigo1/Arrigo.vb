@@ -2,6 +2,7 @@ Public Class Arrigo
     ' variable for keeping track of button clicks
     Dim pageCounter As Integer = 1
 
+
     Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' set the colors of the labels
         newSpecimenLabel.BackColor = Color.LightGray
@@ -17,6 +18,8 @@ Public Class Arrigo
         saveAddLabel.BackColor = Color.LightGreen
         heatingScheduleLabel.BackColor = Color.LightGray
         optHeatingScheduleNameLabel.BackColor = Color.LightGray
+        uniformTempIntervalsLabel.BackColor = Color.LightGray
+
 
 
         ' set what can and cannot be seen upon initialization
@@ -44,6 +47,16 @@ Public Class Arrigo
         Select Case pageCounter
             Case 1
                 ' what a appears on page 1
+                newSpecimenLabel.Show()
+                specimenNameLabel.Show()
+                materialLabel.Show()
+                materialTextBox.Show()
+                MaxTempIntegerInput1.Show()
+                MaxTempLabel.Show()
+
+
+
+
 
 
                 'hidden on page 1
@@ -90,8 +103,6 @@ Public Class Arrigo
                 dryAirTextBox.Show()
                 otherTextBox.Show()
                 observeTextBoxX.Show()
-                saveLabel.Show()
-                saveAddLabel.Show()
 
 
 
@@ -129,6 +140,9 @@ Public Class Arrigo
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
                 pretestWeightLabel.Hide()
+                saveLabel.Hide()
+                saveAddLabel.Hide()
+
 
 
 
@@ -136,6 +150,9 @@ Public Class Arrigo
                 'Shown on page 3
                 submitNewSpecButton.Show()
                 backNexSpecButton.Show()
+                saveLabel.Show()
+                saveAddLabel.Show()
+
                 'Hidden on page 3
 
                 priorTestNotesLabel.Hide()
@@ -184,7 +201,7 @@ Public Class Arrigo
                 priorTestLabel.Hide()
 
 
-            Case Else
+            Case 4
 
                 'Shown on page 3
                 submitNewSpecButton.Show()
@@ -236,6 +253,9 @@ Public Class Arrigo
                 otherLabel.Hide()
                 priorTestLabel.Hide()
 
+            Case 5
+
+
 
 
         End Select
@@ -256,6 +276,8 @@ Public Class Arrigo
     End Sub
 
     Private Sub submitNewSpecButton_Click(sender As Object, e As EventArgs) Handles submitNewSpecButton.Click
+        NewHeatingSchedule.Select()
+
 
 
 

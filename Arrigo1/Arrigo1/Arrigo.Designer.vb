@@ -110,6 +110,49 @@ Partial Class Arrigo
         Me.newHeatSchedTestLabel = New System.Windows.Forms.Label()
         Me.newpageTestLabel = New System.Windows.Forms.Label()
         Me.newHeatBackLabel = New System.Windows.Forms.Label()
+        Me.DoubleInput1 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput2 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput3 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput4 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput5 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput6 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput7 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput8 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput9 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput10 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput11 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput12 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput13 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput14 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput15 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput16 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput17 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput18 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput19 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput20 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput21 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput22 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput23 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput24 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput25 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput26 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput27 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput28 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput29 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput30 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput31 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput32 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput33 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput34 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput35 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput36 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput37 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput38 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput39 = New DevComponents.Editors.DoubleInput()
+        Me.DoubleInput40 = New DevComponents.Editors.DoubleInput()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label_1 = New System.Windows.Forms.Label()
+        Me.Label_40 = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,6 +168,46 @@ Partial Class Arrigo
         CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNavPanel5.SuspendLayout()
+        CType(Me.DoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput40, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -732,6 +815,47 @@ Partial Class Arrigo
         '
         'SideNavPanel3
         '
+        Me.SideNavPanel3.Controls.Add(Me.Label3)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput33)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput34)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput35)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput36)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput37)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput38)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput39)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput40)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput25)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput26)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput27)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput28)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput29)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput30)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput31)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput32)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput17)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput18)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput19)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput20)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput21)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput22)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput23)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput24)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput9)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput10)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput11)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput12)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput13)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput14)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput15)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput16)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput8)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput7)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput6)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput5)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput4)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput3)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput2)
+        Me.SideNavPanel3.Controls.Add(Me.DoubleInput1)
         Me.SideNavPanel3.Controls.Add(Me.newHeatBackLabel)
         Me.SideNavPanel3.Controls.Add(Me.newpageTestLabel)
         Me.SideNavPanel3.Controls.Add(Me.newHeatSchedTestLabel)
@@ -749,6 +873,8 @@ Partial Class Arrigo
         Me.SideNavPanel3.Controls.Add(Me.heatScheduleDefaultNameNum)
         Me.SideNavPanel3.Controls.Add(Me.heatingScheduleLabel)
         Me.SideNavPanel3.Controls.Add(Me.startingTempLabel)
+        Me.SideNavPanel3.Controls.Add(Me.Label_1)
+        Me.SideNavPanel3.Controls.Add(Me.Label_40)
         Me.SideNavPanel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SideNavPanel3.Location = New System.Drawing.Point(141, 36)
         Me.SideNavPanel3.Name = "SideNavPanel3"
@@ -759,7 +885,7 @@ Partial Class Arrigo
         '
         Me.newHeatSchedLabel.AutoSize = True
         Me.newHeatSchedLabel.BackColor = System.Drawing.Color.LightGray
-        Me.newHeatSchedLabel.Location = New System.Drawing.Point(111, 342)
+        Me.newHeatSchedLabel.Location = New System.Drawing.Point(111, 387)
         Me.newHeatSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.newHeatSchedLabel.Name = "newHeatSchedLabel"
         Me.newHeatSchedLabel.Size = New System.Drawing.Size(150, 30)
@@ -771,7 +897,7 @@ Partial Class Arrigo
         '
         Me.autofillSchedLabel.AutoSize = True
         Me.autofillSchedLabel.BackColor = System.Drawing.Color.LightGray
-        Me.autofillSchedLabel.Location = New System.Drawing.Point(341, 342)
+        Me.autofillSchedLabel.Location = New System.Drawing.Point(111, 531)
         Me.autofillSchedLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.autofillSchedLabel.Name = "autofillSchedLabel"
         Me.autofillSchedLabel.Size = New System.Drawing.Size(170, 30)
@@ -1061,7 +1187,7 @@ Partial Class Arrigo
         '
         Me.newpageTestLabel.AutoSize = True
         Me.newpageTestLabel.BackColor = System.Drawing.Color.LightGray
-        Me.newpageTestLabel.Location = New System.Drawing.Point(111, 491)
+        Me.newpageTestLabel.Location = New System.Drawing.Point(425, 669)
         Me.newpageTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.newpageTestLabel.Name = "newpageTestLabel"
         Me.newpageTestLabel.Size = New System.Drawing.Size(150, 30)
@@ -1080,6 +1206,600 @@ Partial Class Arrigo
         Me.newHeatBackLabel.TabIndex = 59
         Me.newHeatBackLabel.Text = "Back"
         Me.newHeatBackLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DoubleInput1
+        '
+        '
+        '
+        '
+        Me.DoubleInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput1.Increment = 1.0R
+        Me.DoubleInput1.Location = New System.Drawing.Point(315, 387)
+        Me.DoubleInput1.Name = "DoubleInput1"
+        Me.DoubleInput1.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput1.TabIndex = 60
+        '
+        'DoubleInput2
+        '
+        '
+        '
+        '
+        Me.DoubleInput2.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput2.Increment = 1.0R
+        Me.DoubleInput2.Location = New System.Drawing.Point(315, 416)
+        Me.DoubleInput2.Name = "DoubleInput2"
+        Me.DoubleInput2.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput2.TabIndex = 61
+        '
+        'DoubleInput3
+        '
+        '
+        '
+        '
+        Me.DoubleInput3.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput3.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput3.Increment = 1.0R
+        Me.DoubleInput3.Location = New System.Drawing.Point(315, 444)
+        Me.DoubleInput3.Name = "DoubleInput3"
+        Me.DoubleInput3.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput3.TabIndex = 62
+        '
+        'DoubleInput4
+        '
+        '
+        '
+        '
+        Me.DoubleInput4.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput4.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput4.Increment = 1.0R
+        Me.DoubleInput4.Location = New System.Drawing.Point(315, 472)
+        Me.DoubleInput4.Name = "DoubleInput4"
+        Me.DoubleInput4.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput4.TabIndex = 63
+        '
+        'DoubleInput5
+        '
+        '
+        '
+        '
+        Me.DoubleInput5.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput5.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput5.Increment = 1.0R
+        Me.DoubleInput5.Location = New System.Drawing.Point(315, 500)
+        Me.DoubleInput5.Name = "DoubleInput5"
+        Me.DoubleInput5.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput5.TabIndex = 64
+        '
+        'DoubleInput6
+        '
+        '
+        '
+        '
+        Me.DoubleInput6.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput6.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput6.Increment = 1.0R
+        Me.DoubleInput6.Location = New System.Drawing.Point(315, 528)
+        Me.DoubleInput6.Name = "DoubleInput6"
+        Me.DoubleInput6.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput6.TabIndex = 65
+        '
+        'DoubleInput7
+        '
+        '
+        '
+        '
+        Me.DoubleInput7.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput7.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput7.Increment = 1.0R
+        Me.DoubleInput7.Location = New System.Drawing.Point(315, 556)
+        Me.DoubleInput7.Name = "DoubleInput7"
+        Me.DoubleInput7.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput7.TabIndex = 66
+        '
+        'DoubleInput8
+        '
+        '
+        '
+        '
+        Me.DoubleInput8.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput8.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput8.Increment = 1.0R
+        Me.DoubleInput8.Location = New System.Drawing.Point(315, 584)
+        Me.DoubleInput8.Name = "DoubleInput8"
+        Me.DoubleInput8.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput8.TabIndex = 67
+        '
+        'DoubleInput9
+        '
+        '
+        '
+        '
+        Me.DoubleInput9.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput9.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput9.Increment = 1.0R
+        Me.DoubleInput9.Location = New System.Drawing.Point(416, 584)
+        Me.DoubleInput9.Name = "DoubleInput9"
+        Me.DoubleInput9.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput9.TabIndex = 75
+        '
+        'DoubleInput10
+        '
+        '
+        '
+        '
+        Me.DoubleInput10.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput10.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput10.Increment = 1.0R
+        Me.DoubleInput10.Location = New System.Drawing.Point(416, 556)
+        Me.DoubleInput10.Name = "DoubleInput10"
+        Me.DoubleInput10.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput10.TabIndex = 74
+        '
+        'DoubleInput11
+        '
+        '
+        '
+        '
+        Me.DoubleInput11.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput11.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput11.Increment = 1.0R
+        Me.DoubleInput11.Location = New System.Drawing.Point(416, 528)
+        Me.DoubleInput11.Name = "DoubleInput11"
+        Me.DoubleInput11.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput11.TabIndex = 73
+        '
+        'DoubleInput12
+        '
+        '
+        '
+        '
+        Me.DoubleInput12.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput12.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput12.Increment = 1.0R
+        Me.DoubleInput12.Location = New System.Drawing.Point(416, 500)
+        Me.DoubleInput12.Name = "DoubleInput12"
+        Me.DoubleInput12.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput12.TabIndex = 72
+        '
+        'DoubleInput13
+        '
+        '
+        '
+        '
+        Me.DoubleInput13.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput13.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput13.Increment = 1.0R
+        Me.DoubleInput13.Location = New System.Drawing.Point(416, 472)
+        Me.DoubleInput13.Name = "DoubleInput13"
+        Me.DoubleInput13.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput13.TabIndex = 71
+        '
+        'DoubleInput14
+        '
+        '
+        '
+        '
+        Me.DoubleInput14.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput14.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput14.Increment = 1.0R
+        Me.DoubleInput14.Location = New System.Drawing.Point(416, 444)
+        Me.DoubleInput14.Name = "DoubleInput14"
+        Me.DoubleInput14.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput14.TabIndex = 70
+        '
+        'DoubleInput15
+        '
+        '
+        '
+        '
+        Me.DoubleInput15.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput15.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput15.Increment = 1.0R
+        Me.DoubleInput15.Location = New System.Drawing.Point(416, 416)
+        Me.DoubleInput15.Name = "DoubleInput15"
+        Me.DoubleInput15.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput15.TabIndex = 69
+        '
+        'DoubleInput16
+        '
+        '
+        '
+        '
+        Me.DoubleInput16.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput16.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput16.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput16.Increment = 1.0R
+        Me.DoubleInput16.Location = New System.Drawing.Point(416, 387)
+        Me.DoubleInput16.Name = "DoubleInput16"
+        Me.DoubleInput16.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput16.TabIndex = 68
+        '
+        'DoubleInput17
+        '
+        '
+        '
+        '
+        Me.DoubleInput17.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput17.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput17.Increment = 1.0R
+        Me.DoubleInput17.Location = New System.Drawing.Point(509, 584)
+        Me.DoubleInput17.Name = "DoubleInput17"
+        Me.DoubleInput17.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput17.TabIndex = 83
+        '
+        'DoubleInput18
+        '
+        '
+        '
+        '
+        Me.DoubleInput18.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput18.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput18.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput18.Increment = 1.0R
+        Me.DoubleInput18.Location = New System.Drawing.Point(509, 556)
+        Me.DoubleInput18.Name = "DoubleInput18"
+        Me.DoubleInput18.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput18.TabIndex = 82
+        '
+        'DoubleInput19
+        '
+        '
+        '
+        '
+        Me.DoubleInput19.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput19.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput19.Increment = 1.0R
+        Me.DoubleInput19.Location = New System.Drawing.Point(509, 528)
+        Me.DoubleInput19.Name = "DoubleInput19"
+        Me.DoubleInput19.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput19.TabIndex = 81
+        '
+        'DoubleInput20
+        '
+        '
+        '
+        '
+        Me.DoubleInput20.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput20.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput20.Increment = 1.0R
+        Me.DoubleInput20.Location = New System.Drawing.Point(509, 500)
+        Me.DoubleInput20.Name = "DoubleInput20"
+        Me.DoubleInput20.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput20.TabIndex = 80
+        '
+        'DoubleInput21
+        '
+        '
+        '
+        '
+        Me.DoubleInput21.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput21.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput21.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput21.Increment = 1.0R
+        Me.DoubleInput21.Location = New System.Drawing.Point(509, 472)
+        Me.DoubleInput21.Name = "DoubleInput21"
+        Me.DoubleInput21.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput21.TabIndex = 79
+        '
+        'DoubleInput22
+        '
+        '
+        '
+        '
+        Me.DoubleInput22.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput22.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput22.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput22.Increment = 1.0R
+        Me.DoubleInput22.Location = New System.Drawing.Point(509, 444)
+        Me.DoubleInput22.Name = "DoubleInput22"
+        Me.DoubleInput22.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput22.TabIndex = 78
+        '
+        'DoubleInput23
+        '
+        '
+        '
+        '
+        Me.DoubleInput23.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput23.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput23.Increment = 1.0R
+        Me.DoubleInput23.Location = New System.Drawing.Point(509, 416)
+        Me.DoubleInput23.Name = "DoubleInput23"
+        Me.DoubleInput23.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput23.TabIndex = 77
+        '
+        'DoubleInput24
+        '
+        '
+        '
+        '
+        Me.DoubleInput24.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput24.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput24.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput24.Increment = 1.0R
+        Me.DoubleInput24.Location = New System.Drawing.Point(509, 387)
+        Me.DoubleInput24.Name = "DoubleInput24"
+        Me.DoubleInput24.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput24.TabIndex = 76
+        '
+        'DoubleInput25
+        '
+        '
+        '
+        '
+        Me.DoubleInput25.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput25.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput25.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput25.Increment = 1.0R
+        Me.DoubleInput25.Location = New System.Drawing.Point(602, 584)
+        Me.DoubleInput25.Name = "DoubleInput25"
+        Me.DoubleInput25.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput25.TabIndex = 91
+        '
+        'DoubleInput26
+        '
+        '
+        '
+        '
+        Me.DoubleInput26.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput26.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput26.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput26.Increment = 1.0R
+        Me.DoubleInput26.Location = New System.Drawing.Point(602, 556)
+        Me.DoubleInput26.Name = "DoubleInput26"
+        Me.DoubleInput26.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput26.TabIndex = 90
+        '
+        'DoubleInput27
+        '
+        '
+        '
+        '
+        Me.DoubleInput27.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput27.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput27.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput27.Increment = 1.0R
+        Me.DoubleInput27.Location = New System.Drawing.Point(602, 528)
+        Me.DoubleInput27.Name = "DoubleInput27"
+        Me.DoubleInput27.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput27.TabIndex = 89
+        '
+        'DoubleInput28
+        '
+        '
+        '
+        '
+        Me.DoubleInput28.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput28.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput28.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput28.Increment = 1.0R
+        Me.DoubleInput28.Location = New System.Drawing.Point(602, 500)
+        Me.DoubleInput28.Name = "DoubleInput28"
+        Me.DoubleInput28.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput28.TabIndex = 88
+        '
+        'DoubleInput29
+        '
+        '
+        '
+        '
+        Me.DoubleInput29.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput29.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput29.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput29.Increment = 1.0R
+        Me.DoubleInput29.Location = New System.Drawing.Point(602, 472)
+        Me.DoubleInput29.Name = "DoubleInput29"
+        Me.DoubleInput29.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput29.TabIndex = 87
+        '
+        'DoubleInput30
+        '
+        '
+        '
+        '
+        Me.DoubleInput30.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput30.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput30.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput30.Increment = 1.0R
+        Me.DoubleInput30.Location = New System.Drawing.Point(602, 444)
+        Me.DoubleInput30.Name = "DoubleInput30"
+        Me.DoubleInput30.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput30.TabIndex = 86
+        '
+        'DoubleInput31
+        '
+        '
+        '
+        '
+        Me.DoubleInput31.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput31.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput31.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput31.Increment = 1.0R
+        Me.DoubleInput31.Location = New System.Drawing.Point(602, 416)
+        Me.DoubleInput31.Name = "DoubleInput31"
+        Me.DoubleInput31.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput31.TabIndex = 85
+        '
+        'DoubleInput32
+        '
+        '
+        '
+        '
+        Me.DoubleInput32.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput32.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput32.Increment = 1.0R
+        Me.DoubleInput32.Location = New System.Drawing.Point(602, 387)
+        Me.DoubleInput32.Name = "DoubleInput32"
+        Me.DoubleInput32.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput32.TabIndex = 84
+        '
+        'DoubleInput33
+        '
+        '
+        '
+        '
+        Me.DoubleInput33.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput33.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput33.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput33.Increment = 1.0R
+        Me.DoubleInput33.Location = New System.Drawing.Point(699, 584)
+        Me.DoubleInput33.Name = "DoubleInput33"
+        Me.DoubleInput33.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput33.TabIndex = 99
+        '
+        'DoubleInput34
+        '
+        '
+        '
+        '
+        Me.DoubleInput34.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput34.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput34.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput34.Increment = 1.0R
+        Me.DoubleInput34.Location = New System.Drawing.Point(699, 556)
+        Me.DoubleInput34.Name = "DoubleInput34"
+        Me.DoubleInput34.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput34.TabIndex = 98
+        '
+        'DoubleInput35
+        '
+        '
+        '
+        '
+        Me.DoubleInput35.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput35.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput35.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput35.Increment = 1.0R
+        Me.DoubleInput35.Location = New System.Drawing.Point(699, 528)
+        Me.DoubleInput35.Name = "DoubleInput35"
+        Me.DoubleInput35.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput35.TabIndex = 97
+        '
+        'DoubleInput36
+        '
+        '
+        '
+        '
+        Me.DoubleInput36.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput36.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput36.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput36.Increment = 1.0R
+        Me.DoubleInput36.Location = New System.Drawing.Point(699, 500)
+        Me.DoubleInput36.Name = "DoubleInput36"
+        Me.DoubleInput36.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput36.TabIndex = 96
+        '
+        'DoubleInput37
+        '
+        '
+        '
+        '
+        Me.DoubleInput37.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput37.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput37.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput37.Increment = 1.0R
+        Me.DoubleInput37.Location = New System.Drawing.Point(699, 472)
+        Me.DoubleInput37.Name = "DoubleInput37"
+        Me.DoubleInput37.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput37.TabIndex = 95
+        '
+        'DoubleInput38
+        '
+        '
+        '
+        '
+        Me.DoubleInput38.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput38.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput38.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput38.Increment = 1.0R
+        Me.DoubleInput38.Location = New System.Drawing.Point(699, 444)
+        Me.DoubleInput38.Name = "DoubleInput38"
+        Me.DoubleInput38.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput38.TabIndex = 94
+        '
+        'DoubleInput39
+        '
+        '
+        '
+        '
+        Me.DoubleInput39.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput39.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput39.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput39.Increment = 1.0R
+        Me.DoubleInput39.Location = New System.Drawing.Point(699, 416)
+        Me.DoubleInput39.Name = "DoubleInput39"
+        Me.DoubleInput39.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput39.TabIndex = 93
+        '
+        'DoubleInput40
+        '
+        '
+        '
+        '
+        Me.DoubleInput40.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput40.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput40.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput40.Increment = 1.0R
+        Me.DoubleInput40.Location = New System.Drawing.Point(699, 387)
+        Me.DoubleInput40.Name = "DoubleInput40"
+        Me.DoubleInput40.Size = New System.Drawing.Size(66, 22)
+        Me.DoubleInput40.TabIndex = 92
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(111, 428)
+        Me.Label3.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(200, 60)
+        Me.Label3.TabIndex = 100
+        Me.Label3.Text = "Enter nominal temperature points in ascending order, or decending order after the" &
+    " highest  temperature."
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label_1
+        '
+        Me.Label_1.BackColor = System.Drawing.Color.Transparent
+        Me.Label_1.Location = New System.Drawing.Point(231, 381)
+        Me.Label_1.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label_1.Name = "Label_1"
+        Me.Label_1.Size = New System.Drawing.Size(150, 30)
+        Me.Label_1.TabIndex = 101
+        Me.Label_1.Text = "(1)"
+        Me.Label_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label_40
+        '
+        Me.Label_40.BackColor = System.Drawing.Color.Transparent
+        Me.Label_40.Location = New System.Drawing.Point(615, 581)
+        Me.Label_40.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label_40.Name = "Label_40"
+        Me.Label_40.Size = New System.Drawing.Size(150, 30)
+        Me.Label_40.TabIndex = 102
+        Me.Label_40.Text = "(40)"
+        Me.Label_40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Arrigo
         '
@@ -1111,6 +1831,46 @@ Partial Class Arrigo
         CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel5.PerformLayout()
+        CType(Me.DoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput39, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput40, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1203,4 +1963,47 @@ Partial Class Arrigo
     Friend WithEvents newpageTestLabel As Label
     Friend WithEvents newHeatSchedTestLabel As Label
     Friend WithEvents newHeatBackLabel As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents DoubleInput33 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput34 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput35 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput36 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput37 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput38 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput39 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput40 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput25 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput26 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput27 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput28 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput29 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput30 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput31 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput32 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput17 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput18 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput19 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput20 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput21 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput22 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput23 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput24 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput9 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput10 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput11 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput12 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput13 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput14 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput15 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput16 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput8 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput7 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput6 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput5 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput4 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput3 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput2 As DevComponents.Editors.DoubleInput
+    Friend WithEvents DoubleInput1 As DevComponents.Editors.DoubleInput
+    Friend WithEvents Label_1 As Label
+    Friend WithEvents Label_40 As Label
 End Class

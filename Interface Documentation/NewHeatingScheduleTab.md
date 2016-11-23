@@ -2,5 +2,4 @@
 ### Interface Items
 
 1. First page
-  * HeatingScheudleName
-  
+  * HeatingScheduleName

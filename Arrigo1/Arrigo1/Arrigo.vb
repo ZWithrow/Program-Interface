@@ -19,6 +19,9 @@ Public Class Arrigo
         heatingScheduleLabel.BackColor = Color.LightGray
         optHeatingScheduleNameLabel.BackColor = Color.LightGray
         uniformTempIntervalsLabel.BackColor = Color.LightGray
+        autofillSchedLabel.BackColor = Color.LightGreen
+        newHeatSchedLabel.BackColor = Color.LightGray
+
 
 
 
@@ -285,4 +288,6 @@ Public Class Arrigo
 
 
     End Sub
+
+
 End Class

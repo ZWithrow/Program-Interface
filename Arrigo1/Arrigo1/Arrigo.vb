@@ -23,8 +23,11 @@ Public Class Arrigo
         autofillSchedLabel.BackColor = Color.LightGreen
         newHeatSchedLabel.BackColor = Color.LightGray
         newSpecProgressBar.BackColor = Color.LightGray
-
-
+        newSpecHomeButton.BackColor = Color.LightGray
+        NewHeatHomeButton.BackColor = Color.LightGray
+        retestHomeButton.BackColor = Color.LightGray
+        savedTestHomeButton.BackColor = Color.LightGray
+        savedSpecHomeButton.BackColor = Color.LightGray
 
 
         ' set what can and cannot be seen upon initialization
@@ -330,7 +333,7 @@ Public Class Arrigo
     End Sub
 
     Private Sub submitNewSpecButton_Click(sender As Object, e As EventArgs) Handles submitNewSpecButton.Click
-        NewHeatingSchedule.Select()
+        NewHeatingScheduleSideNav.Select()
 
 
     End Sub
@@ -344,6 +347,27 @@ Public Class Arrigo
     Private Sub newHeatBackLabel_Click(sender As Object, e As EventArgs) Handles newHeatBackLabel.Click
         heatPageCounter -= 1
         HeatShowPage()
+
+    End Sub
+
+    Private Sub SideNavItem2_Click(sender As Object, e As EventArgs) Handles SideNavItem2.Click
+        NewHeatHomeButton.Show()
+        newSpecHomeButton.Show()
+
+    End Sub
+
+    Private Sub newSpecHomeButton_Click(sender As Object, e As EventArgs) Handles newSpecHomeButton.Click
+        NewSpecimensiSideNav.Select()
+
+    End Sub
+
+    Private Sub NewHeatHomeButton_Click(sender As Object, e As EventArgs) Handles NewHeatHomeButton.Click
+        NewHeatingScheduleSideNav.Select()
+
+    End Sub
+
+    Private Sub retestHomeButton_Click(sender As Object, e As EventArgs) Handles retestHomeButton.Click
+        RetestSideNav.Select()
 
     End Sub
 End Class

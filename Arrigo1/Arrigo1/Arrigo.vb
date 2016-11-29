@@ -28,6 +28,8 @@ Public Class Arrigo
         retestHomeButton.BackColor = Color.LightGray
         savedTestHomeButton.BackColor = Color.LightGray
         savedSpecHomeButton.BackColor = Color.LightGray
+        notesLabel.BackColor = Color.LightGray
+
 
 
         ' set what can and cannot be seen upon initialization
@@ -54,7 +56,7 @@ Public Class Arrigo
 
 
     End Sub
-    Private Sub HeatShowPage()
+    Private Sub HeatShowPage() 'this case switch is for the New Heating Schedule Tab
         Select Case heatPageCounter
             Case 1
                 ' what should appear on page 1
@@ -65,14 +67,10 @@ Public Class Arrigo
                 elevatedTempTestLabel.Show()
                 maxElevTempLabel.Show()
                 TextBox2.Show()
-
+                ' what should be hidden on page 1
                 newpageTestLabel.Hide()
                 newHeatBackLabel.Hide()
                 newHeatSchedTestLabel.Show()
-
-
-
-
 
             Case 2
                 heatingScheduleLabel.Hide()
@@ -92,7 +90,7 @@ Public Class Arrigo
 
         End Select
     End Sub
-    Private Sub ShowPage()
+    Private Sub ShowPage() 'this case switch is for the New Specimen Tab
         Select Case pageCounter
             Case 1
                 ' what a appears on page 1
@@ -102,7 +100,30 @@ Public Class Arrigo
                 materialTextBox.Show()
                 MaxTempIntegerInput1.Show()
                 MaxTempLabel.Show()
-
+                specimenNameIntegerInput.Show()
+                dimensionsLabel.Show()
+                lengthLabel.Show()
+                lengthDoubleInput1.Show()
+                mmLabel.Show()
+                widthLabel.Show()
+                widthDoubleInput2.Show()
+                Label1.Show()
+                heightLabel1.Show()
+                heightDoubleInput1.Show()
+                Label2.Show()
+                compoundShapeLabel.Show()
+                compoundShapeDoubleInput1.Show()
+                parallelLabel.Show()
+                parallelSwitchButton1.Show()
+                weightLabel.Show()
+                weightIntegerInput2.Show()
+                pretestWeightLabel.Show()
+                gramsLabel.Show()
+                notesLabel.Show()
+                roomTempLabel.Show()
+                roomTempIntegerInput.Show()
+                crossSectionLabel.Show()
+                crossSectionSwitchButton.Show()
 
 
 
@@ -252,60 +273,9 @@ Public Class Arrigo
                 priorTestLabel.Hide()
 
 
-            Case 4
-
-                'Shown on page 3
-                submitNewSpecButton.Show()
-                backNexSpecButton.Show()
-                'Hidden on page 3
-                submitNewSpecButton.Hide()
-                priorTestNotesLabel.Hide()
-                priorTestNotesTextBox.Hide()
-                postTestMaxTempLabel.Hide()
-                postMaxTempIntegerInput.Hide()
-                postTestMaxTempLabel.Hide()
-                newSpecimenLabel.Hide()
-                specimenNameLabel.Hide()
-                dimensionsLabel.Hide()
-                materialLabel.Hide()
-                materialTextBox.Hide()
-                MaxTempIntegerInput1.Hide()
-                MaxTempLabel.Hide()
-                weightLabel.Hide()
-                lengthLabel.Hide()
-                lengthDoubleInput1.Hide()
-                heightLabel1.Hide()
-                heightDoubleInput1.Hide()
-                widthLabel.Hide()
-                widthDoubleInput2.Hide()
-                mmLabel.Hide()
-                Label1.Hide()
-                Label2.Hide()
-                compoundShapeLabel.Hide()
-                compoundShapeDoubleInput1.Hide()
-                parallelLabel.Hide()
-                parallelSwitchButton1.Hide()
-                crossSectionLabel.Hide()
-                crossSectionSwitchButton.Hide()
-                weightIntegerInput2.Hide()
-                gramsLabel.Hide()
-                notesLabel.Hide()
-                roomTempLabel.Hide()
-                roomTempIntegerInput.Hide()
-                specimenNameIntegerInput.Hide()
-                pretestWeightLabel.Hide()
-                observeLabel.Hide()
-                observeTextBoxX.Hide()
-                roomAirTextBox.Hide()
-                roomAirLabel.Hide()
-                dryAirTextBox.Hide()
-                dryAirLabel.Hide()
-                otherTextBox.Hide()
-                otherLabel.Hide()
-                priorTestLabel.Hide()
 
             Case Else
-                pageCounter = 4
+                pageCounter = 3
                 ShowPage()
 
 
@@ -368,6 +338,15 @@ Public Class Arrigo
 
     Private Sub retestHomeButton_Click(sender As Object, e As EventArgs) Handles retestHomeButton.Click
         RetestSideNav.Select()
+    End Sub
+
+    Private Sub savedTestHomeButton_Click(sender As Object, e As EventArgs) Handles savedTestHomeButton.Click
+        savedTestSideNav.Select()
+
+    End Sub
+
+    Private Sub savedSpecHomeButton_Click(sender As Object, e As EventArgs) Handles savedSpecHomeButton.Click
+        savedSpecSideNav.Select()
 
     End Sub
 End Class

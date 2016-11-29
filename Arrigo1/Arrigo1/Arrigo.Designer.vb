@@ -149,8 +149,8 @@ Partial Class Arrigo
         Me.NewSpecimensiSideNav = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.NewHeatingScheduleSideNav = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.RetestSideNav = New DevComponents.DotNetBar.Controls.SideNavItem()
-        Me.SideNavItem3 = New DevComponents.DotNetBar.Controls.SideNavItem()
-        Me.SideNavItem4 = New DevComponents.DotNetBar.Controls.SideNavItem()
+        Me.savedTestSideNav = New DevComponents.DotNetBar.Controls.SideNavItem()
+        Me.savedSpecSideNav = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.ButtonItem1 = New DevComponents.DotNetBar.ButtonItem()
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
@@ -223,14 +223,14 @@ Partial Class Arrigo
         '
         'SideNav1
         '
-        Me.SideNav1.Controls.Add(Me.SideNavPanel4)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel4)
+        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.SideNav1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SideNavItem1, Me.Separator1, Me.SideNavItem2, Me.NewSpecimensiSideNav, Me.NewHeatingScheduleSideNav, Me.RetestSideNav, Me.SideNavItem3, Me.SideNavItem4, Me.Separator2})
+        Me.SideNav1.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.SideNavItem1, Me.Separator1, Me.SideNavItem2, Me.NewSpecimensiSideNav, Me.NewHeatingScheduleSideNav, Me.RetestSideNav, Me.savedTestSideNav, Me.savedSpecSideNav, Me.Separator2})
         Me.SideNav1.Location = New System.Drawing.Point(0, 0)
         Me.SideNav1.Name = "SideNav1"
         Me.SideNav1.Padding = New System.Windows.Forms.Padding(1)
@@ -1149,7 +1149,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel2.TabIndex = 6
-        Me.SideNavPanel2.Visible = False
         '
         'newSpecProgressBar
         '
@@ -1281,7 +1280,7 @@ Partial Class Arrigo
         Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(315, 315)
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(320, 315)
         Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
         Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.postMaxTempIntegerInput.TabIndex = 45
@@ -1302,7 +1301,7 @@ Partial Class Arrigo
         '
         Me.priorTestNotesLabel.AutoSize = True
         Me.priorTestNotesLabel.BackColor = System.Drawing.Color.LightGray
-        Me.priorTestNotesLabel.Location = New System.Drawing.Point(111, 73)
+        Me.priorTestNotesLabel.Location = New System.Drawing.Point(120, 34)
         Me.priorTestNotesLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.priorTestNotesLabel.Name = "priorTestNotesLabel"
         Me.priorTestNotesLabel.Size = New System.Drawing.Size(150, 30)
@@ -1375,7 +1374,7 @@ Partial Class Arrigo
         Me.specimenNameIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.specimenNameIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.specimenNameIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.specimenNameIntegerInput.Location = New System.Drawing.Point(675, 43)
+        Me.specimenNameIntegerInput.Location = New System.Drawing.Point(675, 37)
         Me.specimenNameIntegerInput.Name = "specimenNameIntegerInput"
         Me.specimenNameIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.specimenNameIntegerInput.TabIndex = 30
@@ -1726,14 +1725,15 @@ Partial Class Arrigo
         Me.SideNavPanel4.Name = "SideNavPanel4"
         Me.SideNavPanel4.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel4.TabIndex = 14
+        Me.SideNavPanel4.Visible = False
         '
         'SideNavPanel5
         '
         Me.SideNavPanel5.Controls.Add(Me.testlabel)
         Me.SideNavPanel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel5.Location = New System.Drawing.Point(135, 36)
+        Me.SideNavPanel5.Location = New System.Drawing.Point(141, 36)
         Me.SideNavPanel5.Name = "SideNavPanel5"
-        Me.SideNavPanel5.Size = New System.Drawing.Size(1317, 727)
+        Me.SideNavPanel5.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel5.TabIndex = 18
         Me.SideNavPanel5.Visible = False
         '
@@ -1772,6 +1772,7 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
+        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -1786,26 +1787,25 @@ Partial Class Arrigo
         '
         'RetestSideNav
         '
-        Me.RetestSideNav.Checked = True
         Me.RetestSideNav.Name = "RetestSideNav"
         Me.RetestSideNav.Panel = Me.SideNavPanel4
         Me.RetestSideNav.Symbol = ""
         Me.RetestSideNav.Text = "Retest"
         '
-        'SideNavItem3
+        'savedTestSideNav
         '
-        Me.SideNavItem3.Name = "SideNavItem3"
-        Me.SideNavItem3.Panel = Me.SideNavPanel5
-        Me.SideNavItem3.Symbol = ""
-        Me.SideNavItem3.Text = "Saved Tests"
+        Me.savedTestSideNav.Name = "savedTestSideNav"
+        Me.savedTestSideNav.Panel = Me.SideNavPanel5
+        Me.savedTestSideNav.Symbol = ""
+        Me.savedTestSideNav.Text = "Saved Tests"
         '
-        'SideNavItem4
+        'savedSpecSideNav
         '
-        Me.SideNavItem4.Name = "SideNavItem4"
-        Me.SideNavItem4.Panel = Me.SideNavPanel6
-        Me.SideNavItem4.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem1})
-        Me.SideNavItem4.Symbol = ""
-        Me.SideNavItem4.Text = "Saved Specimen"
+        Me.savedSpecSideNav.Name = "savedSpecSideNav"
+        Me.savedSpecSideNav.Panel = Me.SideNavPanel6
+        Me.savedSpecSideNav.SubItems.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem1})
+        Me.savedSpecSideNav.Symbol = ""
+        Me.savedSpecSideNav.Text = "Saved Specimen"
         '
         'ButtonItem1
         '
@@ -1957,8 +1957,8 @@ Partial Class Arrigo
     Friend WithEvents SideNavPanel3 As DevComponents.DotNetBar.Controls.SideNavPanel
     Friend WithEvents NewHeatingScheduleSideNav As DevComponents.DotNetBar.Controls.SideNavItem
     Friend WithEvents RetestSideNav As DevComponents.DotNetBar.Controls.SideNavItem
-    Friend WithEvents SideNavItem3 As DevComponents.DotNetBar.Controls.SideNavItem
-    Friend WithEvents SideNavItem4 As DevComponents.DotNetBar.Controls.SideNavItem
+    Friend WithEvents savedTestSideNav As DevComponents.DotNetBar.Controls.SideNavItem
+    Friend WithEvents savedSpecSideNav As DevComponents.DotNetBar.Controls.SideNavItem
     Friend WithEvents newSpecimenLabel As Label
     Friend WithEvents materialLabel As Label
     Friend WithEvents MaxTempLabel As Label

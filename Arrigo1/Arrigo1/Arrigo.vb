@@ -141,10 +141,6 @@ Public Class Arrigo
                 crossSectionLabel.Show()
                 crossSectionSwitchButton.Show()
 
-
-
-
-
                 'hidden on page 1
                 backNexSpecButton.Hide()
                 submitNewSpecButton.Hide()
@@ -166,14 +162,9 @@ Public Class Arrigo
                 saveAddLabel.Hide()
 
 
-
-
-
-
             Case 2
 
                 'shown page2
-
                 backNexSpecButton.Show()
                 newSpecNextButton.Show()
                 priorTestNotesTextBox.Show()
@@ -288,15 +279,9 @@ Public Class Arrigo
                 otherLabel.Hide()
                 priorTestLabel.Hide()
 
-
-
             Case Else
                 pageCounter = 3
                 ShowPage()
-
-
-
-
 
         End Select
 
@@ -307,8 +292,6 @@ Public Class Arrigo
         pageCounter += 1
         ShowPage()
         newSpecProgressBar.PerformStep()
-
-
 
     End Sub
 

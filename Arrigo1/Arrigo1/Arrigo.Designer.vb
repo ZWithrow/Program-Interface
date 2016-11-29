@@ -87,7 +87,6 @@ Partial Class Arrigo
         Me.Label_1 = New System.Windows.Forms.Label()
         Me.Label_40 = New System.Windows.Forms.Label()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.newSpecProgressBar = New System.Windows.Forms.ProgressBar()
         Me.saveAddLabel = New System.Windows.Forms.Label()
         Me.saveLabel = New System.Windows.Forms.Label()
         Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -158,6 +157,7 @@ Partial Class Arrigo
         Me.retestHomeButton = New System.Windows.Forms.Label()
         Me.savedTestHomeButton = New System.Windows.Forms.Label()
         Me.savedSpecHomeButton = New System.Windows.Forms.Label()
+        Me.newSpecProgressBar = New DevComponents.DotNetBar.Controls.ProgressBarX()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel3.SuspendLayout()
         CType(Me.DoubleInput33, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1150,14 +1150,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Size = New System.Drawing.Size(1311, 727)
         Me.SideNavPanel2.TabIndex = 6
         '
-        'newSpecProgressBar
-        '
-        Me.newSpecProgressBar.Location = New System.Drawing.Point(377, 689)
-        Me.newSpecProgressBar.Maximum = 30
-        Me.newSpecProgressBar.Name = "newSpecProgressBar"
-        Me.newSpecProgressBar.Size = New System.Drawing.Size(257, 10)
-        Me.newSpecProgressBar.TabIndex = 58
-        '
         'saveAddLabel
         '
         Me.saveAddLabel.BackColor = System.Drawing.Color.LightGray
@@ -1867,6 +1859,20 @@ Partial Class Arrigo
         Me.savedSpecHomeButton.Text = "Saved Specimen"
         Me.savedSpecHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'newSpecProgressBar
+        '
+        '
+        '
+        '
+        Me.newSpecProgressBar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.newSpecProgressBar.Location = New System.Drawing.Point(388, 687)
+        Me.newSpecProgressBar.Maximum = 30
+        Me.newSpecProgressBar.Name = "newSpecProgressBar"
+        Me.newSpecProgressBar.Size = New System.Drawing.Size(377, 11)
+        Me.newSpecProgressBar.Step = 10
+        Me.newSpecProgressBar.TabIndex = 59
+        Me.newSpecProgressBar.Text = "ProgressBarX1"
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2026,7 +2032,6 @@ Partial Class Arrigo
     Friend WithEvents numOfIntervalsLabel As Label
     Friend WithEvents autofillSchedLabel As Label
     Friend WithEvents newHeatSchedLabel As Label
-    Friend WithEvents newSpecProgressBar As ProgressBar
     Friend WithEvents newpageTestLabel As Label
     Friend WithEvents newHeatSchedTestLabel As Label
     Friend WithEvents newHeatBackLabel As Label
@@ -2078,4 +2083,5 @@ Partial Class Arrigo
     Friend WithEvents retestHomeButton As Label
     Friend WithEvents savedTestHomeButton As Label
     Friend WithEvents savedSpecHomeButton As Label
+    Friend WithEvents newSpecProgressBar As DevComponents.DotNetBar.Controls.ProgressBarX
 End Class

@@ -29,6 +29,10 @@ Public Class Arrigo
         savedTestHomeButton.BackColor = Color.LightGray
         savedSpecHomeButton.BackColor = Color.LightGray
         notesLabel.BackColor = Color.LightGray
+        newSpecNextButton.BackColor = Color.LightGray
+        backNexSpecButton.BackColor = Color.LightGray
+        submitNewSpecButton.BackColor = Color.LightGray
+
 
 
 
@@ -155,8 +159,7 @@ Public Class Arrigo
 
 
             Case 2
-                'setting colors and graphics of set page
-                newSpecProgressBar.BackColor = Color.Gainsboro
+
                 'shown page2
 
                 backNexSpecButton.Show()
@@ -291,6 +294,7 @@ Public Class Arrigo
         pageCounter += 1
         ShowPage()
         newSpecProgressBar.PerformStep()
+
 
 
     End Sub

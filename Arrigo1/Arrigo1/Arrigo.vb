@@ -32,6 +32,18 @@ Public Class Arrigo
         newSpecNextButton.BackColor = Color.LightGray
         backNexSpecButton.BackColor = Color.LightGray
         submitNewSpecButton.BackColor = Color.LightGray
+        savedTestListlabel.BackColor = Color.LightGray
+        createNewTestLabel.BackColor = Color.LightGray
+        createNewSpecLabel.BackColor = Color.LightGray
+        savedSpecListLabel.BackColor = Color.LightGray
+        selectSpecLabel.BackColor = Color.LightGray
+        createHeatTestLabel.BackColor = Color.LightGray
+        selectheatTestLabel.BackColor = Color.LightGray
+        createNewSpec_retestLabel.BackColor = Color.LightGray
+
+
+
+
 
 
 
@@ -217,6 +229,7 @@ Public Class Arrigo
                 pretestWeightLabel.Hide()
                 saveLabel.Hide()
                 saveAddLabel.Hide()
+                submitNewSpecButton.Hide()
 
 
 
@@ -351,6 +364,26 @@ Public Class Arrigo
 
     Private Sub savedSpecHomeButton_Click(sender As Object, e As EventArgs) Handles savedSpecHomeButton.Click
         savedSpecSideNav.Select()
+
+    End Sub
+
+    Private Sub createNewTestLabel_Click(sender As Object, e As EventArgs) Handles createNewTestLabel.Click
+        NewHeatingScheduleSideNav.Select()
+
+    End Sub
+
+    Private Sub createNewSpecLabel_Click(sender As Object, e As EventArgs) Handles createNewSpecLabel.Click
+        NewSpecimensiSideNav.Select()
+
+    End Sub
+
+    Private Sub createNewSpec_retestLabel_Click(sender As Object, e As EventArgs) Handles createNewSpec_retestLabel.Click
+        NewSpecimensiSideNav.Select()
+
+    End Sub
+
+    Private Sub createHeatTestLabel_Click(sender As Object, e As EventArgs) Handles createHeatTestLabel.Click
+        NewHeatingScheduleSideNav.Select()
 
     End Sub
 End Class

@@ -14,7 +14,7 @@ Public Class Arrigo
         priorTestNotesLabel.BackColor = Color.LightGray
         priorTestLabel.BackColor = Color.Bisque
         roomAirLabel.BackColor = Color.Bisque
-        postTestMaxTempLabel.BackColor = Color.LightGray
+        postTestObserveLabel.BackColor = Color.LightGray
         saveLabel.BackColor = Color.LightGreen
         saveAddLabel.BackColor = Color.LightGreen
         heatingScheduleLabel.BackColor = Color.LightGray
@@ -54,7 +54,7 @@ Public Class Arrigo
         priorTestNotesLabel.Hide()
         priorTestNotesTextBox.Hide()
         postMaxTempIntegerInput.Hide()
-        postTestMaxTempLabel.Hide()
+        postTestObserveLabel.Hide()
         priorTestLabel.Hide()
         roomAirLabel.Hide()
         dryAirLabel.Hide()
@@ -128,7 +128,7 @@ Public Class Arrigo
                 heightDoubleInput1.Show()
                 Label2.Show()
                 compoundShapeLabel.Show()
-                compoundShapeDoubleInput1.Show()
+
                 parallelLabel.Show()
                 parallelSwitchButton1.Show()
                 weightLabel.Show()
@@ -146,9 +146,9 @@ Public Class Arrigo
                 submitNewSpecButton.Hide()
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
-                postTestMaxTempLabel.Hide()
+                postTestObserveLabel.Hide()
                 postMaxTempIntegerInput.Hide()
-                postTestMaxTempLabel.Hide()
+                postTestObserveLabel.Hide()
                 priorTestLabel.Hide()
                 roomAirLabel.Hide()
                 dryAirLabel.Hide()
@@ -166,12 +166,11 @@ Public Class Arrigo
 
                 'shown page2
                 backNexSpecButton.Show()
-                newSpecNextButton.Show()
                 priorTestNotesTextBox.Show()
                 priorTestNotesLabel.Show()
-                postTestMaxTempLabel.Show()
+                postTestObserveLabel.Show()
                 postMaxTempIntegerInput.Show()
-                postTestMaxTempLabel.Show()
+                postTestObserveLabel.Show()
                 priorTestLabel.Show()
                 roomAirLabel.Show()
                 dryAirLabel.Show()
@@ -205,7 +204,6 @@ Public Class Arrigo
                 Label1.Hide()
                 Label2.Hide()
                 compoundShapeLabel.Hide()
-                compoundShapeDoubleInput1.Hide()
                 parallelLabel.Hide()
                 parallelSwitchButton1.Hide()
                 crossSectionLabel.Hide()
@@ -236,9 +234,9 @@ Public Class Arrigo
 
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
-                postTestMaxTempLabel.Hide()
+                postTestObserveLabel.Hide()
                 postMaxTempIntegerInput.Hide()
-                postTestMaxTempLabel.Hide()
+                postTestObserveLabel.Hide()
                 newSpecimenLabel.Hide()
                 specimenNameLabel.Hide()
                 dimensionsLabel.Hide()
@@ -257,7 +255,7 @@ Public Class Arrigo
                 Label1.Hide()
                 Label2.Hide()
                 compoundShapeLabel.Hide()
-                compoundShapeDoubleInput1.Hide()
+
                 parallelLabel.Hide()
                 parallelSwitchButton1.Hide()
                 crossSectionLabel.Hide()

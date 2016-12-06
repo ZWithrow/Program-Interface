@@ -86,8 +86,7 @@ Public Class Arrigo
         dryAirLabel.Hide()
         otherLabel.Hide()
         observeLabel.Hide()
-        roomAirTextBox.Hide()
-        dryAirTextBox.Hide()
+
         otherTextBox.Hide()
         observeTextBoxX.Hide()
         saveLabel.Hide()
@@ -159,7 +158,7 @@ Public Class Arrigo
                 weightLabel.Show()
                 weightIntegerInput2.Show()
                 pretestWeightLabel.Show()
-                gramsLabel.Show()
+
                 notesLabel.Show()
                 roomTempLabel.Show()
                 roomTempIntegerInput.Show()
@@ -184,8 +183,7 @@ Public Class Arrigo
                 dryAirLabel.Hide()
                 otherLabel.Hide()
                 observeLabel.Hide()
-                roomAirTextBox.Hide()
-                dryAirTextBox.Hide()
+
                 otherTextBox.Hide()
                 observeTextBoxX.Hide()
                 saveLabel.Hide()
@@ -206,8 +204,6 @@ Public Class Arrigo
                 dryAirLabel.Show()
                 otherLabel.Show()
                 observeLabel.Show()
-                roomAirTextBox.Show()
-                dryAirTextBox.Show()
                 otherTextBox.Show()
                 observeTextBoxX.Show()
 
@@ -239,7 +235,7 @@ Public Class Arrigo
                 crossSectionLabel.Hide()
                 crossSectionSwitchButton.Hide()
                 weightIntegerInput2.Hide()
-                gramsLabel.Hide()
+
                 notesLabel.Hide()
                 roomTempLabel.Hide()
                 roomTempIntegerInput.Hide()
@@ -296,7 +292,7 @@ Public Class Arrigo
                 crossSectionLabel.Hide()
                 crossSectionSwitchButton.Hide()
                 weightIntegerInput2.Hide()
-                gramsLabel.Hide()
+
                 notesLabel.Hide()
                 roomTempLabel.Hide()
                 roomTempIntegerInput.Hide()
@@ -304,9 +300,9 @@ Public Class Arrigo
                 pretestWeightLabel.Hide()
                 observeLabel.Hide()
                 observeTextBoxX.Hide()
-                roomAirTextBox.Hide()
+
                 roomAirLabel.Hide()
-                dryAirTextBox.Hide()
+
                 dryAirLabel.Hide()
                 otherTextBox.Hide()
                 otherLabel.Hide()

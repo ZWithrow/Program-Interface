@@ -38,8 +38,6 @@ Partial Class Arrigo
         Me.saveLabel = New System.Windows.Forms.Label()
         Me.observeTextBoxX = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.otherTextBox = New System.Windows.Forms.TextBox()
-        Me.dryAirTextBox = New System.Windows.Forms.TextBox()
-        Me.roomAirTextBox = New System.Windows.Forms.TextBox()
         Me.observeLabel = New System.Windows.Forms.Label()
         Me.otherLabel = New System.Windows.Forms.Label()
         Me.dryAirLabel = New System.Windows.Forms.Label()
@@ -62,7 +60,6 @@ Partial Class Arrigo
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.mmLabel = New System.Windows.Forms.Label()
-        Me.gramsLabel = New System.Windows.Forms.Label()
         Me.weightIntegerInput2 = New DevComponents.Editors.IntegerInput()
         Me.weightLabel = New System.Windows.Forms.Label()
         Me.crossSectionSwitchButton = New DevComponents.DotNetBar.Controls.SwitchButton()
@@ -184,6 +181,9 @@ Partial Class Arrigo
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cylDiameterLabel = New System.Windows.Forms.Label()
         Me.DoubleInput42 = New DevComponents.Editors.DoubleInput()
+        Me.crosssecLabel = New System.Windows.Forms.Label()
+        Me.roomAirCheckBox = New System.Windows.Forms.CheckBox()
+        Me.dryAirCheckbox = New System.Windows.Forms.CheckBox()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.externalDesignationIntegerInput2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -271,6 +271,9 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.dryAirCheckbox)
+        Me.SideNavPanel2.Controls.Add(Me.roomAirCheckBox)
+        Me.SideNavPanel2.Controls.Add(Me.crosssecLabel)
         Me.SideNavPanel2.Controls.Add(Me.Label9)
         Me.SideNavPanel2.Controls.Add(Me.cylDiameterLabel)
         Me.SideNavPanel2.Controls.Add(Me.DoubleInput42)
@@ -290,8 +293,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.saveLabel)
         Me.SideNavPanel2.Controls.Add(Me.observeTextBoxX)
         Me.SideNavPanel2.Controls.Add(Me.otherTextBox)
-        Me.SideNavPanel2.Controls.Add(Me.dryAirTextBox)
-        Me.SideNavPanel2.Controls.Add(Me.roomAirTextBox)
         Me.SideNavPanel2.Controls.Add(Me.observeLabel)
         Me.SideNavPanel2.Controls.Add(Me.otherLabel)
         Me.SideNavPanel2.Controls.Add(Me.dryAirLabel)
@@ -314,7 +315,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.Label2)
         Me.SideNavPanel2.Controls.Add(Me.Label1)
         Me.SideNavPanel2.Controls.Add(Me.mmLabel)
-        Me.SideNavPanel2.Controls.Add(Me.gramsLabel)
         Me.SideNavPanel2.Controls.Add(Me.weightIntegerInput2)
         Me.SideNavPanel2.Controls.Add(Me.weightLabel)
         Me.SideNavPanel2.Controls.Add(Me.crossSectionSwitchButton)
@@ -401,7 +401,7 @@ Partial Class Arrigo
         '
         '
         Me.compoundShapeSwitchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.compoundShapeSwitchButton1.Location = New System.Drawing.Point(434, 418)
+        Me.compoundShapeSwitchButton1.Location = New System.Drawing.Point(347, 435)
         Me.compoundShapeSwitchButton1.Name = "compoundShapeSwitchButton1"
         Me.compoundShapeSwitchButton1.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.compoundShapeSwitchButton1.OffText = "Yes"
@@ -477,24 +477,10 @@ Partial Class Arrigo
         '
         'otherTextBox
         '
-        Me.otherTextBox.Location = New System.Drawing.Point(512, 187)
+        Me.otherTextBox.Location = New System.Drawing.Point(1050, 137)
         Me.otherTextBox.Name = "otherTextBox"
-        Me.otherTextBox.Size = New System.Drawing.Size(253, 22)
+        Me.otherTextBox.Size = New System.Drawing.Size(228, 22)
         Me.otherTextBox.TabIndex = 54
-        '
-        'dryAirTextBox
-        '
-        Me.dryAirTextBox.Location = New System.Drawing.Point(512, 146)
-        Me.dryAirTextBox.Name = "dryAirTextBox"
-        Me.dryAirTextBox.Size = New System.Drawing.Size(122, 22)
-        Me.dryAirTextBox.TabIndex = 53
-        '
-        'roomAirTextBox
-        '
-        Me.roomAirTextBox.Location = New System.Drawing.Point(512, 98)
-        Me.roomAirTextBox.Name = "roomAirTextBox"
-        Me.roomAirTextBox.Size = New System.Drawing.Size(122, 22)
-        Me.roomAirTextBox.TabIndex = 52
         '
         'observeLabel
         '
@@ -508,7 +494,7 @@ Partial Class Arrigo
         'otherLabel
         '
         Me.otherLabel.AutoSize = True
-        Me.otherLabel.Location = New System.Drawing.Point(441, 187)
+        Me.otherLabel.Location = New System.Drawing.Point(960, 137)
         Me.otherLabel.Name = "otherLabel"
         Me.otherLabel.Size = New System.Drawing.Size(45, 13)
         Me.otherLabel.TabIndex = 50
@@ -517,7 +503,7 @@ Partial Class Arrigo
         'dryAirLabel
         '
         Me.dryAirLabel.AutoSize = True
-        Me.dryAirLabel.Location = New System.Drawing.Point(441, 146)
+        Me.dryAirLabel.Location = New System.Drawing.Point(960, 113)
         Me.dryAirLabel.Name = "dryAirLabel"
         Me.dryAirLabel.Size = New System.Drawing.Size(50, 13)
         Me.dryAirLabel.TabIndex = 49
@@ -526,7 +512,7 @@ Partial Class Arrigo
         'roomAirLabel
         '
         Me.roomAirLabel.AutoSize = True
-        Me.roomAirLabel.Location = New System.Drawing.Point(441, 98)
+        Me.roomAirLabel.Location = New System.Drawing.Point(960, 87)
         Me.roomAirLabel.Name = "roomAirLabel"
         Me.roomAirLabel.Size = New System.Drawing.Size(65, 13)
         Me.roomAirLabel.TabIndex = 48
@@ -535,7 +521,7 @@ Partial Class Arrigo
         'priorTestLabel
         '
         Me.priorTestLabel.AutoSize = True
-        Me.priorTestLabel.Location = New System.Drawing.Point(273, 590)
+        Me.priorTestLabel.Location = New System.Drawing.Point(960, 49)
         Me.priorTestLabel.Name = "priorTestLabel"
         Me.priorTestLabel.Size = New System.Drawing.Size(218, 13)
         Me.priorTestLabel.TabIndex = 47
@@ -544,11 +530,11 @@ Partial Class Arrigo
         'pretestWeightLabel
         '
         Me.pretestWeightLabel.AutoSize = True
-        Me.pretestWeightLabel.Location = New System.Drawing.Point(221, 499)
+        Me.pretestWeightLabel.Location = New System.Drawing.Point(209, 530)
         Me.pretestWeightLabel.Name = "pretestWeightLabel"
-        Me.pretestWeightLabel.Size = New System.Drawing.Size(99, 13)
+        Me.pretestWeightLabel.Size = New System.Drawing.Size(55, 13)
         Me.pretestWeightLabel.TabIndex = 46
-        Me.pretestWeightLabel.Text = "PRE-TEST WEIGHT:"
+        Me.pretestWeightLabel.Text = "PRE-TEST:"
         '
         'postMaxTempIntegerInput
         '
@@ -579,7 +565,7 @@ Partial Class Arrigo
         '
         Me.priorTestNotesLabel.AutoSize = True
         Me.priorTestNotesLabel.BackColor = System.Drawing.Color.LightGray
-        Me.priorTestNotesLabel.Location = New System.Drawing.Point(111, 609)
+        Me.priorTestNotesLabel.Location = New System.Drawing.Point(790, 37)
         Me.priorTestNotesLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.priorTestNotesLabel.Name = "priorTestNotesLabel"
         Me.priorTestNotesLabel.Size = New System.Drawing.Size(150, 30)
@@ -630,7 +616,7 @@ Partial Class Arrigo
         Me.roomTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.roomTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.roomTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.roomTempIntegerInput.Location = New System.Drawing.Point(416, 529)
+        Me.roomTempIntegerInput.Location = New System.Drawing.Point(444, 561)
         Me.roomTempIntegerInput.Name = "roomTempIntegerInput"
         Me.roomTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.roomTempIntegerInput.TabIndex = 32
@@ -638,7 +624,7 @@ Partial Class Arrigo
         'roomTempLabel
         '
         Me.roomTempLabel.AutoSize = True
-        Me.roomTempLabel.Location = New System.Drawing.Point(317, 538)
+        Me.roomTempLabel.Location = New System.Drawing.Point(323, 561)
         Me.roomTempLabel.Name = "roomTempLabel"
         Me.roomTempLabel.Size = New System.Drawing.Size(75, 13)
         Me.roomTempLabel.TabIndex = 31
@@ -675,7 +661,7 @@ Partial Class Arrigo
         '
         Me.notesLabel.AutoSize = True
         Me.notesLabel.BackColor = System.Drawing.Color.LightGray
-        Me.notesLabel.Location = New System.Drawing.Point(120, 521)
+        Me.notesLabel.Location = New System.Drawing.Point(170, 687)
         Me.notesLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.notesLabel.Name = "notesLabel"
         Me.notesLabel.Size = New System.Drawing.Size(150, 30)
@@ -710,15 +696,6 @@ Partial Class Arrigo
         Me.mmLabel.TabIndex = 24
         Me.mmLabel.Text = "mm"
         '
-        'gramsLabel
-        '
-        Me.gramsLabel.AutoSize = True
-        Me.gramsLabel.Location = New System.Drawing.Point(428, 499)
-        Me.gramsLabel.Name = "gramsLabel"
-        Me.gramsLabel.Size = New System.Drawing.Size(14, 13)
-        Me.gramsLabel.TabIndex = 23
-        Me.gramsLabel.Text = "g"
-        '
         'weightIntegerInput2
         '
         '
@@ -727,7 +704,7 @@ Partial Class Arrigo
         Me.weightIntegerInput2.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.weightIntegerInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.weightIntegerInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.weightIntegerInput2.Location = New System.Drawing.Point(320, 490)
+        Me.weightIntegerInput2.Location = New System.Drawing.Point(308, 521)
         Me.weightIntegerInput2.Name = "weightIntegerInput2"
         Me.weightIntegerInput2.Size = New System.Drawing.Size(90, 22)
         Me.weightIntegerInput2.TabIndex = 22
@@ -736,12 +713,12 @@ Partial Class Arrigo
         '
         Me.weightLabel.AutoSize = True
         Me.weightLabel.BackColor = System.Drawing.Color.LightGray
-        Me.weightLabel.Location = New System.Drawing.Point(30, 466)
+        Me.weightLabel.Location = New System.Drawing.Point(30, 521)
         Me.weightLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.weightLabel.Name = "weightLabel"
         Me.weightLabel.Size = New System.Drawing.Size(150, 30)
         Me.weightLabel.TabIndex = 21
-        Me.weightLabel.Text = "Weight"
+        Me.weightLabel.Text = "Weight (g)"
         Me.weightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'crossSectionSwitchButton
@@ -750,7 +727,7 @@ Partial Class Arrigo
         '
         '
         Me.crossSectionSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.crossSectionSwitchButton.Location = New System.Drawing.Point(480, 473)
+        Me.crossSectionSwitchButton.Location = New System.Drawing.Point(393, 490)
         Me.crossSectionSwitchButton.Name = "crossSectionSwitchButton"
         Me.crossSectionSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.crossSectionSwitchButton.OffText = "Yes"
@@ -765,7 +742,7 @@ Partial Class Arrigo
         'crossSectionLabel
         '
         Me.crossSectionLabel.AutoSize = True
-        Me.crossSectionLabel.Location = New System.Drawing.Point(305, 473)
+        Me.crossSectionLabel.Location = New System.Drawing.Point(218, 490)
         Me.crossSectionLabel.Name = "crossSectionLabel"
         Me.crossSectionLabel.Size = New System.Drawing.Size(146, 13)
         Me.crossSectionLabel.TabIndex = 19
@@ -777,7 +754,7 @@ Partial Class Arrigo
         '
         '
         Me.parallelSwitchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.parallelSwitchButton1.Location = New System.Drawing.Point(434, 443)
+        Me.parallelSwitchButton1.Location = New System.Drawing.Point(347, 460)
         Me.parallelSwitchButton1.Name = "parallelSwitchButton1"
         Me.parallelSwitchButton1.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.parallelSwitchButton1.OffText = "Yes"
@@ -792,7 +769,7 @@ Partial Class Arrigo
         'parallelLabel
         '
         Me.parallelLabel.AutoSize = True
-        Me.parallelLabel.Location = New System.Drawing.Point(305, 443)
+        Me.parallelLabel.Location = New System.Drawing.Point(218, 460)
         Me.parallelLabel.Name = "parallelLabel"
         Me.parallelLabel.Size = New System.Drawing.Size(88, 13)
         Me.parallelLabel.TabIndex = 17
@@ -801,7 +778,7 @@ Partial Class Arrigo
         'compoundShapeLabel
         '
         Me.compoundShapeLabel.AutoSize = True
-        Me.compoundShapeLabel.Location = New System.Drawing.Point(305, 418)
+        Me.compoundShapeLabel.Location = New System.Drawing.Point(218, 435)
         Me.compoundShapeLabel.Name = "compoundShapeLabel"
         Me.compoundShapeLabel.Size = New System.Drawing.Size(111, 13)
         Me.compoundShapeLabel.TabIndex = 15
@@ -2217,6 +2194,33 @@ Partial Class Arrigo
         Me.DoubleInput42.Size = New System.Drawing.Size(131, 22)
         Me.DoubleInput42.TabIndex = 71
         '
+        'crosssecLabel
+        '
+        Me.crosssecLabel.AutoSize = True
+        Me.crosssecLabel.Location = New System.Drawing.Point(466, 490)
+        Me.crosssecLabel.Name = "crosssecLabel"
+        Me.crosssecLabel.Size = New System.Drawing.Size(225, 13)
+        Me.crosssecLabel.TabIndex = 74
+        Me.crosssecLabel.Text = " above dimensions describe gauge section"
+        '
+        'roomAirCheckBox
+        '
+        Me.roomAirCheckBox.AutoSize = True
+        Me.roomAirCheckBox.Location = New System.Drawing.Point(1050, 86)
+        Me.roomAirCheckBox.Name = "roomAirCheckBox"
+        Me.roomAirCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.roomAirCheckBox.TabIndex = 75
+        Me.roomAirCheckBox.UseVisualStyleBackColor = True
+        '
+        'dryAirCheckbox
+        '
+        Me.dryAirCheckbox.AutoSize = True
+        Me.dryAirCheckbox.Location = New System.Drawing.Point(1050, 112)
+        Me.dryAirCheckbox.Name = "dryAirCheckbox"
+        Me.dryAirCheckbox.Size = New System.Drawing.Size(15, 14)
+        Me.dryAirCheckbox.TabIndex = 76
+        Me.dryAirCheckbox.UseVisualStyleBackColor = True
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2331,7 +2335,6 @@ Partial Class Arrigo
     Friend WithEvents crossSectionSwitchButton As DevComponents.DotNetBar.Controls.SwitchButton
     Friend WithEvents crossSectionLabel As Label
     Friend WithEvents weightLabel As Label
-    Friend WithEvents gramsLabel As Label
     Friend WithEvents weightIntegerInput2 As DevComponents.Editors.IntegerInput
     Friend WithEvents mmLabel As Label
     Friend WithEvents Label2 As Label
@@ -2358,8 +2361,6 @@ Partial Class Arrigo
     Friend WithEvents dryAirLabel As Label
     Friend WithEvents otherLabel As Label
     Friend WithEvents observeLabel As Label
-    Friend WithEvents roomAirTextBox As TextBox
-    Friend WithEvents dryAirTextBox As TextBox
     Friend WithEvents otherTextBox As TextBox
     Friend WithEvents observeTextBoxX As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
@@ -2459,4 +2460,7 @@ Partial Class Arrigo
     Friend WithEvents Label8 As Label
     Friend WithEvents DoubleInput41 As DevComponents.Editors.DoubleInput
     Friend WithEvents cylinderLabel As Label
+    Friend WithEvents crosssecLabel As Label
+    Friend WithEvents dryAirCheckbox As CheckBox
+    Friend WithEvents roomAirCheckBox As CheckBox
 End Class

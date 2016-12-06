@@ -54,7 +54,6 @@ Public Class Arrigo
         retestHomeButton.BackColor = Color.LightGray
         savedTestHomeButton.BackColor = Color.LightGray
         savedSpecHomeButton.BackColor = Color.LightGray
-        notesLabel.BackColor = Color.LightGray
         newSpecNextButton.BackColor = Color.LightGray
         backNexSpecButton.BackColor = Color.LightGray
         submitNewSpecButton.BackColor = Color.LightGray
@@ -66,27 +65,14 @@ Public Class Arrigo
         createHeatTestLabel.BackColor = Color.LightGray
         selectheatTestLabel.BackColor = Color.LightGray
         createNewSpec_retestLabel.BackColor = Color.LightGray
-
-
-
-
-
+        postDimLabel.BackColor = Color.LightGray
 
 
 
         ' set what can and cannot be seen upon initialization
         backNexSpecButton.Hide()
         submitNewSpecButton.Hide()
-        priorTestNotesLabel.Hide()
         priorTestNotesTextBox.Hide()
-        postMaxTempIntegerInput.Hide()
-        postTestObserveLabel.Hide()
-        priorTestLabel.Hide()
-        roomAirLabel.Hide()
-        dryAirLabel.Hide()
-        otherLabel.Hide()
-        observeLabel.Hide()
-
         otherTextBox.Hide()
         observeTextBoxX.Hide()
         saveLabel.Hide()
@@ -141,6 +127,11 @@ Public Class Arrigo
                 materialTextBox.Show()
                 MaxTempIntegerInput1.Show()
                 MaxTempLabel.Show()
+                externalDesignLabel.Show()
+                externalDesignationIntegerInput2.Show()
+                externalDesignationIntegerInput1.Show()
+                Label6.Show()
+                Label5.Show()
                 specimenNameIntegerInput.Show()
                 dimensionsLabel.Show()
                 lengthLabel.Show()
@@ -152,38 +143,34 @@ Public Class Arrigo
                 heightLabel1.Show()
                 heightDoubleInput1.Show()
                 Label2.Show()
+                cylinderLabel.Show()
+                cylLengthLabel.Show()
+                cylLengthDoubleInput.Show()
+                Label7.Show()
+                cylDiameterLabel.Show()
+                cylDiameterDoubleInput.Show()
+                Label9.Show()
                 compoundShapeLabel.Show()
                 parallelLabel.Show()
                 parallelSwitchButton1.Show()
                 weightLabel.Show()
                 weightIntegerInput2.Show()
                 pretestWeightLabel.Show()
-
-                notesLabel.Show()
-                roomTempLabel.Show()
-                roomTempIntegerInput.Show()
                 crossSectionLabel.Show()
                 crossSectionSwitchButton.Show()
-                externalDesignLabel.Show()
-                externalDesignationIntegerInput2.Show()
-                externalDesignationIntegerInput1.Show()
-                Label6.Show()
-                Label5.Show()
+
+                roomAirLabel.Show()
+                dryAirLabel.Show()
+                priorTestLabel.Show()
+                postTestObserveLabel.Show()
+                priorTestNotesLabel.Show()
 
                 'hidden on page 1
                 backNexSpecButton.Hide()
                 submitNewSpecButton.Hide()
-                priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
                 postTestObserveLabel.Hide()
-                postMaxTempIntegerInput.Hide()
-                postTestObserveLabel.Hide()
-                priorTestLabel.Hide()
-                roomAirLabel.Hide()
-                dryAirLabel.Hide()
-                otherLabel.Hide()
                 observeLabel.Hide()
-
                 otherTextBox.Hide()
                 observeTextBoxX.Hide()
                 saveLabel.Hide()
@@ -197,19 +184,12 @@ Public Class Arrigo
                 priorTestNotesTextBox.Show()
                 priorTestNotesLabel.Show()
                 postTestObserveLabel.Show()
-                postMaxTempIntegerInput.Show()
                 postTestObserveLabel.Show()
                 priorTestLabel.Show()
                 roomAirLabel.Show()
-                dryAirLabel.Show()
-                otherLabel.Show()
                 observeLabel.Show()
                 otherTextBox.Show()
                 observeTextBoxX.Show()
-
-
-
-
 
                 'hidden page 2
                 newSpecimenLabel.Hide()
@@ -236,9 +216,6 @@ Public Class Arrigo
                 crossSectionSwitchButton.Hide()
                 weightIntegerInput2.Hide()
 
-                notesLabel.Hide()
-                roomTempLabel.Hide()
-                roomTempIntegerInput.Hide()
                 submitNewSpecButton.Hide()
                 specimenNameIntegerInput.Hide()
                 pretestWeightLabel.Hide()
@@ -250,6 +227,9 @@ Public Class Arrigo
                 externalDesignationIntegerInput1.Hide()
                 Label6.Hide()
                 Label5.Hide()
+                dryAirLabel.Hide()
+                otherLabel.Hide()
+
 
 
 
@@ -266,7 +246,7 @@ Public Class Arrigo
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
                 postTestObserveLabel.Hide()
-                postMaxTempIntegerInput.Hide()
+
                 postTestObserveLabel.Hide()
                 newSpecimenLabel.Hide()
                 specimenNameLabel.Hide()
@@ -293,9 +273,6 @@ Public Class Arrigo
                 crossSectionSwitchButton.Hide()
                 weightIntegerInput2.Hide()
 
-                notesLabel.Hide()
-                roomTempLabel.Hide()
-                roomTempIntegerInput.Hide()
                 specimenNameIntegerInput.Hide()
                 pretestWeightLabel.Hide()
                 observeLabel.Hide()

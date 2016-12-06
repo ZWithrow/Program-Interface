@@ -25,16 +25,14 @@ Partial Class Arrigo
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
-        Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.completeTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.heatTestTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
-        Me.createHeatTestLabel = New System.Windows.Forms.Label()
-        Me.selectheatTestLabel = New System.Windows.Forms.Label()
-        Me.createNewSpec_retestLabel = New System.Windows.Forms.Label()
-        Me.specTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
-        Me.selectSpecLabel = New System.Windows.Forms.Label()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.externalDesignationIntegerInput2 = New DevComponents.Editors.IntegerInput()
+        Me.externalDesignationIntegerInput1 = New DevComponents.Editors.IntegerInput()
+        Me.externalDesignLabel = New System.Windows.Forms.Label()
+        Me.compoundShapeSwitchButton1 = New DevComponents.DotNetBar.Controls.SwitchButton()
+        Me.postDimensionsLabel = New System.Windows.Forms.Label()
         Me.newSpecProgressBar = New DevComponents.DotNetBar.Controls.ProgressBarX()
         Me.saveAddLabel = New System.Windows.Forms.Label()
         Me.saveLabel = New System.Windows.Forms.Label()
@@ -83,10 +81,12 @@ Partial Class Arrigo
         Me.MaxTempLabel = New System.Windows.Forms.Label()
         Me.materialLabel = New System.Windows.Forms.Label()
         Me.newSpecimenLabel = New System.Windows.Forms.Label()
-        Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.createNewSpecLabel = New System.Windows.Forms.Label()
-        Me.savedSpecListLabel = New System.Windows.Forms.Label()
-        Me.savedSpecListBox = New System.Windows.Forms.ListBox()
+        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.savedSpecHomeButton = New System.Windows.Forms.Label()
+        Me.savedTestHomeButton = New System.Windows.Forms.Label()
+        Me.retestHomeButton = New System.Windows.Forms.Label()
+        Me.NewHeatHomeButton = New System.Windows.Forms.Label()
+        Me.newSpecHomeButton = New System.Windows.Forms.Label()
         Me.SideNavPanel5 = New DevComponents.DotNetBar.Controls.SideNavPanel()
         Me.createNewTestLabel = New System.Windows.Forms.Label()
         Me.savedTestListBox = New System.Windows.Forms.ListBox()
@@ -152,12 +152,19 @@ Partial Class Arrigo
         Me.startingTempLabel = New System.Windows.Forms.Label()
         Me.Label_1 = New System.Windows.Forms.Label()
         Me.Label_40 = New System.Windows.Forms.Label()
-        Me.SideNavPanel1 = New DevComponents.DotNetBar.Controls.SideNavPanel()
-        Me.savedSpecHomeButton = New System.Windows.Forms.Label()
-        Me.savedTestHomeButton = New System.Windows.Forms.Label()
-        Me.retestHomeButton = New System.Windows.Forms.Label()
-        Me.NewHeatHomeButton = New System.Windows.Forms.Label()
-        Me.newSpecHomeButton = New System.Windows.Forms.Label()
+        Me.SideNavPanel4 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.completeTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.heatTestTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
+        Me.createHeatTestLabel = New System.Windows.Forms.Label()
+        Me.selectheatTestLabel = New System.Windows.Forms.Label()
+        Me.createNewSpec_retestLabel = New System.Windows.Forms.Label()
+        Me.specTextBoxDropDown = New DevComponents.DotNetBar.Controls.TextBoxDropDown()
+        Me.selectSpecLabel = New System.Windows.Forms.Label()
+        Me.SideNavPanel6 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.createNewSpecLabel = New System.Windows.Forms.Label()
+        Me.savedSpecListLabel = New System.Windows.Forms.Label()
+        Me.savedSpecListBox = New System.Windows.Forms.ListBox()
         Me.SideNavItem1 = New DevComponents.DotNetBar.Controls.SideNavItem()
         Me.Separator1 = New DevComponents.DotNetBar.Separator()
         Me.SideNavItem2 = New DevComponents.DotNetBar.Controls.SideNavItem()
@@ -170,11 +177,17 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.postDimensionsLabel = New System.Windows.Forms.Label()
-        Me.compoundShapeSwitchButton1 = New DevComponents.DotNetBar.Controls.SwitchButton()
+        Me.cylinderLabel = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.DoubleInput41 = New DevComponents.Editors.DoubleInput()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cylDiameterLabel = New System.Windows.Forms.Label()
+        Me.DoubleInput42 = New DevComponents.Editors.DoubleInput()
         Me.SideNav1.SuspendLayout()
-        Me.SideNavPanel4.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
+        CType(Me.externalDesignationIntegerInput2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.externalDesignationIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -183,7 +196,7 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SideNavPanel6.SuspendLayout()
+        Me.SideNavPanel1.SuspendLayout()
         Me.SideNavPanel5.SuspendLayout()
         Me.SideNavPanel3.SuspendLayout()
         CType(Me.DoubleInput33, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -228,7 +241,10 @@ Partial Class Arrigo
         CType(Me.DoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SideNavPanel1.SuspendLayout()
+        Me.SideNavPanel4.SuspendLayout()
+        Me.SideNavPanel6.SuspendLayout()
+        CType(Me.DoubleInput41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DoubleInput42, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -253,124 +269,20 @@ Partial Class Arrigo
         Me.SideNav1.TabIndex = 0
         Me.SideNav1.Text = "SideNav1"
         '
-        'SideNavPanel4
-        '
-        Me.SideNavPanel4.Controls.Add(Me.completeTextBoxDropDown)
-        Me.SideNavPanel4.Controls.Add(Me.Label4)
-        Me.SideNavPanel4.Controls.Add(Me.heatTestTextBoxDropDown)
-        Me.SideNavPanel4.Controls.Add(Me.createHeatTestLabel)
-        Me.SideNavPanel4.Controls.Add(Me.selectheatTestLabel)
-        Me.SideNavPanel4.Controls.Add(Me.createNewSpec_retestLabel)
-        Me.SideNavPanel4.Controls.Add(Me.specTextBoxDropDown)
-        Me.SideNavPanel4.Controls.Add(Me.selectSpecLabel)
-        Me.SideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel4.Location = New System.Drawing.Point(159, 36)
-        Me.SideNavPanel4.Name = "SideNavPanel4"
-        Me.SideNavPanel4.Size = New System.Drawing.Size(1293, 727)
-        Me.SideNavPanel4.TabIndex = 14
-        Me.SideNavPanel4.Visible = False
-        '
-        'completeTextBoxDropDown
-        '
-        '
-        '
-        '
-        Me.completeTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
-        Me.completeTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.completeTextBoxDropDown.ButtonDropDown.Visible = True
-        Me.completeTextBoxDropDown.Location = New System.Drawing.Point(320, 201)
-        Me.completeTextBoxDropDown.Name = "completeTextBoxDropDown"
-        Me.completeTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
-        Me.completeTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.completeTextBoxDropDown.TabIndex = 51
-        Me.completeTextBoxDropDown.Text = ""
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.LightGray
-        Me.Label4.Location = New System.Drawing.Point(120, 194)
-        Me.Label4.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(150, 30)
-        Me.Label4.TabIndex = 50
-        Me.Label4.Text = "Re-Run Complete Test"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'heatTestTextBoxDropDown
-        '
-        '
-        '
-        '
-        Me.heatTestTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
-        Me.heatTestTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.heatTestTextBoxDropDown.ButtonDropDown.Visible = True
-        Me.heatTestTextBoxDropDown.Location = New System.Drawing.Point(320, 114)
-        Me.heatTestTextBoxDropDown.Name = "heatTestTextBoxDropDown"
-        Me.heatTestTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
-        Me.heatTestTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.heatTestTextBoxDropDown.TabIndex = 49
-        Me.heatTestTextBoxDropDown.Text = ""
-        '
-        'createHeatTestLabel
-        '
-        Me.createHeatTestLabel.Location = New System.Drawing.Point(651, 105)
-        Me.createHeatTestLabel.Name = "createHeatTestLabel"
-        Me.createHeatTestLabel.Size = New System.Drawing.Size(150, 35)
-        Me.createHeatTestLabel.TabIndex = 48
-        Me.createHeatTestLabel.Text = "Create New Heating Test"
-        Me.createHeatTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'selectheatTestLabel
-        '
-        Me.selectheatTestLabel.AutoSize = True
-        Me.selectheatTestLabel.BackColor = System.Drawing.Color.LightGray
-        Me.selectheatTestLabel.Location = New System.Drawing.Point(120, 107)
-        Me.selectheatTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.selectheatTestLabel.Name = "selectheatTestLabel"
-        Me.selectheatTestLabel.Size = New System.Drawing.Size(150, 30)
-        Me.selectheatTestLabel.TabIndex = 47
-        Me.selectheatTestLabel.Text = "Heating Schedule"
-        Me.selectheatTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'createNewSpec_retestLabel
-        '
-        Me.createNewSpec_retestLabel.Location = New System.Drawing.Point(651, 32)
-        Me.createNewSpec_retestLabel.Name = "createNewSpec_retestLabel"
-        Me.createNewSpec_retestLabel.Size = New System.Drawing.Size(150, 35)
-        Me.createNewSpec_retestLabel.TabIndex = 46
-        Me.createNewSpec_retestLabel.Text = "Create New Specimen"
-        Me.createNewSpec_retestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'specTextBoxDropDown
-        '
-        '
-        '
-        '
-        Me.specTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
-        Me.specTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.specTextBoxDropDown.ButtonDropDown.Visible = True
-        Me.specTextBoxDropDown.Location = New System.Drawing.Point(320, 41)
-        Me.specTextBoxDropDown.Name = "specTextBoxDropDown"
-        Me.specTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
-        Me.specTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.specTextBoxDropDown.TabIndex = 44
-        Me.specTextBoxDropDown.Text = ""
-        '
-        'selectSpecLabel
-        '
-        Me.selectSpecLabel.AutoSize = True
-        Me.selectSpecLabel.BackColor = System.Drawing.Color.LightGray
-        Me.selectSpecLabel.Location = New System.Drawing.Point(120, 34)
-        Me.selectSpecLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.selectSpecLabel.Name = "selectSpecLabel"
-        Me.selectSpecLabel.Size = New System.Drawing.Size(150, 30)
-        Me.selectSpecLabel.TabIndex = 43
-        Me.selectSpecLabel.Text = "Specimen"
-        Me.selectSpecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.Label9)
+        Me.SideNavPanel2.Controls.Add(Me.cylDiameterLabel)
+        Me.SideNavPanel2.Controls.Add(Me.DoubleInput42)
+        Me.SideNavPanel2.Controls.Add(Me.Label7)
+        Me.SideNavPanel2.Controls.Add(Me.Label8)
+        Me.SideNavPanel2.Controls.Add(Me.DoubleInput41)
+        Me.SideNavPanel2.Controls.Add(Me.cylinderLabel)
+        Me.SideNavPanel2.Controls.Add(Me.Label6)
+        Me.SideNavPanel2.Controls.Add(Me.Label5)
+        Me.SideNavPanel2.Controls.Add(Me.externalDesignationIntegerInput2)
+        Me.SideNavPanel2.Controls.Add(Me.externalDesignationIntegerInput1)
+        Me.SideNavPanel2.Controls.Add(Me.externalDesignLabel)
         Me.SideNavPanel2.Controls.Add(Me.compoundShapeSwitchButton1)
         Me.SideNavPanel2.Controls.Add(Me.postDimensionsLabel)
         Me.SideNavPanel2.Controls.Add(Me.newSpecProgressBar)
@@ -427,6 +339,89 @@ Partial Class Arrigo
         Me.SideNavPanel2.Size = New System.Drawing.Size(1293, 727)
         Me.SideNavPanel2.TabIndex = 6
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(289, 187)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(13, 13)
+        Me.Label6.TabIndex = 66
+        Me.Label6.Text = "1"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(429, 187)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(13, 13)
+        Me.Label5.TabIndex = 65
+        Me.Label5.Text = "2"
+        '
+        'externalDesignationIntegerInput2
+        '
+        '
+        '
+        '
+        Me.externalDesignationIntegerInput2.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.externalDesignationIntegerInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.externalDesignationIntegerInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.externalDesignationIntegerInput2.Location = New System.Drawing.Point(448, 181)
+        Me.externalDesignationIntegerInput2.Name = "externalDesignationIntegerInput2"
+        Me.externalDesignationIntegerInput2.Size = New System.Drawing.Size(90, 22)
+        Me.externalDesignationIntegerInput2.TabIndex = 64
+        '
+        'externalDesignationIntegerInput1
+        '
+        '
+        '
+        '
+        Me.externalDesignationIntegerInput1.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.externalDesignationIntegerInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.externalDesignationIntegerInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.externalDesignationIntegerInput1.Location = New System.Drawing.Point(308, 181)
+        Me.externalDesignationIntegerInput1.Name = "externalDesignationIntegerInput1"
+        Me.externalDesignationIntegerInput1.Size = New System.Drawing.Size(90, 22)
+        Me.externalDesignationIntegerInput1.TabIndex = 63
+        '
+        'externalDesignLabel
+        '
+        Me.externalDesignLabel.AutoSize = True
+        Me.externalDesignLabel.BackColor = System.Drawing.Color.LightGray
+        Me.externalDesignLabel.Location = New System.Drawing.Point(30, 181)
+        Me.externalDesignLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.externalDesignLabel.Name = "externalDesignLabel"
+        Me.externalDesignLabel.Size = New System.Drawing.Size(150, 30)
+        Me.externalDesignLabel.TabIndex = 62
+        Me.externalDesignLabel.Text = "External Designations"
+        Me.externalDesignLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'compoundShapeSwitchButton1
+        '
+        '
+        '
+        '
+        Me.compoundShapeSwitchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.compoundShapeSwitchButton1.Location = New System.Drawing.Point(434, 418)
+        Me.compoundShapeSwitchButton1.Name = "compoundShapeSwitchButton1"
+        Me.compoundShapeSwitchButton1.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.compoundShapeSwitchButton1.OffText = "Yes"
+        Me.compoundShapeSwitchButton1.OffTextColor = System.Drawing.Color.Black
+        Me.compoundShapeSwitchButton1.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.compoundShapeSwitchButton1.OnText = "No"
+        Me.compoundShapeSwitchButton1.OnTextColor = System.Drawing.Color.Black
+        Me.compoundShapeSwitchButton1.Size = New System.Drawing.Size(66, 13)
+        Me.compoundShapeSwitchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.compoundShapeSwitchButton1.TabIndex = 61
+        '
+        'postDimensionsLabel
+        '
+        Me.postDimensionsLabel.AutoSize = True
+        Me.postDimensionsLabel.Location = New System.Drawing.Point(690, 314)
+        Me.postDimensionsLabel.Name = "postDimensionsLabel"
+        Me.postDimensionsLabel.Size = New System.Drawing.Size(97, 13)
+        Me.postDimensionsLabel.TabIndex = 60
+        Me.postDimensionsLabel.Text = "Dimensions (mm):"
+        '
         'newSpecProgressBar
         '
         '
@@ -444,7 +439,7 @@ Partial Class Arrigo
         'saveAddLabel
         '
         Me.saveAddLabel.BackColor = System.Drawing.Color.LightGray
-        Me.saveAddLabel.Location = New System.Drawing.Point(317, 464)
+        Me.saveAddLabel.Location = New System.Drawing.Point(612, 490)
         Me.saveAddLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.saveAddLabel.Name = "saveAddLabel"
         Me.saveAddLabel.Size = New System.Drawing.Size(317, 30)
@@ -456,7 +451,7 @@ Partial Class Arrigo
         '
         Me.saveLabel.AutoSize = True
         Me.saveLabel.BackColor = System.Drawing.Color.LightGray
-        Me.saveLabel.Location = New System.Drawing.Point(120, 402)
+        Me.saveLabel.Location = New System.Drawing.Point(653, 381)
         Me.saveLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.saveLabel.Name = "saveLabel"
         Me.saveLabel.Size = New System.Drawing.Size(150, 30)
@@ -549,7 +544,7 @@ Partial Class Arrigo
         'pretestWeightLabel
         '
         Me.pretestWeightLabel.AutoSize = True
-        Me.pretestWeightLabel.Location = New System.Drawing.Point(317, 475)
+        Me.pretestWeightLabel.Location = New System.Drawing.Point(221, 499)
         Me.pretestWeightLabel.Name = "pretestWeightLabel"
         Me.pretestWeightLabel.Size = New System.Drawing.Size(99, 13)
         Me.pretestWeightLabel.TabIndex = 46
@@ -563,7 +558,7 @@ Partial Class Arrigo
         Me.postMaxTempIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.postMaxTempIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.postMaxTempIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(407, 356)
+        Me.postMaxTempIntegerInput.Location = New System.Drawing.Point(675, 347)
         Me.postMaxTempIntegerInput.Name = "postMaxTempIntegerInput"
         Me.postMaxTempIntegerInput.Size = New System.Drawing.Size(90, 22)
         Me.postMaxTempIntegerInput.TabIndex = 45
@@ -572,7 +567,7 @@ Partial Class Arrigo
         '
         Me.postTestObserveLabel.AutoSize = True
         Me.postTestObserveLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postTestObserveLabel.Location = New System.Drawing.Point(120, 315)
+        Me.postTestObserveLabel.Location = New System.Drawing.Point(637, 561)
         Me.postTestObserveLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.postTestObserveLabel.Name = "postTestObserveLabel"
         Me.postTestObserveLabel.Size = New System.Drawing.Size(150, 30)
@@ -691,7 +686,7 @@ Partial Class Arrigo
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(459, 283)
+        Me.Label2.Location = New System.Drawing.Point(456, 314)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(25, 13)
         Me.Label2.TabIndex = 26
@@ -700,7 +695,7 @@ Partial Class Arrigo
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(459, 248)
+        Me.Label1.Location = New System.Drawing.Point(456, 279)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(25, 13)
         Me.Label1.TabIndex = 25
@@ -709,7 +704,7 @@ Partial Class Arrigo
         'mmLabel
         '
         Me.mmLabel.AutoSize = True
-        Me.mmLabel.Location = New System.Drawing.Point(459, 209)
+        Me.mmLabel.Location = New System.Drawing.Point(456, 240)
         Me.mmLabel.Name = "mmLabel"
         Me.mmLabel.Size = New System.Drawing.Size(25, 13)
         Me.mmLabel.TabIndex = 24
@@ -718,7 +713,7 @@ Partial Class Arrigo
         'gramsLabel
         '
         Me.gramsLabel.AutoSize = True
-        Me.gramsLabel.Location = New System.Drawing.Point(524, 475)
+        Me.gramsLabel.Location = New System.Drawing.Point(428, 499)
         Me.gramsLabel.Name = "gramsLabel"
         Me.gramsLabel.Size = New System.Drawing.Size(14, 13)
         Me.gramsLabel.TabIndex = 23
@@ -732,7 +727,7 @@ Partial Class Arrigo
         Me.weightIntegerInput2.BackgroundStyle.Class = "DateTimeInputBackground"
         Me.weightIntegerInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.weightIntegerInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.weightIntegerInput2.Location = New System.Drawing.Point(416, 466)
+        Me.weightIntegerInput2.Location = New System.Drawing.Point(320, 490)
         Me.weightIntegerInput2.Name = "weightIntegerInput2"
         Me.weightIntegerInput2.Size = New System.Drawing.Size(90, 22)
         Me.weightIntegerInput2.TabIndex = 22
@@ -741,7 +736,7 @@ Partial Class Arrigo
         '
         Me.weightLabel.AutoSize = True
         Me.weightLabel.BackColor = System.Drawing.Color.LightGray
-        Me.weightLabel.Location = New System.Drawing.Point(120, 458)
+        Me.weightLabel.Location = New System.Drawing.Point(30, 466)
         Me.weightLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.weightLabel.Name = "weightLabel"
         Me.weightLabel.Size = New System.Drawing.Size(150, 30)
@@ -755,7 +750,7 @@ Partial Class Arrigo
         '
         '
         Me.crossSectionSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.crossSectionSwitchButton.Location = New System.Drawing.Point(396, 411)
+        Me.crossSectionSwitchButton.Location = New System.Drawing.Point(480, 473)
         Me.crossSectionSwitchButton.Name = "crossSectionSwitchButton"
         Me.crossSectionSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.crossSectionSwitchButton.OffText = "Yes"
@@ -770,7 +765,7 @@ Partial Class Arrigo
         'crossSectionLabel
         '
         Me.crossSectionLabel.AutoSize = True
-        Me.crossSectionLabel.Location = New System.Drawing.Point(221, 411)
+        Me.crossSectionLabel.Location = New System.Drawing.Point(305, 473)
         Me.crossSectionLabel.Name = "crossSectionLabel"
         Me.crossSectionLabel.Size = New System.Drawing.Size(146, 13)
         Me.crossSectionLabel.TabIndex = 19
@@ -782,7 +777,7 @@ Partial Class Arrigo
         '
         '
         Me.parallelSwitchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.parallelSwitchButton1.Location = New System.Drawing.Point(350, 381)
+        Me.parallelSwitchButton1.Location = New System.Drawing.Point(434, 443)
         Me.parallelSwitchButton1.Name = "parallelSwitchButton1"
         Me.parallelSwitchButton1.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.parallelSwitchButton1.OffText = "Yes"
@@ -797,7 +792,7 @@ Partial Class Arrigo
         'parallelLabel
         '
         Me.parallelLabel.AutoSize = True
-        Me.parallelLabel.Location = New System.Drawing.Point(221, 381)
+        Me.parallelLabel.Location = New System.Drawing.Point(305, 443)
         Me.parallelLabel.Name = "parallelLabel"
         Me.parallelLabel.Size = New System.Drawing.Size(88, 13)
         Me.parallelLabel.TabIndex = 17
@@ -806,7 +801,7 @@ Partial Class Arrigo
         'compoundShapeLabel
         '
         Me.compoundShapeLabel.AutoSize = True
-        Me.compoundShapeLabel.Location = New System.Drawing.Point(221, 356)
+        Me.compoundShapeLabel.Location = New System.Drawing.Point(305, 418)
         Me.compoundShapeLabel.Name = "compoundShapeLabel"
         Me.compoundShapeLabel.Size = New System.Drawing.Size(111, 13)
         Me.compoundShapeLabel.TabIndex = 15
@@ -821,7 +816,7 @@ Partial Class Arrigo
         Me.heightDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.heightDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.heightDoubleInput1.Increment = 1.0R
-        Me.heightDoubleInput1.Location = New System.Drawing.Point(311, 274)
+        Me.heightDoubleInput1.Location = New System.Drawing.Point(308, 305)
         Me.heightDoubleInput1.Name = "heightDoubleInput1"
         Me.heightDoubleInput1.Size = New System.Drawing.Size(131, 22)
         Me.heightDoubleInput1.TabIndex = 14
@@ -829,7 +824,7 @@ Partial Class Arrigo
         'heightLabel1
         '
         Me.heightLabel1.AutoSize = True
-        Me.heightLabel1.Location = New System.Drawing.Point(221, 283)
+        Me.heightLabel1.Location = New System.Drawing.Point(218, 314)
         Me.heightLabel1.Name = "heightLabel1"
         Me.heightLabel1.Size = New System.Drawing.Size(48, 13)
         Me.heightLabel1.TabIndex = 13
@@ -844,7 +839,7 @@ Partial Class Arrigo
         Me.widthDoubleInput2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.widthDoubleInput2.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.widthDoubleInput2.Increment = 1.0R
-        Me.widthDoubleInput2.Location = New System.Drawing.Point(311, 239)
+        Me.widthDoubleInput2.Location = New System.Drawing.Point(308, 270)
         Me.widthDoubleInput2.Name = "widthDoubleInput2"
         Me.widthDoubleInput2.Size = New System.Drawing.Size(131, 22)
         Me.widthDoubleInput2.TabIndex = 12
@@ -852,7 +847,7 @@ Partial Class Arrigo
         'widthLabel
         '
         Me.widthLabel.AutoSize = True
-        Me.widthLabel.Location = New System.Drawing.Point(221, 248)
+        Me.widthLabel.Location = New System.Drawing.Point(218, 279)
         Me.widthLabel.Name = "widthLabel"
         Me.widthLabel.Size = New System.Drawing.Size(45, 13)
         Me.widthLabel.TabIndex = 11
@@ -861,7 +856,7 @@ Partial Class Arrigo
         'lengthLabel
         '
         Me.lengthLabel.AutoSize = True
-        Me.lengthLabel.Location = New System.Drawing.Point(221, 209)
+        Me.lengthLabel.Location = New System.Drawing.Point(218, 240)
         Me.lengthLabel.Name = "lengthLabel"
         Me.lengthLabel.Size = New System.Drawing.Size(50, 13)
         Me.lengthLabel.TabIndex = 10
@@ -876,7 +871,7 @@ Partial Class Arrigo
         Me.lengthDoubleInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lengthDoubleInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.lengthDoubleInput1.Increment = 1.0R
-        Me.lengthDoubleInput1.Location = New System.Drawing.Point(311, 200)
+        Me.lengthDoubleInput1.Location = New System.Drawing.Point(308, 231)
         Me.lengthDoubleInput1.Name = "lengthDoubleInput1"
         Me.lengthDoubleInput1.Size = New System.Drawing.Size(131, 22)
         Me.lengthDoubleInput1.TabIndex = 9
@@ -898,7 +893,7 @@ Partial Class Arrigo
         '
         Me.dimensionsLabel.AutoSize = True
         Me.dimensionsLabel.BackColor = System.Drawing.Color.LightGray
-        Me.dimensionsLabel.Location = New System.Drawing.Point(30, 207)
+        Me.dimensionsLabel.Location = New System.Drawing.Point(30, 231)
         Me.dimensionsLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.dimensionsLabel.Name = "dimensionsLabel"
         Me.dimensionsLabel.Size = New System.Drawing.Size(150, 30)
@@ -913,9 +908,9 @@ Partial Class Arrigo
         Me.MaxTempLabel.Location = New System.Drawing.Point(221, 87)
         Me.MaxTempLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.MaxTempLabel.Name = "MaxTempLabel"
-        Me.MaxTempLabel.Size = New System.Drawing.Size(150, 30)
+        Me.MaxTempLabel.Size = New System.Drawing.Size(164, 30)
         Me.MaxTempLabel.TabIndex = 2
-        Me.MaxTempLabel.Text = "Max Allowable Temperature"
+        Me.MaxTempLabel.Text = "Max Allowable Temperature (C)"
         Me.MaxTempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'materialLabel
@@ -942,43 +937,74 @@ Partial Class Arrigo
         Me.newSpecimenLabel.Text = "New Specimen"
         Me.newSpecimenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'SideNavPanel6
+        'SideNavPanel1
         '
-        Me.SideNavPanel6.Controls.Add(Me.createNewSpecLabel)
-        Me.SideNavPanel6.Controls.Add(Me.savedSpecListLabel)
-        Me.SideNavPanel6.Controls.Add(Me.savedSpecListBox)
-        Me.SideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel6.Location = New System.Drawing.Point(146, 36)
-        Me.SideNavPanel6.Name = "SideNavPanel6"
-        Me.SideNavPanel6.Size = New System.Drawing.Size(1306, 727)
-        Me.SideNavPanel6.TabIndex = 22
-        Me.SideNavPanel6.Visible = False
+        Me.SideNavPanel1.Controls.Add(Me.savedSpecHomeButton)
+        Me.SideNavPanel1.Controls.Add(Me.savedTestHomeButton)
+        Me.SideNavPanel1.Controls.Add(Me.retestHomeButton)
+        Me.SideNavPanel1.Controls.Add(Me.NewHeatHomeButton)
+        Me.SideNavPanel1.Controls.Add(Me.newSpecHomeButton)
+        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel1.Location = New System.Drawing.Point(159, 36)
+        Me.SideNavPanel1.Name = "SideNavPanel1"
+        Me.SideNavPanel1.Size = New System.Drawing.Size(1293, 727)
+        Me.SideNavPanel1.TabIndex = 2
+        Me.SideNavPanel1.Visible = False
         '
-        'createNewSpecLabel
+        'savedSpecHomeButton
         '
-        Me.createNewSpecLabel.Location = New System.Drawing.Point(43, 505)
-        Me.createNewSpecLabel.Name = "createNewSpecLabel"
-        Me.createNewSpecLabel.Size = New System.Drawing.Size(210, 24)
-        Me.createNewSpecLabel.TabIndex = 45
-        Me.createNewSpecLabel.Text = "Create New Specimen"
-        Me.createNewSpecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.savedSpecHomeButton.BackColor = System.Drawing.Color.LightGray
+        Me.savedSpecHomeButton.Location = New System.Drawing.Point(177, 318)
+        Me.savedSpecHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.savedSpecHomeButton.Name = "savedSpecHomeButton"
+        Me.savedSpecHomeButton.Size = New System.Drawing.Size(185, 60)
+        Me.savedSpecHomeButton.TabIndex = 48
+        Me.savedSpecHomeButton.Text = "Saved Specimen"
+        Me.savedSpecHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'savedSpecListLabel
+        'savedTestHomeButton
         '
-        Me.savedSpecListLabel.Location = New System.Drawing.Point(43, 38)
-        Me.savedSpecListLabel.Name = "savedSpecListLabel"
-        Me.savedSpecListLabel.Size = New System.Drawing.Size(119, 24)
-        Me.savedSpecListLabel.TabIndex = 44
-        Me.savedSpecListLabel.Text = "Saved Specimens"
-        Me.savedSpecListLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.savedTestHomeButton.BackColor = System.Drawing.Color.LightGray
+        Me.savedTestHomeButton.Location = New System.Drawing.Point(506, 170)
+        Me.savedTestHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.savedTestHomeButton.Name = "savedTestHomeButton"
+        Me.savedTestHomeButton.Size = New System.Drawing.Size(185, 60)
+        Me.savedTestHomeButton.TabIndex = 47
+        Me.savedTestHomeButton.Text = "Saved Tests"
+        Me.savedTestHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'savedSpecListBox
+        'retestHomeButton
         '
-        Me.savedSpecListBox.FormattingEnabled = True
-        Me.savedSpecListBox.Location = New System.Drawing.Point(46, 65)
-        Me.savedSpecListBox.Name = "savedSpecListBox"
-        Me.savedSpecListBox.Size = New System.Drawing.Size(1237, 420)
-        Me.savedSpecListBox.TabIndex = 0
+        Me.retestHomeButton.BackColor = System.Drawing.Color.LightGray
+        Me.retestHomeButton.Location = New System.Drawing.Point(177, 173)
+        Me.retestHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.retestHomeButton.Name = "retestHomeButton"
+        Me.retestHomeButton.Size = New System.Drawing.Size(185, 60)
+        Me.retestHomeButton.TabIndex = 46
+        Me.retestHomeButton.Text = "Retest"
+        Me.retestHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'NewHeatHomeButton
+        '
+        Me.NewHeatHomeButton.BackColor = System.Drawing.Color.LightGray
+        Me.NewHeatHomeButton.Location = New System.Drawing.Point(506, 32)
+        Me.NewHeatHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.NewHeatHomeButton.Name = "NewHeatHomeButton"
+        Me.NewHeatHomeButton.Size = New System.Drawing.Size(185, 60)
+        Me.NewHeatHomeButton.TabIndex = 45
+        Me.NewHeatHomeButton.Text = "Create New Heating Schedule"
+        Me.NewHeatHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'newSpecHomeButton
+        '
+        Me.newSpecHomeButton.BackColor = System.Drawing.Color.LightGray
+        Me.newSpecHomeButton.Location = New System.Drawing.Point(177, 32)
+        Me.newSpecHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.newSpecHomeButton.Name = "newSpecHomeButton"
+        Me.newSpecHomeButton.Size = New System.Drawing.Size(185, 60)
+        Me.newSpecHomeButton.TabIndex = 44
+        Me.newSpecHomeButton.Text = "Create New Specimen"
+        Me.newSpecHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'SideNavPanel5
         '
@@ -1873,74 +1899,159 @@ Partial Class Arrigo
         Me.Label_40.Text = "(40)"
         Me.Label_40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'SideNavPanel1
+        'SideNavPanel4
         '
-        Me.SideNavPanel1.Controls.Add(Me.savedSpecHomeButton)
-        Me.SideNavPanel1.Controls.Add(Me.savedTestHomeButton)
-        Me.SideNavPanel1.Controls.Add(Me.retestHomeButton)
-        Me.SideNavPanel1.Controls.Add(Me.NewHeatHomeButton)
-        Me.SideNavPanel1.Controls.Add(Me.newSpecHomeButton)
-        Me.SideNavPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SideNavPanel1.Location = New System.Drawing.Point(159, 36)
-        Me.SideNavPanel1.Name = "SideNavPanel1"
-        Me.SideNavPanel1.Size = New System.Drawing.Size(1293, 727)
-        Me.SideNavPanel1.TabIndex = 2
-        Me.SideNavPanel1.Visible = False
+        Me.SideNavPanel4.Controls.Add(Me.completeTextBoxDropDown)
+        Me.SideNavPanel4.Controls.Add(Me.Label4)
+        Me.SideNavPanel4.Controls.Add(Me.heatTestTextBoxDropDown)
+        Me.SideNavPanel4.Controls.Add(Me.createHeatTestLabel)
+        Me.SideNavPanel4.Controls.Add(Me.selectheatTestLabel)
+        Me.SideNavPanel4.Controls.Add(Me.createNewSpec_retestLabel)
+        Me.SideNavPanel4.Controls.Add(Me.specTextBoxDropDown)
+        Me.SideNavPanel4.Controls.Add(Me.selectSpecLabel)
+        Me.SideNavPanel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel4.Location = New System.Drawing.Point(159, 36)
+        Me.SideNavPanel4.Name = "SideNavPanel4"
+        Me.SideNavPanel4.Size = New System.Drawing.Size(1293, 727)
+        Me.SideNavPanel4.TabIndex = 14
+        Me.SideNavPanel4.Visible = False
         '
-        'savedSpecHomeButton
+        'completeTextBoxDropDown
         '
-        Me.savedSpecHomeButton.BackColor = System.Drawing.Color.LightGray
-        Me.savedSpecHomeButton.Location = New System.Drawing.Point(177, 318)
-        Me.savedSpecHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.savedSpecHomeButton.Name = "savedSpecHomeButton"
-        Me.savedSpecHomeButton.Size = New System.Drawing.Size(185, 60)
-        Me.savedSpecHomeButton.TabIndex = 48
-        Me.savedSpecHomeButton.Text = "Saved Specimen"
-        Me.savedSpecHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'savedTestHomeButton
         '
-        Me.savedTestHomeButton.BackColor = System.Drawing.Color.LightGray
-        Me.savedTestHomeButton.Location = New System.Drawing.Point(506, 170)
-        Me.savedTestHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.savedTestHomeButton.Name = "savedTestHomeButton"
-        Me.savedTestHomeButton.Size = New System.Drawing.Size(185, 60)
-        Me.savedTestHomeButton.TabIndex = 47
-        Me.savedTestHomeButton.Text = "Saved Tests"
-        Me.savedTestHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'retestHomeButton
+        Me.completeTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
+        Me.completeTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.completeTextBoxDropDown.ButtonDropDown.Visible = True
+        Me.completeTextBoxDropDown.Location = New System.Drawing.Point(320, 201)
+        Me.completeTextBoxDropDown.Name = "completeTextBoxDropDown"
+        Me.completeTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
+        Me.completeTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.completeTextBoxDropDown.TabIndex = 51
+        Me.completeTextBoxDropDown.Text = ""
         '
-        Me.retestHomeButton.BackColor = System.Drawing.Color.LightGray
-        Me.retestHomeButton.Location = New System.Drawing.Point(177, 173)
-        Me.retestHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.retestHomeButton.Name = "retestHomeButton"
-        Me.retestHomeButton.Size = New System.Drawing.Size(185, 60)
-        Me.retestHomeButton.TabIndex = 46
-        Me.retestHomeButton.Text = "Retest"
-        Me.retestHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        'Label4
         '
-        'NewHeatHomeButton
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.LightGray
+        Me.Label4.Location = New System.Drawing.Point(120, 194)
+        Me.Label4.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(150, 30)
+        Me.Label4.TabIndex = 50
+        Me.Label4.Text = "Re-Run Complete Test"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        Me.NewHeatHomeButton.BackColor = System.Drawing.Color.LightGray
-        Me.NewHeatHomeButton.Location = New System.Drawing.Point(506, 32)
-        Me.NewHeatHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.NewHeatHomeButton.Name = "NewHeatHomeButton"
-        Me.NewHeatHomeButton.Size = New System.Drawing.Size(185, 60)
-        Me.NewHeatHomeButton.TabIndex = 45
-        Me.NewHeatHomeButton.Text = "Create New Heating Schedule"
-        Me.NewHeatHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        'heatTestTextBoxDropDown
         '
-        'newSpecHomeButton
         '
-        Me.newSpecHomeButton.BackColor = System.Drawing.Color.LightGray
-        Me.newSpecHomeButton.Location = New System.Drawing.Point(177, 32)
-        Me.newSpecHomeButton.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.newSpecHomeButton.Name = "newSpecHomeButton"
-        Me.newSpecHomeButton.Size = New System.Drawing.Size(185, 60)
-        Me.newSpecHomeButton.TabIndex = 44
-        Me.newSpecHomeButton.Text = "Create New Specimen"
-        Me.newSpecHomeButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        '
+        Me.heatTestTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
+        Me.heatTestTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.heatTestTextBoxDropDown.ButtonDropDown.Visible = True
+        Me.heatTestTextBoxDropDown.Location = New System.Drawing.Point(320, 114)
+        Me.heatTestTextBoxDropDown.Name = "heatTestTextBoxDropDown"
+        Me.heatTestTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
+        Me.heatTestTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.heatTestTextBoxDropDown.TabIndex = 49
+        Me.heatTestTextBoxDropDown.Text = ""
+        '
+        'createHeatTestLabel
+        '
+        Me.createHeatTestLabel.Location = New System.Drawing.Point(651, 105)
+        Me.createHeatTestLabel.Name = "createHeatTestLabel"
+        Me.createHeatTestLabel.Size = New System.Drawing.Size(150, 35)
+        Me.createHeatTestLabel.TabIndex = 48
+        Me.createHeatTestLabel.Text = "Create New Heating Test"
+        Me.createHeatTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'selectheatTestLabel
+        '
+        Me.selectheatTestLabel.AutoSize = True
+        Me.selectheatTestLabel.BackColor = System.Drawing.Color.LightGray
+        Me.selectheatTestLabel.Location = New System.Drawing.Point(120, 107)
+        Me.selectheatTestLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.selectheatTestLabel.Name = "selectheatTestLabel"
+        Me.selectheatTestLabel.Size = New System.Drawing.Size(150, 30)
+        Me.selectheatTestLabel.TabIndex = 47
+        Me.selectheatTestLabel.Text = "Heating Schedule"
+        Me.selectheatTestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'createNewSpec_retestLabel
+        '
+        Me.createNewSpec_retestLabel.Location = New System.Drawing.Point(651, 32)
+        Me.createNewSpec_retestLabel.Name = "createNewSpec_retestLabel"
+        Me.createNewSpec_retestLabel.Size = New System.Drawing.Size(150, 35)
+        Me.createNewSpec_retestLabel.TabIndex = 46
+        Me.createNewSpec_retestLabel.Text = "Create New Specimen"
+        Me.createNewSpec_retestLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'specTextBoxDropDown
+        '
+        '
+        '
+        '
+        Me.specTextBoxDropDown.BackgroundStyle.Class = "TextBoxBorder"
+        Me.specTextBoxDropDown.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.specTextBoxDropDown.ButtonDropDown.Visible = True
+        Me.specTextBoxDropDown.Location = New System.Drawing.Point(320, 41)
+        Me.specTextBoxDropDown.Name = "specTextBoxDropDown"
+        Me.specTextBoxDropDown.Size = New System.Drawing.Size(273, 21)
+        Me.specTextBoxDropDown.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.specTextBoxDropDown.TabIndex = 44
+        Me.specTextBoxDropDown.Text = ""
+        '
+        'selectSpecLabel
+        '
+        Me.selectSpecLabel.AutoSize = True
+        Me.selectSpecLabel.BackColor = System.Drawing.Color.LightGray
+        Me.selectSpecLabel.Location = New System.Drawing.Point(120, 34)
+        Me.selectSpecLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.selectSpecLabel.Name = "selectSpecLabel"
+        Me.selectSpecLabel.Size = New System.Drawing.Size(150, 30)
+        Me.selectSpecLabel.TabIndex = 43
+        Me.selectSpecLabel.Text = "Specimen"
+        Me.selectSpecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SideNavPanel6
+        '
+        Me.SideNavPanel6.Controls.Add(Me.createNewSpecLabel)
+        Me.SideNavPanel6.Controls.Add(Me.savedSpecListLabel)
+        Me.SideNavPanel6.Controls.Add(Me.savedSpecListBox)
+        Me.SideNavPanel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SideNavPanel6.Location = New System.Drawing.Point(146, 36)
+        Me.SideNavPanel6.Name = "SideNavPanel6"
+        Me.SideNavPanel6.Size = New System.Drawing.Size(1306, 727)
+        Me.SideNavPanel6.TabIndex = 22
+        Me.SideNavPanel6.Visible = False
+        '
+        'createNewSpecLabel
+        '
+        Me.createNewSpecLabel.Location = New System.Drawing.Point(43, 505)
+        Me.createNewSpecLabel.Name = "createNewSpecLabel"
+        Me.createNewSpecLabel.Size = New System.Drawing.Size(210, 24)
+        Me.createNewSpecLabel.TabIndex = 45
+        Me.createNewSpecLabel.Text = "Create New Specimen"
+        Me.createNewSpecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'savedSpecListLabel
+        '
+        Me.savedSpecListLabel.Location = New System.Drawing.Point(43, 38)
+        Me.savedSpecListLabel.Name = "savedSpecListLabel"
+        Me.savedSpecListLabel.Size = New System.Drawing.Size(119, 24)
+        Me.savedSpecListLabel.TabIndex = 44
+        Me.savedSpecListLabel.Text = "Saved Specimens"
+        Me.savedSpecListLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'savedSpecListBox
+        '
+        Me.savedSpecListBox.FormattingEnabled = True
+        Me.savedSpecListBox.Location = New System.Drawing.Point(46, 65)
+        Me.savedSpecListBox.Name = "savedSpecListBox"
+        Me.savedSpecListBox.Size = New System.Drawing.Size(1237, 420)
+        Me.savedSpecListBox.TabIndex = 0
         '
         'SideNavItem1
         '
@@ -2030,32 +2141,81 @@ Partial Class Arrigo
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'postDimensionsLabel
+        'cylinderLabel
         '
-        Me.postDimensionsLabel.AutoSize = True
-        Me.postDimensionsLabel.Location = New System.Drawing.Point(317, 328)
-        Me.postDimensionsLabel.Name = "postDimensionsLabel"
-        Me.postDimensionsLabel.Size = New System.Drawing.Size(97, 13)
-        Me.postDimensionsLabel.TabIndex = 60
-        Me.postDimensionsLabel.Text = "Dimensions (mm):"
+        Me.cylinderLabel.AutoSize = True
+        Me.cylinderLabel.BackColor = System.Drawing.Color.LightGray
+        Me.cylinderLabel.Location = New System.Drawing.Point(30, 347)
+        Me.cylinderLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.cylinderLabel.Name = "cylinderLabel"
+        Me.cylinderLabel.Size = New System.Drawing.Size(150, 30)
+        Me.cylinderLabel.TabIndex = 67
+        Me.cylinderLabel.Text = "Cylinder"
+        Me.cylinderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'compoundShapeSwitchButton1
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(456, 356)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(25, 13)
+        Me.Label7.TabIndex = 70
+        Me.Label7.Text = "mm"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(218, 356)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(50, 13)
+        Me.Label8.TabIndex = 69
+        Me.Label8.Text = "LENGTH:"
+        '
+        'DoubleInput41
         '
         '
         '
         '
-        Me.compoundShapeSwitchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.compoundShapeSwitchButton1.Location = New System.Drawing.Point(350, 356)
-        Me.compoundShapeSwitchButton1.Name = "compoundShapeSwitchButton1"
-        Me.compoundShapeSwitchButton1.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.compoundShapeSwitchButton1.OffText = "Yes"
-        Me.compoundShapeSwitchButton1.OffTextColor = System.Drawing.Color.Black
-        Me.compoundShapeSwitchButton1.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.compoundShapeSwitchButton1.OnText = "No"
-        Me.compoundShapeSwitchButton1.OnTextColor = System.Drawing.Color.Black
-        Me.compoundShapeSwitchButton1.Size = New System.Drawing.Size(66, 13)
-        Me.compoundShapeSwitchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.compoundShapeSwitchButton1.TabIndex = 61
+        Me.DoubleInput41.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput41.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput41.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput41.Increment = 1.0R
+        Me.DoubleInput41.Location = New System.Drawing.Point(308, 347)
+        Me.DoubleInput41.Name = "DoubleInput41"
+        Me.DoubleInput41.Size = New System.Drawing.Size(131, 22)
+        Me.DoubleInput41.TabIndex = 68
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(456, 396)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(25, 13)
+        Me.Label9.TabIndex = 73
+        Me.Label9.Text = "mm"
+        '
+        'cylDiameterLabel
+        '
+        Me.cylDiameterLabel.AutoSize = True
+        Me.cylDiameterLabel.Location = New System.Drawing.Point(218, 396)
+        Me.cylDiameterLabel.Name = "cylDiameterLabel"
+        Me.cylDiameterLabel.Size = New System.Drawing.Size(62, 13)
+        Me.cylDiameterLabel.TabIndex = 72
+        Me.cylDiameterLabel.Text = "DIAMETER:"
+        '
+        'DoubleInput42
+        '
+        '
+        '
+        '
+        Me.DoubleInput42.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.DoubleInput42.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.DoubleInput42.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.DoubleInput42.Increment = 1.0R
+        Me.DoubleInput42.Location = New System.Drawing.Point(308, 387)
+        Me.DoubleInput42.Name = "DoubleInput42"
+        Me.DoubleInput42.Size = New System.Drawing.Size(131, 22)
+        Me.DoubleInput42.TabIndex = 71
         '
         'Arrigo
         '
@@ -2066,15 +2226,14 @@ Partial Class Arrigo
         Me.Controls.Add(Me.priorTestNotesTextBox)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Arrigo"
         Me.Text = " "
         Me.SideNav1.ResumeLayout(False)
         Me.SideNav1.PerformLayout()
-        Me.SideNavPanel4.ResumeLayout(False)
-        Me.SideNavPanel4.PerformLayout()
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
+        CType(Me.externalDesignationIntegerInput2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.externalDesignationIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.postMaxTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.roomTempIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2083,7 +2242,7 @@ Partial Class Arrigo
         CType(Me.widthDoubleInput2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.lengthDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MaxTempIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SideNavPanel6.ResumeLayout(False)
+        Me.SideNavPanel1.ResumeLayout(False)
         Me.SideNavPanel5.ResumeLayout(False)
         Me.SideNavPanel3.ResumeLayout(False)
         Me.SideNavPanel3.PerformLayout()
@@ -2129,7 +2288,11 @@ Partial Class Arrigo
         CType(Me.DoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tempIntervalsDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.SideNavPanel1.ResumeLayout(False)
+        Me.SideNavPanel4.ResumeLayout(False)
+        Me.SideNavPanel4.PerformLayout()
+        Me.SideNavPanel6.ResumeLayout(False)
+        CType(Me.DoubleInput41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DoubleInput42, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2284,4 +2447,16 @@ Partial Class Arrigo
     Friend WithEvents Label4 As Label
     Friend WithEvents postDimensionsLabel As Label
     Friend WithEvents compoundShapeSwitchButton1 As DevComponents.DotNetBar.Controls.SwitchButton
+    Friend WithEvents externalDesignLabel As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents externalDesignationIntegerInput2 As DevComponents.Editors.IntegerInput
+    Friend WithEvents externalDesignationIntegerInput1 As DevComponents.Editors.IntegerInput
+    Friend WithEvents Label9 As Label
+    Friend WithEvents cylDiameterLabel As Label
+    Friend WithEvents DoubleInput42 As DevComponents.Editors.DoubleInput
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents DoubleInput41 As DevComponents.Editors.DoubleInput
+    Friend WithEvents cylinderLabel As Label
 End Class

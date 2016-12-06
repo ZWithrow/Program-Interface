@@ -3,13 +3,39 @@ Public Class Arrigo
     Dim pageCounter As Integer = 1
     Dim heatPageCounter As Integer = 1
 
+    '  FolderBrowserDialog1.ShowDialog()
+    '  FileLocation = FolderBrowserDialog1.SelectedPath
+    '  If Write = True Then
+
+    ' Dim FileName As String = ""
+    'FileName = FileLocation + "\" + CurrentDateAndTime.Year.ToString _
+    '        + "_" + CurrentDateAndTime.Month.ToString _
+    '        + "_" + CurrentDateAndTime.Day.ToString _
+    '        + "_" + CurrentDateAndTime.Hour.ToString _
+    '        + "_" + CurrentDateAndTime.Minute.ToString _
+    '       + "_" + CurrentDateAndTime.Second.ToString + "_PIDTest.csv"
+    ' Dim RowsLeft As Integer = DaqData.Rows.Count
+    '  TextBoxX2.Text = "Rows left to Write: " + RowsLeft.ToString
+    '  TextBoxX2.Update()
+    ' My.Computer.FileSystem.WriteAllText(FileName, "Time (s), Outside Temp (C), Inside Temp (C)" + vbCrLf, False)
+    ' Dim i As Integer = 0
+    ' While i < DaqData.Rows.Count - 1
+    ' My.Computer.FileSystem.WriteAllText(FileName, Time(i).ToString + "," + PIDArray1(i).ToString + "," + DaqArray1(i).ToString + vbCrLf, True)
+    ' i += 1
+    ' RowsLeft -= 1
+    '  TextBoxX2.Text = "Rows left to Write: " + RowsLeft.ToString
+    'TextBoxX2.Update()
+
+    ' End While
+    'End If
+
 
     Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' set the colors of the labels
         newSpecimenLabel.BackColor = Color.LightGray
         dimensionsLabel.BackColor = Color.LightGray
         materialLabel.BackColor = Color.LightGray
-        MaxTempLabel.BackColor = Color.LightGray
+        externalDesignLabel.BackColor = Color.LightGray
         weightLabel.BackColor = Color.LightGray
         priorTestNotesLabel.BackColor = Color.LightGray
         priorTestLabel.BackColor = Color.Bisque
@@ -128,7 +154,6 @@ Public Class Arrigo
                 heightDoubleInput1.Show()
                 Label2.Show()
                 compoundShapeLabel.Show()
-
                 parallelLabel.Show()
                 parallelSwitchButton1.Show()
                 weightLabel.Show()
@@ -140,6 +165,11 @@ Public Class Arrigo
                 roomTempIntegerInput.Show()
                 crossSectionLabel.Show()
                 crossSectionSwitchButton.Show()
+                externalDesignLabel.Show()
+                externalDesignationIntegerInput2.Show()
+                externalDesignationIntegerInput1.Show()
+                Label6.Show()
+                Label5.Show()
 
                 'hidden on page 1
                 backNexSpecButton.Hide()
@@ -219,6 +249,11 @@ Public Class Arrigo
                 saveLabel.Hide()
                 saveAddLabel.Hide()
                 submitNewSpecButton.Hide()
+                externalDesignLabel.Hide()
+                externalDesignationIntegerInput2.Hide()
+                externalDesignationIntegerInput1.Hide()
+                Label6.Hide()
+                Label5.Hide()
 
 
 
@@ -367,4 +402,5 @@ Public Class Arrigo
         NewHeatingScheduleSideNav.Select()
 
     End Sub
+
 End Class

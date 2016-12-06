@@ -158,83 +158,55 @@ Public Class Arrigo
                 pretestWeightLabel.Show()
                 crossSectionLabel.Show()
                 crossSectionSwitchButton.Show()
-
-                roomAirLabel.Show()
-                dryAirLabel.Show()
-                priorTestLabel.Show()
-                postTestObserveLabel.Show()
                 priorTestNotesLabel.Show()
+                roomAirLabel.Show()
+                roomAirCheckBox.Show()
+                dryAirLabel.Show()
+                dryAirCheckbox.Show()
+                otherLabel.Show()
+                otherTextBox.Show()
+                priorTestLabel.Show()
+                observeLabel.Show()
+                observeTextBoxX.Show()
+
+                'Post test observation section
+                postTestObserveLabel.Show()
+                postTestmsgLabel.Show()
+                postDimLabel.Show()
+                postLengthDoubleInput.Show()
+                postLengthLabel.Show()
+                postWidthLabel.Show()
+                postWidthDoubleInput.Show()
+                postHeightDoubleInput.Show()
+                postHeightLabel.Show()
+                'mm labels for len,wid,height
+                Label17.Show()
+                Label16.Show()
+                Label15.Show()
+                Label12.Show()
+                Label10.Show()
+
+                postCylinderLabel.Show()
+                postCylLengthLabel.Show()
+                postCylLengthDoubleInput.Show()
+                postCylDiameterLabel.Show()
+                postCylDiameterDoubleInput.Show()
+
+
+
 
                 'hidden on page 1
                 backNexSpecButton.Hide()
                 submitNewSpecButton.Hide()
-                priorTestNotesTextBox.Hide()
-                postTestObserveLabel.Hide()
-                observeLabel.Hide()
-                otherTextBox.Hide()
-                observeTextBoxX.Hide()
                 saveLabel.Hide()
                 saveAddLabel.Hide()
+
+
+
+
 
 
             Case 2
-
-                'shown page2
-                backNexSpecButton.Show()
-                priorTestNotesTextBox.Show()
-                priorTestNotesLabel.Show()
-                postTestObserveLabel.Show()
-                postTestObserveLabel.Show()
-                priorTestLabel.Show()
-                roomAirLabel.Show()
-                observeLabel.Show()
-                otherTextBox.Show()
-                observeTextBoxX.Show()
-
-                'hidden page 2
-                newSpecimenLabel.Hide()
-                specimenNameLabel.Hide()
-                dimensionsLabel.Hide()
-                materialLabel.Hide()
-                materialTextBox.Hide()
-                MaxTempIntegerInput1.Hide()
-                MaxTempLabel.Hide()
-                weightLabel.Hide()
-                lengthLabel.Hide()
-                lengthDoubleInput1.Hide()
-                heightLabel1.Hide()
-                heightDoubleInput1.Hide()
-                widthLabel.Hide()
-                widthDoubleInput2.Hide()
-                mmLabel.Hide()
-                Label1.Hide()
-                Label2.Hide()
-                compoundShapeLabel.Hide()
-                parallelLabel.Hide()
-                parallelSwitchButton1.Hide()
-                crossSectionLabel.Hide()
-                crossSectionSwitchButton.Hide()
-                weightIntegerInput2.Hide()
-
-                submitNewSpecButton.Hide()
-                specimenNameIntegerInput.Hide()
-                pretestWeightLabel.Hide()
-                saveLabel.Hide()
-                saveAddLabel.Hide()
-                submitNewSpecButton.Hide()
-                externalDesignLabel.Hide()
-                externalDesignationIntegerInput2.Hide()
-                externalDesignationIntegerInput1.Hide()
-                Label6.Hide()
-                Label5.Hide()
-                dryAirLabel.Hide()
-                otherLabel.Hide()
-
-
-
-
-
-            Case 3
                 'Shown on page 3
                 submitNewSpecButton.Show()
                 backNexSpecButton.Show()
@@ -246,7 +218,6 @@ Public Class Arrigo
                 priorTestNotesLabel.Hide()
                 priorTestNotesTextBox.Hide()
                 postTestObserveLabel.Hide()
-
                 postTestObserveLabel.Hide()
                 newSpecimenLabel.Hide()
                 specimenNameLabel.Hide()
@@ -279,14 +250,13 @@ Public Class Arrigo
                 observeTextBoxX.Hide()
 
                 roomAirLabel.Hide()
-
                 dryAirLabel.Hide()
                 otherTextBox.Hide()
                 otherLabel.Hide()
                 priorTestLabel.Hide()
 
             Case Else
-                pageCounter = 3
+                pageCounter = 2
                 ShowPage()
 
         End Select

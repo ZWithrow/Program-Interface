@@ -26,6 +26,43 @@ Partial Class Arrigo
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.SideNav1 = New DevComponents.DotNetBar.Controls.SideNav()
         Me.SideNavPanel2 = New DevComponents.DotNetBar.Controls.SideNavPanel()
+        Me.postTestWeightLabel = New System.Windows.Forms.Label()
+        Me.postWeightIntegerInput = New DevComponents.Editors.IntegerInput()
+        Me.postWeightLabel = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.postCylDiameterLabel = New System.Windows.Forms.Label()
+        Me.postCylDiameterDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.postCylLengthLabel = New System.Windows.Forms.Label()
+        Me.postCylLengthDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.postCylinderLabel = New System.Windows.Forms.Label()
+        Me.postCompoundShapeSwitchButton = New DevComponents.DotNetBar.Controls.SwitchButton()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.postCrossSectionSwitchButton = New DevComponents.DotNetBar.Controls.SwitchButton()
+        Me.postCrossSectionLabel = New System.Windows.Forms.Label()
+        Me.postParallelSwitchButton = New DevComponents.DotNetBar.Controls.SwitchButton()
+        Me.postParallelLabel = New System.Windows.Forms.Label()
+        Me.postCompoundShapeLabel = New System.Windows.Forms.Label()
+        Me.postHeightDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.postHeightLabel = New System.Windows.Forms.Label()
+        Me.postWidthDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.postWidthLabel = New System.Windows.Forms.Label()
+        Me.postLengthLabel = New System.Windows.Forms.Label()
+        Me.postLengthDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.postDimLabel = New System.Windows.Forms.Label()
+        Me.postTestmsgLabel = New System.Windows.Forms.Label()
+        Me.dryAirCheckbox = New System.Windows.Forms.CheckBox()
+        Me.roomAirCheckBox = New System.Windows.Forms.CheckBox()
+        Me.crosssecLabel = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cylDiameterLabel = New System.Windows.Forms.Label()
+        Me.cylDiameterDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.cylLengthLabel = New System.Windows.Forms.Label()
+        Me.cylLengthDoubleInput = New DevComponents.Editors.DoubleInput()
+        Me.cylinderLabel = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.externalDesignationIntegerInput2 = New DevComponents.Editors.IntegerInput()
@@ -169,45 +206,16 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.cylinderLabel = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.cylLengthLabel = New System.Windows.Forms.Label()
-        Me.cylLengthDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.cylDiameterLabel = New System.Windows.Forms.Label()
-        Me.cylDiameterDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.crosssecLabel = New System.Windows.Forms.Label()
-        Me.roomAirCheckBox = New System.Windows.Forms.CheckBox()
-        Me.dryAirCheckbox = New System.Windows.Forms.CheckBox()
-        Me.postTestmsgLabel = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.posCylDiameterLabel = New System.Windows.Forms.Label()
-        Me.posCylDiameterDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.postCylLengthLabel = New System.Windows.Forms.Label()
-        Me.postCylLengthDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.postCylinderLabel = New System.Windows.Forms.Label()
-        Me.postCompoundShapeSwitchButton = New DevComponents.DotNetBar.Controls.SwitchButton()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.SwitchButton2 = New DevComponents.DotNetBar.Controls.SwitchButton()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.SwitchButton3 = New DevComponents.DotNetBar.Controls.SwitchButton()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.postCompoundShapeLabel = New System.Windows.Forms.Label()
-        Me.postHeightDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.postHeightLabel = New System.Windows.Forms.Label()
-        Me.postWidthDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.postWidthLabel = New System.Windows.Forms.Label()
-        Me.postLengthLabel = New System.Windows.Forms.Label()
-        Me.postLengthDoubleInput = New DevComponents.Editors.DoubleInput()
-        Me.postDimLabel = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.IntegerInput1 = New DevComponents.Editors.IntegerInput()
-        Me.postTestWeightLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
+        CType(Me.postWeightIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.postCylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.postCylLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.postHeightDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.postWidthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.postLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cylLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.externalDesignationIntegerInput2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.externalDesignationIntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -263,14 +271,6 @@ Partial Class Arrigo
         CType(Me.startingTempDoubleInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SideNavPanel4.SuspendLayout()
         Me.SideNavPanel6.SuspendLayout()
-        CType(Me.cylLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.posCylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.postCylLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.postHeightDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.postWidthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.postLengthDoubleInput, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StyleManager1
@@ -297,12 +297,12 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
-        Me.SideNavPanel2.Controls.Add(Me.Label8)
-        Me.SideNavPanel2.Controls.Add(Me.IntegerInput1)
         Me.SideNavPanel2.Controls.Add(Me.postTestWeightLabel)
+        Me.SideNavPanel2.Controls.Add(Me.postWeightIntegerInput)
+        Me.SideNavPanel2.Controls.Add(Me.postWeightLabel)
         Me.SideNavPanel2.Controls.Add(Me.Label10)
-        Me.SideNavPanel2.Controls.Add(Me.posCylDiameterLabel)
-        Me.SideNavPanel2.Controls.Add(Me.posCylDiameterDoubleInput)
+        Me.SideNavPanel2.Controls.Add(Me.postCylDiameterLabel)
+        Me.SideNavPanel2.Controls.Add(Me.postCylDiameterDoubleInput)
         Me.SideNavPanel2.Controls.Add(Me.Label12)
         Me.SideNavPanel2.Controls.Add(Me.postCylLengthLabel)
         Me.SideNavPanel2.Controls.Add(Me.postCylLengthDoubleInput)
@@ -311,10 +311,10 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.Label15)
         Me.SideNavPanel2.Controls.Add(Me.Label16)
         Me.SideNavPanel2.Controls.Add(Me.Label17)
-        Me.SideNavPanel2.Controls.Add(Me.SwitchButton2)
-        Me.SideNavPanel2.Controls.Add(Me.Label18)
-        Me.SideNavPanel2.Controls.Add(Me.SwitchButton3)
-        Me.SideNavPanel2.Controls.Add(Me.Label19)
+        Me.SideNavPanel2.Controls.Add(Me.postCrossSectionSwitchButton)
+        Me.SideNavPanel2.Controls.Add(Me.postCrossSectionLabel)
+        Me.SideNavPanel2.Controls.Add(Me.postParallelSwitchButton)
+        Me.SideNavPanel2.Controls.Add(Me.postParallelLabel)
         Me.SideNavPanel2.Controls.Add(Me.postCompoundShapeLabel)
         Me.SideNavPanel2.Controls.Add(Me.postHeightDoubleInput)
         Me.SideNavPanel2.Controls.Add(Me.postHeightLabel)
@@ -386,6 +386,417 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1293, 727)
         Me.SideNavPanel2.TabIndex = 6
+        '
+        'postTestWeightLabel
+        '
+        Me.postTestWeightLabel.AutoSize = True
+        Me.postTestWeightLabel.Location = New System.Drawing.Point(960, 585)
+        Me.postTestWeightLabel.Name = "postTestWeightLabel"
+        Me.postTestWeightLabel.Size = New System.Drawing.Size(55, 13)
+        Me.postTestWeightLabel.TabIndex = 103
+        Me.postTestWeightLabel.Text = "PRE-TEST:"
+        '
+        'postWeightIntegerInput
+        '
+        '
+        '
+        '
+        Me.postWeightIntegerInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postWeightIntegerInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postWeightIntegerInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postWeightIntegerInput.Location = New System.Drawing.Point(1068, 585)
+        Me.postWeightIntegerInput.Name = "postWeightIntegerInput"
+        Me.postWeightIntegerInput.Size = New System.Drawing.Size(90, 22)
+        Me.postWeightIntegerInput.TabIndex = 102
+        '
+        'postWeightLabel
+        '
+        Me.postWeightLabel.AutoSize = True
+        Me.postWeightLabel.BackColor = System.Drawing.Color.LightGray
+        Me.postWeightLabel.Location = New System.Drawing.Point(790, 576)
+        Me.postWeightLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postWeightLabel.Name = "postWeightLabel"
+        Me.postWeightLabel.Size = New System.Drawing.Size(150, 30)
+        Me.postWeightLabel.TabIndex = 101
+        Me.postWeightLabel.Text = "Weight (g)"
+        Me.postWeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(1216, 462)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(25, 13)
+        Me.Label10.TabIndex = 100
+        Me.Label10.Text = "mm"
+        '
+        'postCylDiameterLabel
+        '
+        Me.postCylDiameterLabel.AutoSize = True
+        Me.postCylDiameterLabel.Location = New System.Drawing.Point(960, 462)
+        Me.postCylDiameterLabel.Name = "postCylDiameterLabel"
+        Me.postCylDiameterLabel.Size = New System.Drawing.Size(62, 13)
+        Me.postCylDiameterLabel.TabIndex = 99
+        Me.postCylDiameterLabel.Text = "DIAMETER:"
+        '
+        'postCylDiameterDoubleInput
+        '
+        '
+        '
+        '
+        Me.postCylDiameterDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postCylDiameterDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postCylDiameterDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postCylDiameterDoubleInput.Increment = 1.0R
+        Me.postCylDiameterDoubleInput.Location = New System.Drawing.Point(1068, 453)
+        Me.postCylDiameterDoubleInput.Name = "postCylDiameterDoubleInput"
+        Me.postCylDiameterDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.postCylDiameterDoubleInput.TabIndex = 98
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(1216, 422)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(25, 13)
+        Me.Label12.TabIndex = 97
+        Me.Label12.Text = "mm"
+        '
+        'postCylLengthLabel
+        '
+        Me.postCylLengthLabel.AutoSize = True
+        Me.postCylLengthLabel.Location = New System.Drawing.Point(960, 422)
+        Me.postCylLengthLabel.Name = "postCylLengthLabel"
+        Me.postCylLengthLabel.Size = New System.Drawing.Size(50, 13)
+        Me.postCylLengthLabel.TabIndex = 96
+        Me.postCylLengthLabel.Text = "LENGTH:"
+        '
+        'postCylLengthDoubleInput
+        '
+        '
+        '
+        '
+        Me.postCylLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postCylLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postCylLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postCylLengthDoubleInput.Increment = 1.0R
+        Me.postCylLengthDoubleInput.Location = New System.Drawing.Point(1068, 413)
+        Me.postCylLengthDoubleInput.Name = "postCylLengthDoubleInput"
+        Me.postCylLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.postCylLengthDoubleInput.TabIndex = 95
+        '
+        'postCylinderLabel
+        '
+        Me.postCylinderLabel.AutoSize = True
+        Me.postCylinderLabel.BackColor = System.Drawing.Color.LightGray
+        Me.postCylinderLabel.Location = New System.Drawing.Point(790, 413)
+        Me.postCylinderLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postCylinderLabel.Name = "postCylinderLabel"
+        Me.postCylinderLabel.Size = New System.Drawing.Size(150, 30)
+        Me.postCylinderLabel.TabIndex = 94
+        Me.postCylinderLabel.Text = "Cylinder"
+        Me.postCylinderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'postCompoundShapeSwitchButton
+        '
+        '
+        '
+        '
+        Me.postCompoundShapeSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postCompoundShapeSwitchButton.Location = New System.Drawing.Point(1107, 501)
+        Me.postCompoundShapeSwitchButton.Name = "postCompoundShapeSwitchButton"
+        Me.postCompoundShapeSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postCompoundShapeSwitchButton.OffText = "Yes"
+        Me.postCompoundShapeSwitchButton.OffTextColor = System.Drawing.Color.Black
+        Me.postCompoundShapeSwitchButton.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postCompoundShapeSwitchButton.OnText = "No"
+        Me.postCompoundShapeSwitchButton.OnTextColor = System.Drawing.Color.Black
+        Me.postCompoundShapeSwitchButton.Size = New System.Drawing.Size(66, 13)
+        Me.postCompoundShapeSwitchButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.postCompoundShapeSwitchButton.TabIndex = 93
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(1216, 380)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(25, 13)
+        Me.Label15.TabIndex = 92
+        Me.Label15.Text = "mm"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(1216, 345)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(25, 13)
+        Me.Label16.TabIndex = 91
+        Me.Label16.Text = "mm"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(1216, 306)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(25, 13)
+        Me.Label17.TabIndex = 90
+        Me.Label17.Text = "mm"
+        '
+        'postCrossSectionSwitchButton
+        '
+        '
+        '
+        '
+        Me.postCrossSectionSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postCrossSectionSwitchButton.Location = New System.Drawing.Point(1153, 556)
+        Me.postCrossSectionSwitchButton.Name = "postCrossSectionSwitchButton"
+        Me.postCrossSectionSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postCrossSectionSwitchButton.OffText = "Yes"
+        Me.postCrossSectionSwitchButton.OffTextColor = System.Drawing.Color.Black
+        Me.postCrossSectionSwitchButton.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postCrossSectionSwitchButton.OnText = "No"
+        Me.postCrossSectionSwitchButton.OnTextColor = System.Drawing.Color.Black
+        Me.postCrossSectionSwitchButton.Size = New System.Drawing.Size(66, 13)
+        Me.postCrossSectionSwitchButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.postCrossSectionSwitchButton.TabIndex = 89
+        '
+        'postCrossSectionLabel
+        '
+        Me.postCrossSectionLabel.AutoSize = True
+        Me.postCrossSectionLabel.Location = New System.Drawing.Point(960, 556)
+        Me.postCrossSectionLabel.Name = "postCrossSectionLabel"
+        Me.postCrossSectionLabel.Size = New System.Drawing.Size(146, 13)
+        Me.postCrossSectionLabel.TabIndex = 88
+        Me.postCrossSectionLabel.Text = "CROSS SECTION UNIFORM:"
+        '
+        'postParallelSwitchButton
+        '
+        '
+        '
+        '
+        Me.postParallelSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postParallelSwitchButton.Location = New System.Drawing.Point(1107, 526)
+        Me.postParallelSwitchButton.Name = "postParallelSwitchButton"
+        Me.postParallelSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postParallelSwitchButton.OffText = "Yes"
+        Me.postParallelSwitchButton.OffTextColor = System.Drawing.Color.Black
+        Me.postParallelSwitchButton.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.postParallelSwitchButton.OnText = "No"
+        Me.postParallelSwitchButton.OnTextColor = System.Drawing.Color.Black
+        Me.postParallelSwitchButton.Size = New System.Drawing.Size(66, 13)
+        Me.postParallelSwitchButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.postParallelSwitchButton.TabIndex = 87
+        '
+        'postParallelLabel
+        '
+        Me.postParallelLabel.AutoSize = True
+        Me.postParallelLabel.Location = New System.Drawing.Point(960, 526)
+        Me.postParallelLabel.Name = "postParallelLabel"
+        Me.postParallelLabel.Size = New System.Drawing.Size(88, 13)
+        Me.postParallelLabel.TabIndex = 86
+        Me.postParallelLabel.Text = "ENDS PARALLEL:"
+        '
+        'postCompoundShapeLabel
+        '
+        Me.postCompoundShapeLabel.AutoSize = True
+        Me.postCompoundShapeLabel.Location = New System.Drawing.Point(960, 501)
+        Me.postCompoundShapeLabel.Name = "postCompoundShapeLabel"
+        Me.postCompoundShapeLabel.Size = New System.Drawing.Size(111, 13)
+        Me.postCompoundShapeLabel.TabIndex = 85
+        Me.postCompoundShapeLabel.Text = "COMPOUND SHAPE:"
+        '
+        'postHeightDoubleInput
+        '
+        '
+        '
+        '
+        Me.postHeightDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postHeightDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postHeightDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postHeightDoubleInput.Increment = 1.0R
+        Me.postHeightDoubleInput.Location = New System.Drawing.Point(1068, 371)
+        Me.postHeightDoubleInput.Name = "postHeightDoubleInput"
+        Me.postHeightDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.postHeightDoubleInput.TabIndex = 84
+        '
+        'postHeightLabel
+        '
+        Me.postHeightLabel.AutoSize = True
+        Me.postHeightLabel.Location = New System.Drawing.Point(960, 380)
+        Me.postHeightLabel.Name = "postHeightLabel"
+        Me.postHeightLabel.Size = New System.Drawing.Size(48, 13)
+        Me.postHeightLabel.TabIndex = 83
+        Me.postHeightLabel.Text = "HEIGHT:"
+        '
+        'postWidthDoubleInput
+        '
+        '
+        '
+        '
+        Me.postWidthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postWidthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postWidthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postWidthDoubleInput.Increment = 1.0R
+        Me.postWidthDoubleInput.Location = New System.Drawing.Point(1068, 336)
+        Me.postWidthDoubleInput.Name = "postWidthDoubleInput"
+        Me.postWidthDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.postWidthDoubleInput.TabIndex = 82
+        '
+        'postWidthLabel
+        '
+        Me.postWidthLabel.AutoSize = True
+        Me.postWidthLabel.Location = New System.Drawing.Point(960, 345)
+        Me.postWidthLabel.Name = "postWidthLabel"
+        Me.postWidthLabel.Size = New System.Drawing.Size(45, 13)
+        Me.postWidthLabel.TabIndex = 81
+        Me.postWidthLabel.Text = "WIDTH:"
+        '
+        'postLengthLabel
+        '
+        Me.postLengthLabel.AutoSize = True
+        Me.postLengthLabel.Location = New System.Drawing.Point(960, 306)
+        Me.postLengthLabel.Name = "postLengthLabel"
+        Me.postLengthLabel.Size = New System.Drawing.Size(50, 13)
+        Me.postLengthLabel.TabIndex = 80
+        Me.postLengthLabel.Text = "LENGTH:"
+        '
+        'postLengthDoubleInput
+        '
+        '
+        '
+        '
+        Me.postLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.postLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.postLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.postLengthDoubleInput.Increment = 1.0R
+        Me.postLengthDoubleInput.Location = New System.Drawing.Point(1068, 297)
+        Me.postLengthDoubleInput.Name = "postLengthDoubleInput"
+        Me.postLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.postLengthDoubleInput.TabIndex = 79
+        '
+        'postDimLabel
+        '
+        Me.postDimLabel.AutoSize = True
+        Me.postDimLabel.BackColor = System.Drawing.Color.LightGray
+        Me.postDimLabel.Location = New System.Drawing.Point(790, 297)
+        Me.postDimLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postDimLabel.Name = "postDimLabel"
+        Me.postDimLabel.Size = New System.Drawing.Size(150, 30)
+        Me.postDimLabel.TabIndex = 78
+        Me.postDimLabel.Text = "Dimensions"
+        Me.postDimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'postTestmsgLabel
+        '
+        Me.postTestmsgLabel.AutoSize = True
+        Me.postTestmsgLabel.Location = New System.Drawing.Point(960, 261)
+        Me.postTestmsgLabel.Name = "postTestmsgLabel"
+        Me.postTestmsgLabel.Size = New System.Drawing.Size(191, 13)
+        Me.postTestmsgLabel.TabIndex = 77
+        Me.postTestmsgLabel.Text = "(To be added any time after the test)"
+        '
+        'dryAirCheckbox
+        '
+        Me.dryAirCheckbox.AutoSize = True
+        Me.dryAirCheckbox.Location = New System.Drawing.Point(1050, 112)
+        Me.dryAirCheckbox.Name = "dryAirCheckbox"
+        Me.dryAirCheckbox.Size = New System.Drawing.Size(15, 14)
+        Me.dryAirCheckbox.TabIndex = 76
+        Me.dryAirCheckbox.UseVisualStyleBackColor = True
+        '
+        'roomAirCheckBox
+        '
+        Me.roomAirCheckBox.AutoSize = True
+        Me.roomAirCheckBox.Location = New System.Drawing.Point(1050, 86)
+        Me.roomAirCheckBox.Name = "roomAirCheckBox"
+        Me.roomAirCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.roomAirCheckBox.TabIndex = 75
+        Me.roomAirCheckBox.UseVisualStyleBackColor = True
+        '
+        'crosssecLabel
+        '
+        Me.crosssecLabel.AutoSize = True
+        Me.crosssecLabel.Location = New System.Drawing.Point(466, 490)
+        Me.crosssecLabel.Name = "crosssecLabel"
+        Me.crosssecLabel.Size = New System.Drawing.Size(225, 13)
+        Me.crosssecLabel.TabIndex = 74
+        Me.crosssecLabel.Text = " above dimensions describe gauge section"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(456, 396)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(25, 13)
+        Me.Label9.TabIndex = 73
+        Me.Label9.Text = "mm"
+        '
+        'cylDiameterLabel
+        '
+        Me.cylDiameterLabel.AutoSize = True
+        Me.cylDiameterLabel.Location = New System.Drawing.Point(218, 396)
+        Me.cylDiameterLabel.Name = "cylDiameterLabel"
+        Me.cylDiameterLabel.Size = New System.Drawing.Size(62, 13)
+        Me.cylDiameterLabel.TabIndex = 72
+        Me.cylDiameterLabel.Text = "DIAMETER:"
+        '
+        'cylDiameterDoubleInput
+        '
+        '
+        '
+        '
+        Me.cylDiameterDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.cylDiameterDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.cylDiameterDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.cylDiameterDoubleInput.Increment = 1.0R
+        Me.cylDiameterDoubleInput.Location = New System.Drawing.Point(308, 387)
+        Me.cylDiameterDoubleInput.Name = "cylDiameterDoubleInput"
+        Me.cylDiameterDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.cylDiameterDoubleInput.TabIndex = 71
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(456, 356)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(25, 13)
+        Me.Label7.TabIndex = 70
+        Me.Label7.Text = "mm"
+        '
+        'cylLengthLabel
+        '
+        Me.cylLengthLabel.AutoSize = True
+        Me.cylLengthLabel.Location = New System.Drawing.Point(218, 356)
+        Me.cylLengthLabel.Name = "cylLengthLabel"
+        Me.cylLengthLabel.Size = New System.Drawing.Size(50, 13)
+        Me.cylLengthLabel.TabIndex = 69
+        Me.cylLengthLabel.Text = "LENGTH:"
+        '
+        'cylLengthDoubleInput
+        '
+        '
+        '
+        '
+        Me.cylLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
+        Me.cylLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.cylLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
+        Me.cylLengthDoubleInput.Increment = 1.0R
+        Me.cylLengthDoubleInput.Location = New System.Drawing.Point(308, 347)
+        Me.cylLengthDoubleInput.Name = "cylLengthDoubleInput"
+        Me.cylLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
+        Me.cylLengthDoubleInput.TabIndex = 68
+        '
+        'cylinderLabel
+        '
+        Me.cylinderLabel.AutoSize = True
+        Me.cylinderLabel.BackColor = System.Drawing.Color.LightGray
+        Me.cylinderLabel.Location = New System.Drawing.Point(30, 347)
+        Me.cylinderLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.cylinderLabel.Name = "cylinderLabel"
+        Me.cylinderLabel.Size = New System.Drawing.Size(150, 30)
+        Me.cylinderLabel.TabIndex = 67
+        Me.cylinderLabel.Text = "Cylinder"
+        Me.cylinderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '
@@ -2109,417 +2520,6 @@ Partial Class Arrigo
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'cylinderLabel
-        '
-        Me.cylinderLabel.AutoSize = True
-        Me.cylinderLabel.BackColor = System.Drawing.Color.LightGray
-        Me.cylinderLabel.Location = New System.Drawing.Point(30, 347)
-        Me.cylinderLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.cylinderLabel.Name = "cylinderLabel"
-        Me.cylinderLabel.Size = New System.Drawing.Size(150, 30)
-        Me.cylinderLabel.TabIndex = 67
-        Me.cylinderLabel.Text = "Cylinder"
-        Me.cylinderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(456, 356)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(25, 13)
-        Me.Label7.TabIndex = 70
-        Me.Label7.Text = "mm"
-        '
-        'cylLengthLabel
-        '
-        Me.cylLengthLabel.AutoSize = True
-        Me.cylLengthLabel.Location = New System.Drawing.Point(218, 356)
-        Me.cylLengthLabel.Name = "cylLengthLabel"
-        Me.cylLengthLabel.Size = New System.Drawing.Size(50, 13)
-        Me.cylLengthLabel.TabIndex = 69
-        Me.cylLengthLabel.Text = "LENGTH:"
-        '
-        'cylLengthDoubleInput
-        '
-        '
-        '
-        '
-        Me.cylLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.cylLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.cylLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.cylLengthDoubleInput.Increment = 1.0R
-        Me.cylLengthDoubleInput.Location = New System.Drawing.Point(308, 347)
-        Me.cylLengthDoubleInput.Name = "cylLengthDoubleInput"
-        Me.cylLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.cylLengthDoubleInput.TabIndex = 68
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(456, 396)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(25, 13)
-        Me.Label9.TabIndex = 73
-        Me.Label9.Text = "mm"
-        '
-        'cylDiameterLabel
-        '
-        Me.cylDiameterLabel.AutoSize = True
-        Me.cylDiameterLabel.Location = New System.Drawing.Point(218, 396)
-        Me.cylDiameterLabel.Name = "cylDiameterLabel"
-        Me.cylDiameterLabel.Size = New System.Drawing.Size(62, 13)
-        Me.cylDiameterLabel.TabIndex = 72
-        Me.cylDiameterLabel.Text = "DIAMETER:"
-        '
-        'cylDiameterDoubleInput
-        '
-        '
-        '
-        '
-        Me.cylDiameterDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.cylDiameterDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.cylDiameterDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.cylDiameterDoubleInput.Increment = 1.0R
-        Me.cylDiameterDoubleInput.Location = New System.Drawing.Point(308, 387)
-        Me.cylDiameterDoubleInput.Name = "cylDiameterDoubleInput"
-        Me.cylDiameterDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.cylDiameterDoubleInput.TabIndex = 71
-        '
-        'crosssecLabel
-        '
-        Me.crosssecLabel.AutoSize = True
-        Me.crosssecLabel.Location = New System.Drawing.Point(466, 490)
-        Me.crosssecLabel.Name = "crosssecLabel"
-        Me.crosssecLabel.Size = New System.Drawing.Size(225, 13)
-        Me.crosssecLabel.TabIndex = 74
-        Me.crosssecLabel.Text = " above dimensions describe gauge section"
-        '
-        'roomAirCheckBox
-        '
-        Me.roomAirCheckBox.AutoSize = True
-        Me.roomAirCheckBox.Location = New System.Drawing.Point(1050, 86)
-        Me.roomAirCheckBox.Name = "roomAirCheckBox"
-        Me.roomAirCheckBox.Size = New System.Drawing.Size(15, 14)
-        Me.roomAirCheckBox.TabIndex = 75
-        Me.roomAirCheckBox.UseVisualStyleBackColor = True
-        '
-        'dryAirCheckbox
-        '
-        Me.dryAirCheckbox.AutoSize = True
-        Me.dryAirCheckbox.Location = New System.Drawing.Point(1050, 112)
-        Me.dryAirCheckbox.Name = "dryAirCheckbox"
-        Me.dryAirCheckbox.Size = New System.Drawing.Size(15, 14)
-        Me.dryAirCheckbox.TabIndex = 76
-        Me.dryAirCheckbox.UseVisualStyleBackColor = True
-        '
-        'postTestmsgLabel
-        '
-        Me.postTestmsgLabel.AutoSize = True
-        Me.postTestmsgLabel.Location = New System.Drawing.Point(960, 261)
-        Me.postTestmsgLabel.Name = "postTestmsgLabel"
-        Me.postTestmsgLabel.Size = New System.Drawing.Size(191, 13)
-        Me.postTestmsgLabel.TabIndex = 77
-        Me.postTestmsgLabel.Text = "(To be added any time after the test)"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(1216, 462)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(25, 13)
-        Me.Label10.TabIndex = 100
-        Me.Label10.Text = "mm"
-        '
-        'posCylDiameterLabel
-        '
-        Me.posCylDiameterLabel.AutoSize = True
-        Me.posCylDiameterLabel.Location = New System.Drawing.Point(960, 462)
-        Me.posCylDiameterLabel.Name = "posCylDiameterLabel"
-        Me.posCylDiameterLabel.Size = New System.Drawing.Size(62, 13)
-        Me.posCylDiameterLabel.TabIndex = 99
-        Me.posCylDiameterLabel.Text = "DIAMETER:"
-        '
-        'posCylDiameterDoubleInput
-        '
-        '
-        '
-        '
-        Me.posCylDiameterDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.posCylDiameterDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.posCylDiameterDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.posCylDiameterDoubleInput.Increment = 1.0R
-        Me.posCylDiameterDoubleInput.Location = New System.Drawing.Point(1068, 453)
-        Me.posCylDiameterDoubleInput.Name = "posCylDiameterDoubleInput"
-        Me.posCylDiameterDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.posCylDiameterDoubleInput.TabIndex = 98
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(1216, 422)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(25, 13)
-        Me.Label12.TabIndex = 97
-        Me.Label12.Text = "mm"
-        '
-        'postCylLengthLabel
-        '
-        Me.postCylLengthLabel.AutoSize = True
-        Me.postCylLengthLabel.Location = New System.Drawing.Point(960, 422)
-        Me.postCylLengthLabel.Name = "postCylLengthLabel"
-        Me.postCylLengthLabel.Size = New System.Drawing.Size(50, 13)
-        Me.postCylLengthLabel.TabIndex = 96
-        Me.postCylLengthLabel.Text = "LENGTH:"
-        '
-        'postCylLengthDoubleInput
-        '
-        '
-        '
-        '
-        Me.postCylLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.postCylLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postCylLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postCylLengthDoubleInput.Increment = 1.0R
-        Me.postCylLengthDoubleInput.Location = New System.Drawing.Point(1068, 413)
-        Me.postCylLengthDoubleInput.Name = "postCylLengthDoubleInput"
-        Me.postCylLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.postCylLengthDoubleInput.TabIndex = 95
-        '
-        'postCylinderLabel
-        '
-        Me.postCylinderLabel.AutoSize = True
-        Me.postCylinderLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postCylinderLabel.Location = New System.Drawing.Point(790, 413)
-        Me.postCylinderLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.postCylinderLabel.Name = "postCylinderLabel"
-        Me.postCylinderLabel.Size = New System.Drawing.Size(150, 30)
-        Me.postCylinderLabel.TabIndex = 94
-        Me.postCylinderLabel.Text = "Cylinder"
-        Me.postCylinderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'postCompoundShapeSwitchButton
-        '
-        '
-        '
-        '
-        Me.postCompoundShapeSwitchButton.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postCompoundShapeSwitchButton.Location = New System.Drawing.Point(1107, 501)
-        Me.postCompoundShapeSwitchButton.Name = "postCompoundShapeSwitchButton"
-        Me.postCompoundShapeSwitchButton.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.postCompoundShapeSwitchButton.OffText = "Yes"
-        Me.postCompoundShapeSwitchButton.OffTextColor = System.Drawing.Color.Black
-        Me.postCompoundShapeSwitchButton.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.postCompoundShapeSwitchButton.OnText = "No"
-        Me.postCompoundShapeSwitchButton.OnTextColor = System.Drawing.Color.Black
-        Me.postCompoundShapeSwitchButton.Size = New System.Drawing.Size(66, 13)
-        Me.postCompoundShapeSwitchButton.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.postCompoundShapeSwitchButton.TabIndex = 93
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(1216, 380)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(25, 13)
-        Me.Label15.TabIndex = 92
-        Me.Label15.Text = "mm"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(1216, 345)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(25, 13)
-        Me.Label16.TabIndex = 91
-        Me.Label16.Text = "mm"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(1216, 306)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(25, 13)
-        Me.Label17.TabIndex = 90
-        Me.Label17.Text = "mm"
-        '
-        'SwitchButton2
-        '
-        '
-        '
-        '
-        Me.SwitchButton2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.SwitchButton2.Location = New System.Drawing.Point(1153, 556)
-        Me.SwitchButton2.Name = "SwitchButton2"
-        Me.SwitchButton2.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SwitchButton2.OffText = "Yes"
-        Me.SwitchButton2.OffTextColor = System.Drawing.Color.Black
-        Me.SwitchButton2.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SwitchButton2.OnText = "No"
-        Me.SwitchButton2.OnTextColor = System.Drawing.Color.Black
-        Me.SwitchButton2.Size = New System.Drawing.Size(66, 13)
-        Me.SwitchButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.SwitchButton2.TabIndex = 89
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(960, 556)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(146, 13)
-        Me.Label18.TabIndex = 88
-        Me.Label18.Text = "CROSS SECTION UNIFORM:"
-        '
-        'SwitchButton3
-        '
-        '
-        '
-        '
-        Me.SwitchButton3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.SwitchButton3.Location = New System.Drawing.Point(1107, 526)
-        Me.SwitchButton3.Name = "SwitchButton3"
-        Me.SwitchButton3.OffBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SwitchButton3.OffText = "Yes"
-        Me.SwitchButton3.OffTextColor = System.Drawing.Color.Black
-        Me.SwitchButton3.OnBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SwitchButton3.OnText = "No"
-        Me.SwitchButton3.OnTextColor = System.Drawing.Color.Black
-        Me.SwitchButton3.Size = New System.Drawing.Size(66, 13)
-        Me.SwitchButton3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.SwitchButton3.TabIndex = 87
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(960, 526)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(88, 13)
-        Me.Label19.TabIndex = 86
-        Me.Label19.Text = "ENDS PARALLEL:"
-        '
-        'postCompoundShapeLabel
-        '
-        Me.postCompoundShapeLabel.AutoSize = True
-        Me.postCompoundShapeLabel.Location = New System.Drawing.Point(960, 501)
-        Me.postCompoundShapeLabel.Name = "postCompoundShapeLabel"
-        Me.postCompoundShapeLabel.Size = New System.Drawing.Size(111, 13)
-        Me.postCompoundShapeLabel.TabIndex = 85
-        Me.postCompoundShapeLabel.Text = "COMPOUND SHAPE:"
-        '
-        'postHeightDoubleInput
-        '
-        '
-        '
-        '
-        Me.postHeightDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.postHeightDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postHeightDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postHeightDoubleInput.Increment = 1.0R
-        Me.postHeightDoubleInput.Location = New System.Drawing.Point(1068, 371)
-        Me.postHeightDoubleInput.Name = "postHeightDoubleInput"
-        Me.postHeightDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.postHeightDoubleInput.TabIndex = 84
-        '
-        'postHeightLabel
-        '
-        Me.postHeightLabel.AutoSize = True
-        Me.postHeightLabel.Location = New System.Drawing.Point(960, 380)
-        Me.postHeightLabel.Name = "postHeightLabel"
-        Me.postHeightLabel.Size = New System.Drawing.Size(48, 13)
-        Me.postHeightLabel.TabIndex = 83
-        Me.postHeightLabel.Text = "HEIGHT:"
-        '
-        'postWidthDoubleInput
-        '
-        '
-        '
-        '
-        Me.postWidthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.postWidthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postWidthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postWidthDoubleInput.Increment = 1.0R
-        Me.postWidthDoubleInput.Location = New System.Drawing.Point(1068, 336)
-        Me.postWidthDoubleInput.Name = "postWidthDoubleInput"
-        Me.postWidthDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.postWidthDoubleInput.TabIndex = 82
-        '
-        'postWidthLabel
-        '
-        Me.postWidthLabel.AutoSize = True
-        Me.postWidthLabel.Location = New System.Drawing.Point(960, 345)
-        Me.postWidthLabel.Name = "postWidthLabel"
-        Me.postWidthLabel.Size = New System.Drawing.Size(45, 13)
-        Me.postWidthLabel.TabIndex = 81
-        Me.postWidthLabel.Text = "WIDTH:"
-        '
-        'postLengthLabel
-        '
-        Me.postLengthLabel.AutoSize = True
-        Me.postLengthLabel.Location = New System.Drawing.Point(960, 306)
-        Me.postLengthLabel.Name = "postLengthLabel"
-        Me.postLengthLabel.Size = New System.Drawing.Size(50, 13)
-        Me.postLengthLabel.TabIndex = 80
-        Me.postLengthLabel.Text = "LENGTH:"
-        '
-        'postLengthDoubleInput
-        '
-        '
-        '
-        '
-        Me.postLengthDoubleInput.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.postLengthDoubleInput.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.postLengthDoubleInput.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.postLengthDoubleInput.Increment = 1.0R
-        Me.postLengthDoubleInput.Location = New System.Drawing.Point(1068, 297)
-        Me.postLengthDoubleInput.Name = "postLengthDoubleInput"
-        Me.postLengthDoubleInput.Size = New System.Drawing.Size(131, 22)
-        Me.postLengthDoubleInput.TabIndex = 79
-        '
-        'postDimLabel
-        '
-        Me.postDimLabel.AutoSize = True
-        Me.postDimLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postDimLabel.Location = New System.Drawing.Point(790, 297)
-        Me.postDimLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.postDimLabel.Name = "postDimLabel"
-        Me.postDimLabel.Size = New System.Drawing.Size(150, 30)
-        Me.postDimLabel.TabIndex = 78
-        Me.postDimLabel.Text = "Dimensions"
-        Me.postDimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(960, 585)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(55, 13)
-        Me.Label8.TabIndex = 103
-        Me.Label8.Text = "PRE-TEST:"
-        '
-        'IntegerInput1
-        '
-        '
-        '
-        '
-        Me.IntegerInput1.BackgroundStyle.Class = "DateTimeInputBackground"
-        Me.IntegerInput1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.IntegerInput1.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
-        Me.IntegerInput1.Location = New System.Drawing.Point(1068, 585)
-        Me.IntegerInput1.Name = "IntegerInput1"
-        Me.IntegerInput1.Size = New System.Drawing.Size(90, 22)
-        Me.IntegerInput1.TabIndex = 102
-        '
-        'postTestWeightLabel
-        '
-        Me.postTestWeightLabel.AutoSize = True
-        Me.postTestWeightLabel.BackColor = System.Drawing.Color.LightGray
-        Me.postTestWeightLabel.Location = New System.Drawing.Point(790, 576)
-        Me.postTestWeightLabel.MinimumSize = New System.Drawing.Size(150, 30)
-        Me.postTestWeightLabel.Name = "postTestWeightLabel"
-        Me.postTestWeightLabel.Size = New System.Drawing.Size(150, 30)
-        Me.postTestWeightLabel.TabIndex = 101
-        Me.postTestWeightLabel.Text = "Weight (g)"
-        Me.postTestWeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2535,6 +2535,14 @@ Partial Class Arrigo
         Me.SideNav1.PerformLayout()
         Me.SideNavPanel2.ResumeLayout(False)
         Me.SideNavPanel2.PerformLayout()
+        CType(Me.postWeightIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.postCylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.postCylLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.postHeightDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.postWidthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.postLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cylLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.externalDesignationIntegerInput2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.externalDesignationIntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.specimenNameIntegerInput, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2592,14 +2600,6 @@ Partial Class Arrigo
         Me.SideNavPanel4.ResumeLayout(False)
         Me.SideNavPanel4.PerformLayout()
         Me.SideNavPanel6.ResumeLayout(False)
-        CType(Me.cylLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.posCylDiameterDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.postCylLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.postHeightDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.postWidthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.postLengthDoubleInput, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.IntegerInput1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2762,8 +2762,8 @@ Partial Class Arrigo
     Friend WithEvents dryAirCheckbox As CheckBox
     Friend WithEvents roomAirCheckBox As CheckBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents posCylDiameterLabel As Label
-    Friend WithEvents posCylDiameterDoubleInput As DevComponents.Editors.DoubleInput
+    Friend WithEvents postCylDiameterLabel As Label
+    Friend WithEvents postCylDiameterDoubleInput As DevComponents.Editors.DoubleInput
     Friend WithEvents Label12 As Label
     Friend WithEvents postCylLengthLabel As Label
     Friend WithEvents postCylLengthDoubleInput As DevComponents.Editors.DoubleInput
@@ -2772,10 +2772,10 @@ Partial Class Arrigo
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
-    Friend WithEvents SwitchButton2 As DevComponents.DotNetBar.Controls.SwitchButton
-    Friend WithEvents Label18 As Label
-    Friend WithEvents SwitchButton3 As DevComponents.DotNetBar.Controls.SwitchButton
-    Friend WithEvents Label19 As Label
+    Friend WithEvents postCrossSectionSwitchButton As DevComponents.DotNetBar.Controls.SwitchButton
+    Friend WithEvents postCrossSectionLabel As Label
+    Friend WithEvents postParallelSwitchButton As DevComponents.DotNetBar.Controls.SwitchButton
+    Friend WithEvents postParallelLabel As Label
     Friend WithEvents postCompoundShapeLabel As Label
     Friend WithEvents postHeightDoubleInput As DevComponents.Editors.DoubleInput
     Friend WithEvents postHeightLabel As Label
@@ -2785,7 +2785,7 @@ Partial Class Arrigo
     Friend WithEvents postLengthDoubleInput As DevComponents.Editors.DoubleInput
     Friend WithEvents postDimLabel As Label
     Friend WithEvents postTestmsgLabel As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents IntegerInput1 As DevComponents.Editors.IntegerInput
     Friend WithEvents postTestWeightLabel As Label
+    Friend WithEvents postWeightIntegerInput As DevComponents.Editors.IntegerInput
+    Friend WithEvents postWeightLabel As Label
 End Class

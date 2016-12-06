@@ -203,6 +203,7 @@ Public Class Arrigo
                 postGainLossLabel.Show()
                 postDiffWeightLabel.Show()
 
+                newSpecNextButton.Show()
                 'hidden on page 1
                 backNexSpecButton.Hide()
                 submitNewSpecButton.Hide()
@@ -306,6 +307,9 @@ Public Class Arrigo
                 postWeightIntegerInput.Hide()
                 postGainLossLabel.Hide()
                 postDiffWeightLabel.Hide()
+
+                newSpecNextButton.Hide()
+
             Case Else
                 pageCounter = 2
                 ShowPage()

@@ -206,6 +206,8 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.postGainLossLabel = New System.Windows.Forms.Label()
+        Me.postDiffWeightLabel = New System.Windows.Forms.Label()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postWeightIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -297,6 +299,10 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.saveLabel)
+        Me.SideNavPanel2.Controls.Add(Me.saveAddLabel)
+        Me.SideNavPanel2.Controls.Add(Me.postDiffWeightLabel)
+        Me.SideNavPanel2.Controls.Add(Me.postGainLossLabel)
         Me.SideNavPanel2.Controls.Add(Me.postTestWeightLabel)
         Me.SideNavPanel2.Controls.Add(Me.postWeightIntegerInput)
         Me.SideNavPanel2.Controls.Add(Me.postWeightLabel)
@@ -341,8 +347,6 @@ Partial Class Arrigo
         Me.SideNavPanel2.Controls.Add(Me.externalDesignLabel)
         Me.SideNavPanel2.Controls.Add(Me.compoundShapeSwitchButton1)
         Me.SideNavPanel2.Controls.Add(Me.newSpecProgressBar)
-        Me.SideNavPanel2.Controls.Add(Me.saveAddLabel)
-        Me.SideNavPanel2.Controls.Add(Me.saveLabel)
         Me.SideNavPanel2.Controls.Add(Me.observeTextBoxX)
         Me.SideNavPanel2.Controls.Add(Me.otherTextBox)
         Me.SideNavPanel2.Controls.Add(Me.observeLabel)
@@ -392,9 +396,9 @@ Partial Class Arrigo
         Me.postTestWeightLabel.AutoSize = True
         Me.postTestWeightLabel.Location = New System.Drawing.Point(960, 585)
         Me.postTestWeightLabel.Name = "postTestWeightLabel"
-        Me.postTestWeightLabel.Size = New System.Drawing.Size(55, 13)
+        Me.postTestWeightLabel.Size = New System.Drawing.Size(61, 13)
         Me.postTestWeightLabel.TabIndex = 103
-        Me.postTestWeightLabel.Text = "PRE-TEST:"
+        Me.postTestWeightLabel.Text = "POST TEST:"
         '
         'postWeightIntegerInput
         '
@@ -879,7 +883,7 @@ Partial Class Arrigo
         '
         Me.newSpecProgressBar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.newSpecProgressBar.Location = New System.Drawing.Point(388, 687)
-        Me.newSpecProgressBar.Maximum = 30
+        Me.newSpecProgressBar.Maximum = 20
         Me.newSpecProgressBar.Name = "newSpecProgressBar"
         Me.newSpecProgressBar.Size = New System.Drawing.Size(377, 11)
         Me.newSpecProgressBar.Step = 10
@@ -889,7 +893,7 @@ Partial Class Arrigo
         'saveAddLabel
         '
         Me.saveAddLabel.BackColor = System.Drawing.Color.LightGray
-        Me.saveAddLabel.Location = New System.Drawing.Point(789, 687)
+        Me.saveAddLabel.Location = New System.Drawing.Point(744, 492)
         Me.saveAddLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.saveAddLabel.Name = "saveAddLabel"
         Me.saveAddLabel.Size = New System.Drawing.Size(317, 30)
@@ -901,7 +905,7 @@ Partial Class Arrigo
         '
         Me.saveLabel.AutoSize = True
         Me.saveLabel.BackColor = System.Drawing.Color.LightGray
-        Me.saveLabel.Location = New System.Drawing.Point(790, 669)
+        Me.saveLabel.Location = New System.Drawing.Point(445, 490)
         Me.saveLabel.MinimumSize = New System.Drawing.Size(150, 30)
         Me.saveLabel.Name = "saveLabel"
         Me.saveLabel.Size = New System.Drawing.Size(150, 30)
@@ -2520,6 +2524,26 @@ Partial Class Arrigo
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'postGainLossLabel
+        '
+        Me.postGainLossLabel.AutoSize = True
+        Me.postGainLossLabel.Location = New System.Drawing.Point(960, 630)
+        Me.postGainLossLabel.Name = "postGainLossLabel"
+        Me.postGainLossLabel.Size = New System.Drawing.Size(101, 13)
+        Me.postGainLossLabel.TabIndex = 104
+        Me.postGainLossLabel.Text = "Weight Gain/Loss:"
+        '
+        'postDiffWeightLabel
+        '
+        Me.postDiffWeightLabel.AutoSize = True
+        Me.postDiffWeightLabel.BackColor = System.Drawing.Color.LightGray
+        Me.postDiffWeightLabel.Location = New System.Drawing.Point(1069, 621)
+        Me.postDiffWeightLabel.MinimumSize = New System.Drawing.Size(150, 30)
+        Me.postDiffWeightLabel.Name = "postDiffWeightLabel"
+        Me.postDiffWeightLabel.Size = New System.Drawing.Size(150, 30)
+        Me.postDiffWeightLabel.TabIndex = 105
+        Me.postDiffWeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Arrigo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2788,4 +2812,6 @@ Partial Class Arrigo
     Friend WithEvents postTestWeightLabel As Label
     Friend WithEvents postWeightIntegerInput As DevComponents.Editors.IntegerInput
     Friend WithEvents postWeightLabel As Label
+    Friend WithEvents postDiffWeightLabel As Label
+    Friend WithEvents postGainLossLabel As Label
 End Class

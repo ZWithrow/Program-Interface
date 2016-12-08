@@ -208,6 +208,7 @@ Partial Class Arrigo
         Me.Separator2 = New DevComponents.DotNetBar.Separator()
         Me.priorTestNotesTextBox = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SideNav1.SuspendLayout()
         Me.SideNavPanel2.SuspendLayout()
         CType(Me.postWeightIntegerInput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -282,10 +283,10 @@ Partial Class Arrigo
         '
         'SideNav1
         '
+        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel2)
         Me.SideNav1.Controls.Add(Me.SideNavPanel1)
         Me.SideNav1.Controls.Add(Me.SideNavPanel5)
-        Me.SideNav1.Controls.Add(Me.SideNavPanel3)
         Me.SideNav1.Controls.Add(Me.SideNavPanel4)
         Me.SideNav1.Controls.Add(Me.SideNavPanel6)
         Me.SideNav1.Dock = System.Windows.Forms.DockStyle.Left
@@ -299,6 +300,7 @@ Partial Class Arrigo
         '
         'SideNavPanel2
         '
+        Me.SideNavPanel2.Controls.Add(Me.TextBox1)
         Me.SideNavPanel2.Controls.Add(Me.saveLabel)
         Me.SideNavPanel2.Controls.Add(Me.saveAddLabel)
         Me.SideNavPanel2.Controls.Add(Me.postDiffWeightLabel)
@@ -390,6 +392,7 @@ Partial Class Arrigo
         Me.SideNavPanel2.Name = "SideNavPanel2"
         Me.SideNavPanel2.Size = New System.Drawing.Size(1293, 727)
         Me.SideNavPanel2.TabIndex = 6
+        Me.SideNavPanel2.Visible = False
         '
         'saveLabel
         '
@@ -1514,7 +1517,6 @@ Partial Class Arrigo
         Me.SideNavPanel3.Name = "SideNavPanel3"
         Me.SideNavPanel3.Size = New System.Drawing.Size(1293, 727)
         Me.SideNavPanel3.TabIndex = 10
-        Me.SideNavPanel3.Visible = False
         '
         'Label3
         '
@@ -2482,7 +2484,6 @@ Partial Class Arrigo
         '
         'NewSpecimensiSideNav
         '
-        Me.NewSpecimensiSideNav.Checked = True
         Me.NewSpecimensiSideNav.Name = "NewSpecimensiSideNav"
         Me.NewSpecimensiSideNav.Panel = Me.SideNavPanel2
         Me.NewSpecimensiSideNav.Symbol = ""
@@ -2490,6 +2491,7 @@ Partial Class Arrigo
         '
         'NewHeatingScheduleSideNav
         '
+        Me.NewHeatingScheduleSideNav.Checked = True
         Me.NewHeatingScheduleSideNav.Name = "NewHeatingScheduleSideNav"
         Me.NewHeatingScheduleSideNav.Panel = Me.SideNavPanel3
         Me.NewHeatingScheduleSideNav.Symbol = ""
@@ -2543,6 +2545,13 @@ Partial Class Arrigo
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(221, 644)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(314, 22)
+        Me.TextBox1.TabIndex = 106
         '
         'Arrigo
         '
@@ -2814,4 +2823,5 @@ Partial Class Arrigo
     Friend WithEvents postWeightLabel As Label
     Friend WithEvents postDiffWeightLabel As Label
     Friend WithEvents postGainLossLabel As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

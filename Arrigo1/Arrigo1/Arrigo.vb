@@ -28,8 +28,14 @@ Public Class Arrigo
 
     ' End While
     'End If
+    Public Shared ReadOnly Property StartupPath As String
+    Private Sub PrintStartupPath()
+        TextBox1.Text = "The path for the executable file that " &
+      "started the application is: " &
+      Application.StartupPath
+    End Sub
 
-    Private Sub CreateCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
+    Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
         Try
             Dim stLine As String = ""
             Dim objWriter As IO.StreamWriter = IO.File.AppendText(_specimenCSVPath)
@@ -39,7 +45,7 @@ Public Class Arrigo
                 objWriter.Write(materialTextBox & ",")
 
                 'If value contains comma in the value then you have to perform this opertions
-                Dim append = If(materialTextBox.Contains(","), String.Format("""{0}""", materialTextBox), materialTextBox)
+                Dim append = If(materialTextBox.Contains(","), String.Format("""{0}"""), materialTextBox)
                 stLine = String.Format("{0}{1},", stLine, append)
                 objWriter.Write(stLine)
                 objWriter.Write(Environment.NewLine)
@@ -49,6 +55,27 @@ Public Class Arrigo
         Catch ex As Exception
         End Try
     End Sub
+    Private Sub CreateHeatCSVfile(ByVal _heatCSVPath As String, ByVal heatScheduleDefaultNameNum As String, ByVal optHeatingScheduleTextBox As String, ByVal TextBox2 As String)
+        Try
+            Dim stLine As String = ""
+            Dim objWriter As IO.StreamWriter = IO.File.AppendText(_heatCSVPath)
+            If IO.File.Exists(_heatCSVPath) Then
+                objWriter.Write(heatScheduleDefaultNameNum & ",")
+                objWriter.Write(optHeatingScheduleTextBox & ",")
+                objWriter.Write(TextBox2 & ",")
+
+                'If value contains comma in the value then you have to perform this opertions
+                Dim append = If(TextBox2.Contains(","), String.Format("""{0}"""), TextBox2)
+                stLine = String.Format("{0}{1},", stLine, append)
+                objWriter.Write(stLine)
+                objWriter.Write(Environment.NewLine)
+            End If
+            objWriter.Close()
+            ClearTextbox()
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Private Sub ClearTextbox()
         specimenNameTextbox.Text = ""
         MaxTempIntegerInput1.Text = ""
@@ -346,7 +373,8 @@ Public Class Arrigo
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
-        CreateCSVfile(Application.StartupPath & "\SpecimenData" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
+
+        CreateSpecimenCSVfile(Application.StartupPath & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
         ShowPage()
         newSpecProgressBar.PerformStep()
 
@@ -367,6 +395,8 @@ Public Class Arrigo
 
     Private Sub newHeatSchedTestLabel_Click(sender As Object, e As EventArgs) Handles newHeatSchedTestLabel.Click
         heatPageCounter += 1
+        CreateHeatCSVfile(Application.StartupPath & "\" & "HeatSchedules.csv", heatScheduleDefaultNameNum.Text.ToString(), optHeatingScheduleTextBox.Text.ToString(), TextBox2.Text.ToString())
+
         HeatShowPage()
 
     End Sub

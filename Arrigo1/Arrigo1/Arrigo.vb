@@ -29,7 +29,32 @@ Public Class Arrigo
     ' End While
     'End If
 
+    Private Sub CreateCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
+        Try
+            Dim stLine As String = ""
+            Dim objWriter As IO.StreamWriter = IO.File.AppendText(_specimenCSVPath)
+            If IO.File.Exists(_specimenCSVPath) Then
+                objWriter.Write(specimenNameTextBox & ",")
+                objWriter.Write(MaxTempIntegerInput1 & ",")
+                objWriter.Write(materialTextBox & ",")
 
+                'If value contains comma in the value then you have to perform this opertions
+                Dim append = If(materialTextBox.Contains(","), String.Format("""{0}""", materialTextBox), materialTextBox)
+                stLine = String.Format("{0}{1},", stLine, append)
+                objWriter.Write(stLine)
+                objWriter.Write(Environment.NewLine)
+            End If
+            objWriter.Close()
+            ClearTextbox()
+        Catch ex As Exception
+        End Try
+    End Sub
+    Private Sub ClearTextbox()
+        specimenNameTextbox.Text = ""
+        MaxTempIntegerInput1.Text = ""
+        materialTextBox.Text = ""
+
+    End Sub
     Private Sub Arrigo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' set the colors of the labels
         newSpecimenLabel.BackColor = Color.LightGray
@@ -122,7 +147,7 @@ Public Class Arrigo
             Case 1
                 ' what a appears on page 1
                 newSpecimenLabel.Show()
-                specimenNameLabel.Show()
+                specimenNameTextbox.Show()
                 materialLabel.Show()
                 materialTextBox.Show()
                 MaxTempIntegerInput1.Show()
@@ -225,7 +250,7 @@ Public Class Arrigo
                 'Hidden on page 2
 
                 newSpecimenLabel.Hide()
-                specimenNameLabel.Hide()
+                specimenNameTextbox.Hide()
                 materialLabel.Hide()
                 materialTextBox.Hide()
                 MaxTempIntegerInput1.Hide()
@@ -321,6 +346,7 @@ Public Class Arrigo
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
+        CreateCSVfile(Application.StartupPath & "\SpecimenData" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
         ShowPage()
         newSpecProgressBar.PerformStep()
 

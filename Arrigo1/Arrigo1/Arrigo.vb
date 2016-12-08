@@ -3,31 +3,7 @@ Public Class Arrigo
     Dim pageCounter As Integer = 1
     Dim heatPageCounter As Integer = 1
 
-    '  FolderBrowserDialog1.ShowDialog()
-    '  FileLocation = FolderBrowserDialog1.SelectedPath
-    '  If Write = True Then
 
-    ' Dim FileName As String = ""
-    'FileName = FileLocation + "\" + CurrentDateAndTime.Year.ToString _
-    '        + "_" + CurrentDateAndTime.Month.ToString _
-    '        + "_" + CurrentDateAndTime.Day.ToString _
-    '        + "_" + CurrentDateAndTime.Hour.ToString _
-    '        + "_" + CurrentDateAndTime.Minute.ToString _
-    '       + "_" + CurrentDateAndTime.Second.ToString + "_PIDTest.csv"
-    ' Dim RowsLeft As Integer = DaqData.Rows.Count
-    '  TextBoxX2.Text = "Rows left to Write: " + RowsLeft.ToString
-    '  TextBoxX2.Update()
-    ' My.Computer.FileSystem.WriteAllText(FileName, "Time (s), Outside Temp (C), Inside Temp (C)" + vbCrLf, False)
-    ' Dim i As Integer = 0
-    ' While i < DaqData.Rows.Count - 1
-    ' My.Computer.FileSystem.WriteAllText(FileName, Time(i).ToString + "," + PIDArray1(i).ToString + "," + DaqArray1(i).ToString + vbCrLf, True)
-    ' i += 1
-    ' RowsLeft -= 1
-    '  TextBoxX2.Text = "Rows left to Write: " + RowsLeft.ToString
-    'TextBoxX2.Update()
-
-    ' End While
-    'End If
     Public Shared ReadOnly Property StartupPath As String
     Private Sub PrintStartupPath()
         TextBox1.Text = "The path for the executable file that " &

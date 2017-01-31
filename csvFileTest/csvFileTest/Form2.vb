@@ -19,29 +19,30 @@ Imports System.IO
         End Sub
 
         Public Function GetCsvData(ByVal strFolderPath As String, ByVal strFileName As String) As DataTable
+        Try
+            'CharacterSet=65001 will needed for UTF-8 settings
+            Dim strConnString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & strFolderPath & ";Extended Properties='text;HDR=Yes;FMT=Delimited;CharacterSet=65001;'"
+            Dim conn As New OleDbConnection(strConnString)
             Try
-                'CharacterSet=65001 will needed for UTF-8 settings
-                Dim strConnString As String = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & strFolderPath & ";Extended Properties='text;HDR=Yes;FMT=Delimited;CharacterSet=65001;'"
-                Dim conn As New OleDbConnection(strConnString)
-                Try
-                    conn.Open()
-                    Dim cmd As New OleDbCommand("SELECT * FROM [" & strFileName & "]", conn)
-                    Dim da As New OleDbDataAdapter()
+                conn.Open()
+                Dim cmd As New OleDbCommand("SELECT * FROM [" & strFileName & "]", conn)
+                Dim da As New OleDbDataAdapter()
 
-                    da.SelectCommand = cmd
-                    Dim ds As New DataSet()
+                da.SelectCommand = cmd
+                Dim ds As New DataSet()
 
-                    da.Fill(ds)
-                    da.Dispose()
-                    Return ds.Tables(0)
-                Catch
-                    Return Nothing
-                Finally
-                    conn.Close()
-                End Try
+                da.Fill(ds)
+                da.Dispose()
+                Return ds.Tables(0)
             Catch ex As Exception
+
+            Finally
+                conn.Close()
             End Try
-        End Function
+        Catch ex As Exception
+        End Try
+        Return Nothing
+    End Function
 
 
     Private Sub closeButton1_Click(sender As Object, e As EventArgs) Handles closeButton1.Click

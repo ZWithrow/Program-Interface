@@ -3,6 +3,9 @@ Public Class Arrigo
     Dim pageCounter As Integer = 1
     Dim heatPageCounter As Integer = 1
 
+    'new csv file path
+    Dim csvFilePath = IO.Path.GetFullPath(String.Format("{0}\..", Application.StartupPath))
+
 
     Public Shared ReadOnly Property StartupPath As String
     Private Sub PrintStartupPath()
@@ -351,7 +354,7 @@ Public Class Arrigo
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
 
-        CreateSpecimenCSVfile(Application.StartupPath & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
+        CreateSpecimenCSVfile(csvFilePath & "/SpecimenData" & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
         ShowPage()
         newSpecProgressBar.PerformStep()
 
@@ -372,7 +375,7 @@ Public Class Arrigo
 
     Private Sub newHeatSchedTestLabel_Click(sender As Object, e As EventArgs) Handles newHeatSchedTestLabel.Click
         heatPageCounter += 1
-        CreateHeatCSVfile(Application.StartupPath & "\" & "HeatSchedules.csv", heatScheduleDefaultNameNum.Text.ToString(), optHeatingScheduleTextBox.Text.ToString(), TextBox2.Text.ToString())
+        CreateHeatCSVfile(csvFilePath & "/SpecimenData" & "\" & "HeatSchedules.csv", heatScheduleDefaultNameNum.Text.ToString(), optHeatingScheduleTextBox.Text.ToString(), TextBox2.Text.ToString())
 
         HeatShowPage()
 

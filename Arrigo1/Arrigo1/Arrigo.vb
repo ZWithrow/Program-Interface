@@ -11,14 +11,15 @@ Public Class Arrigo
       Application.StartupPath
     End Sub
 
-    Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
+    Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal specimenNameIntegerInput As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
         Try
             Dim stLine As String = ""
             Dim objWriter As IO.StreamWriter = IO.File.AppendText(_specimenCSVPath)
             If IO.File.Exists(_specimenCSVPath) Then
                 objWriter.Write(specimenNameTextBox & ",")
+                objWriter.Write(specimenNameIntegerInput & ",")
                 objWriter.Write(MaxTempIntegerInput1 & ",")
-                objWriter.Write(materialTextBox & ",")
+                'objWriter.Write(materialTextBox & ",")
 
                 'If value contains comma in the value then you have to perform this opertions
                 Dim append = If(materialTextBox.Contains(","), String.Format("""{0}"""), materialTextBox)
@@ -350,7 +351,7 @@ Public Class Arrigo
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
 
-        CreateSpecimenCSVfile(Application.StartupPath & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
+        CreateSpecimenCSVfile(Application.StartupPath & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
         ShowPage()
         newSpecProgressBar.PerformStep()
 

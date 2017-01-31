@@ -36,7 +36,6 @@ Public Class Form1
 
     Private Sub submitButton_Click(sender As Object, e As EventArgs) Handles submitButton.Click
         CreateCSVfile(lPath & "/Data" & "/" & "CustomerRecords.csv", nameTextBox1.Text.ToString(), IDTextBox1.Text.ToString(), msgTextBox1.Text.ToString())
-        ' CreateCSVfile(Application.CommonAppDataPath & "\" & "CustomerRecords.csv", nameTextBox1.Text.ToString(), IDTextBox1.Text.ToString(), msgTextBox1.Text.ToString())
 
     End Sub
 

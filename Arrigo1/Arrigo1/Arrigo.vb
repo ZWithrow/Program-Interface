@@ -1,4 +1,6 @@
 Public Class Arrigo
+
+
     ' variable for keeping track of button clicks
     Dim pageCounter As Integer = 1
     Dim heatPageCounter As Integer = 1
@@ -10,11 +12,13 @@ Public Class Arrigo
     Public Shared ReadOnly Property StartupPath As String
     Private Sub PrintStartupPath()
         TextBox1.Text = "The path for the executable file that " &
-      "started the application is: " &
-      Application.StartupPath
+  "started the application is: " &
+  Application.StartupPath
     End Sub
 
-    Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal specimenNameIntegerInput As String, ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String)
+    Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal specimenNameIntegerInput As String,
+                                  ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String, ByVal externalDesignationIntegerInput1 As String,
+                                  ByVal externalDesignationIntegerInput2 As String, ByVal lengthDoubleInput1 As String)
         Try
             Dim stLine As String = ""
             Dim objWriter As IO.StreamWriter = IO.File.AppendText(_specimenCSVPath)
@@ -22,16 +26,19 @@ Public Class Arrigo
                 objWriter.Write(specimenNameTextBox & ",")
                 objWriter.Write(specimenNameIntegerInput & ",")
                 objWriter.Write(MaxTempIntegerInput1 & ",")
-                'objWriter.Write(materialTextBox & ",")
+                objWriter.Write(materialTextBox & ",")
+                objWriter.Write(externalDesignationIntegerInput1 & ",")
+                objWriter.Write(externalDesignationIntegerInput2 & ",")
+                objWriter.Write(lengthDoubleInput1 & ",")
 
                 'If value contains comma in the value then you have to perform this opertions
-                Dim append = If(materialTextBox.Contains(","), String.Format("""{0}"""), materialTextBox)
-                stLine = String.Format("{0}{1},", stLine, append)
-                objWriter.Write(stLine)
+                'Dim append = If(materialTextBox.Contains(","), String.Format("""{0}"""), materialTextBox)
+                'stLine = String.Format("{0}{1},", stLine, append)
+                'objWriter.Write(stLine)
                 objWriter.Write(Environment.NewLine)
             End If
             objWriter.Close()
-            ClearTextbox()
+            ClearSpecTextbox()
         Catch ex As Exception
         End Try
     End Sub
@@ -51,12 +58,22 @@ Public Class Arrigo
                 objWriter.Write(Environment.NewLine)
             End If
             objWriter.Close()
-            ClearTextbox()
+            ClearHeatTextbox()
         Catch ex As Exception
         End Try
     End Sub
 
-    Private Sub ClearTextbox()
+    Private Sub ClearSpecTextbox()
+        specimenNameTextbox.Text = ""
+        MaxTempIntegerInput1.Text = ""
+        specimenNameIntegerInput.Text = ""
+        materialTextBox.Text = ""
+        externalDesignationIntegerInput1.Text = ""
+        externalDesignationIntegerInput2.Text = ""
+        lengthDoubleInput1.Text = ""
+
+    End Sub
+    Private Sub ClearHeatTextbox()
         specimenNameTextbox.Text = ""
         MaxTempIntegerInput1.Text = ""
         materialTextBox.Text = ""
@@ -354,7 +371,6 @@ Public Class Arrigo
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles newSpecNextButton.Click
         pageCounter += 1
 
-        CreateSpecimenCSVfile(csvFilePath & "/SpecimenData" & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(), specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString())
         ShowPage()
         newSpecProgressBar.PerformStep()
 
@@ -368,6 +384,10 @@ Public Class Arrigo
     End Sub
 
     Private Sub submitNewSpecButton_Click(sender As Object, e As EventArgs) Handles submitNewSpecButton.Click
+        CreateSpecimenCSVfile(csvFilePath & "/SpecimenData" & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(),
+                          specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString(), externalDesignationIntegerInput1.Text.ToString(), externalDesignationIntegerInput2.Text.ToString(),
+                          lengthDoubleInput1.Text.ToString())
+
         NewHeatingScheduleSideNav.Select()
 
 

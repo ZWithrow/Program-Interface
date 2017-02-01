@@ -203,6 +203,7 @@ Public Class Arrigo
                 cylDiameterDoubleInput.Show()
                 Label9.Show()
                 compoundShapeLabel.Show()
+                compoundShapeSwitchButton1.Show()
                 parallelLabel.Show()
                 parallelSwitchButton1.Show()
                 weightLabel.Show()
@@ -462,4 +463,11 @@ Public Class Arrigo
 
     End Sub
 
+    Private Sub saveAddLabel_Click(sender As Object, e As EventArgs) Handles saveAddLabel.Click
+
+        pageCounter = 1
+        ShowPage()
+
+
+    End Sub
 End Class

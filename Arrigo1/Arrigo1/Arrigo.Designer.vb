@@ -926,6 +926,7 @@ Partial Class Arrigo
         Me.compoundShapeSwitchButton1.OnTextColor = System.Drawing.Color.Black
         Me.compoundShapeSwitchButton1.Size = New System.Drawing.Size(66, 13)
         Me.compoundShapeSwitchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.compoundShapeSwitchButton1.SwitchClickTogglesValue = True
         Me.compoundShapeSwitchButton1.TabIndex = 61
         '
         'newSpecProgressBar

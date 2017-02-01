@@ -18,7 +18,8 @@ Public Class Arrigo
 
     Private Sub CreateSpecimenCSVfile(ByVal _specimenCSVPath As String, ByVal specimenNameTextBox As String, ByVal specimenNameIntegerInput As String,
                                   ByVal MaxTempIntegerInput1 As String, ByVal materialTextBox As String, ByVal externalDesignationIntegerInput1 As String,
-                                  ByVal externalDesignationIntegerInput2 As String, ByVal lengthDoubleInput1 As String, ByVal compoundShapeSwitchButton1 As String)
+                                  ByVal externalDesignationIntegerInput2 As String, ByVal lengthDoubleInput1 As String, ByVal widthDoubleInput2 As String,
+                                  ByVal heightDoubleInput1 As String, ByVal compoundShapeSwitchButton1 As String, ByVal parallelSwitchButton1 As String)
         Try
             Dim stLine As String = ""
             Dim objWriter As IO.StreamWriter = IO.File.AppendText(_specimenCSVPath)
@@ -30,7 +31,10 @@ Public Class Arrigo
                 objWriter.Write(externalDesignationIntegerInput1 & ",")
                 objWriter.Write(externalDesignationIntegerInput2 & ",")
                 objWriter.Write(lengthDoubleInput1 & ",")
+                objWriter.Write(widthDoubleInput2 & ",")
+                objWriter.Write(heightDoubleInput1 & ",")
                 objWriter.Write(compoundShapeSwitchButton1 & ",")
+                objWriter.Write(parallelSwitchButton1 & ",")
 
                 'If value contains comma in the value then you have to perform this opertions
                 'Dim append = If(materialTextBox.Contains(","), String.Format("""{0}"""), materialTextBox)
@@ -73,7 +77,10 @@ Public Class Arrigo
         externalDesignationIntegerInput1.Text = ""
         externalDesignationIntegerInput2.Text = ""
         lengthDoubleInput1.Text = ""
+        widthDoubleInput2.Text = ""
+        heightDoubleInput1.Text = ""
         compoundShapeSwitchButton1.Value = ""
+        parallelSwitchButton1.Value = ""
 
     End Sub
     Private Sub ClearHeatTextbox()
@@ -390,7 +397,8 @@ Public Class Arrigo
     Private Sub submitNewSpecButton_Click(sender As Object, e As EventArgs) Handles submitNewSpecButton.Click
         CreateSpecimenCSVfile(csvFilePath & "/SpecimenData" & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(),
                           specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString(), externalDesignationIntegerInput1.Text.ToString(), externalDesignationIntegerInput2.Text.ToString(),
-                          lengthDoubleInput1.Text.ToString(), compoundShapeSwitchButton1.Value.ToString())
+                          lengthDoubleInput1.Text.ToString(), widthDoubleInput2.Text.ToString(), heightDoubleInput1.Text.ToString(),
+                              compoundShapeSwitchButton1.Value.ToString(), parallelSwitchButton1.Value.ToString())
 
         NewHeatingScheduleSideNav.Select()
         pageCounter = 1
@@ -464,6 +472,9 @@ Public Class Arrigo
     End Sub
 
     Private Sub saveAddLabel_Click(sender As Object, e As EventArgs) Handles saveAddLabel.Click
+        ' CreateSpecimenCSVfile(csvFilePath & "/SpecimenData" & "\" & "NewSpecimen.csv", specimenNameTextbox.Text.ToString(),
+        'specimenNameIntegerInput.Text.ToString(), MaxTempIntegerInput1.Text.ToString(), materialTextBox.Text.ToString(), externalDesignationIntegerInput1.Text.ToString(), externalDesignationIntegerInput2.Text.ToString(),
+        'lengthDoubleInput1.Text.ToString(), widthDoubleInput2.Text.ToString(), compoundShapeSwitchButton1.Value.ToString(), parallelSwitchButton1.Value.ToString())
 
         pageCounter = 1
         ShowPage()
